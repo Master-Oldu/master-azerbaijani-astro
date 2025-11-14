@@ -1,0 +1,192 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseHead title="Master Azerbaijani – App Coming Soon" />
+
+<Header />
+
+<main class="page-container about-page">
+
+  <!-- Flag -->
+  <div class="flag" style="font-size:4rem; margin-bottom:20px;">🇦🇿</div>
+
+  <!-- Title -->
+  <h1>Master Azerbaijani</h1>
+
+  <!-- Subtitle -->
+  <p
+    style="
+      font-size:1.5rem;
+      opacity:0.9;
+      margin-bottom:30px;
+      text-shadow:2px 2px 4px rgba(0,0,0,0.3);
+      max-width:900px;
+      margin-left:auto;
+      margin-right:auto;
+    "
+  >
+    Connect with your heritage. Bridge generations. Build belonging.
+  </p>
+
+  <!-- Launch Date Box -->
+  <div
+    class="launch-date"
+    style="
+      font-size:1.2rem;
+      margin-bottom:30px;
+      background:rgba(255,255,255,0.2);
+      padding:15px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.3);
+      text-shadow:2px 2px 4px rgba(0,0,0,0.3);
+    "
+  >
+    <strong>
+      <img src="/images/buta.webp" alt="Coming Soon Icon" style="height:1em; vertical-align:middle;" />
+      Launching Novruz 2026
+    </strong>
+    <br />
+    <em>March 20, 2026… A perfect time for new beginnings</em>
+  </div>
+
+  <!-- Countdown -->
+  <div
+    id="countdown"
+    class="countdown"
+    style="
+      font-size:2.5rem;
+      font-weight:700;
+      margin-bottom:20px;
+      text-shadow:0 0 10px #fff, 0 0 20px #fff;
+      animation:pulse 1.5s infinite alternate;
+    "
+  >
+    00d 00h 00m 00s
+  </div>
+
+  <!-- Waitlist CTA -->
+  <p style="margin-bottom:15px; font-size:1.1rem;">
+    Be the first to know when we launch:
+  </p>
+
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSchAl_aV-b9vF2ah5HPzdfD8OiWQ-J4uwtu_VLt7WfP_tGR3A/viewform?usp=sf_link"
+    target="_blank"
+    class="join-btn"
+    style="
+      display:inline-block;
+      background:#ff8c00;
+      color:#185a9d;
+      font-weight:700;
+      padding:15px 30px;
+      border-radius:12px;
+      text-decoration:none;
+      font-size:1.2rem;
+      transition:transform 0.3s ease, box-shadow 0.3s ease;
+    "
+    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 15px rgba(0,0,0,0.3)'"
+    onmouseout="this.style.transform='none'; this.style.boxShadow='none'"
+  >
+    Join the Waitlist
+  </a>
+
+  <!-- Features -->
+  <div
+    class="features"
+    style="
+      text-align:left;
+      margin:30px 0;
+      background:rgba(255,255,255,0.25);
+      padding:20px;
+      border-radius:10px;
+    "
+  >
+    <h3
+      style="
+        text-align:center;
+        margin-bottom:20px;
+        font-size:1.3rem;
+        text-shadow:2px 2px 4px rgba(0,0,0,0.3);
+      "
+    >
+      What's Coming:
+    </h3>
+
+    <ul style="list-style:none; padding-left:0;">
+      <li style="padding-left:30px; position:relative; margin-bottom:12px;">
+        Interactive lessons for families and heritage learners
+        <span style="position:absolute; left:0; color:#ff8c00; font-size:1.2rem; font-weight:bold;">✓</span>
+      </li>
+
+      <li style="padding-left:30px; position:relative; margin-bottom:12px;">
+        Audio pronunciation with native speaker guidance
+        <span style="position:absolute; left:0; color:#ff8c00; font-size:1.2rem; font-weight:bold;">✓</span>
+      </li>
+
+      <li style="padding-left:30px; position:relative; margin-bottom:12px;">
+        Cultural context that goes beyond just words
+        <span style="position:absolute; left:0; color:#ff8c00; font-size:1.2rem; font-weight:bold;">✓</span>
+      </li>
+
+      <li style="padding-left:30px; position:relative; margin-bottom:12px;">
+        Designed for busy people living abroad
+        <span style="position:absolute; left:0; color:#ff8c00; font-size:1.2rem; font-weight:bold;">✓</span>
+      </li>
+
+      <li style="padding-left:30px; position:relative; margin-bottom:12px;">
+        Perfect for connecting with grandparents and in-laws
+        <span style="position:absolute; left:0; color:#ff8c00; font-size:1.2rem; font-weight:bold;">✓</span>
+      </li>
+
+      <li style="padding-left:30px; position:relative;">
+        Built by someone who understands the struggle
+        <span style="position:absolute; left:0; color:#ff8c00; font-size:1.2rem; font-weight:bold;">✓</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact" style="margin-top:30px; font-size:1rem;">
+    Questions? Ideas? Just want to chat?<br />
+    <a href="mailto:hello@masterazerbaijani.com">hello@masterazerbaijani.com</a>
+  </div>
+
+</main>
+
+<Footer />
+
+<!-- Countdown Logic -->
+<script is:inline>
+  const countdownElement = document.getElementById('countdown');
+  const launchDate = new Date("March 20, 2026 00:00:00").getTime();
+
+  function updateCountdown() {
+    const now = Date.now();
+    const distance = launchDate - now;
+
+    if (distance < 0) {
+      countdownElement.innerHTML = "Launched!";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24))/(1000*60*60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60))/(1000*60));
+    const seconds = Math.floor((distance % (1000 * 60))/1000);
+
+    countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+
+<style is:inline>
+  @keyframes pulse {
+    0% { text-shadow: 0 0 10px #fff, 0 0 20px #fff; }
+    100% { text-shadow: 0 0 20px #fff, 0 0 40px #fff; }
+  }
+</style>
