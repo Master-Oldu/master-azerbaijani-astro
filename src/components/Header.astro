@@ -1,6 +1,5 @@
 ---
 ---
-
 <header>
   <a href="/" class="logo">
     <img src="/images/logo-1.png" alt="Master Azerbaijani Logo" />
@@ -40,13 +39,22 @@
     const links = document.querySelectorAll('nav a');
     let current = window.location.pathname;
 
-    if (!current || current === '') current = '/';
+    // Normalize Astro's trailing slash URLs
+    if (current !== "/" && current.endsWith("/")) {
+      current = current.slice(0, -1);
+    }
 
     links.forEach(function (link) {
-      const href = link.getAttribute('href');
+      let href = link.getAttribute("href");
+
+      // Normalize link href too
+      if (href !== "/" && href.endsWith("/")) {
+        href = href.slice(0, -1);
+      }
+
       if (href === current) {
-        link.classList.add('active');
-        link.setAttribute('aria-current', 'page');
+        link.classList.add("active");
+        link.setAttribute("aria-current", "page");
       }
     });
   })();
