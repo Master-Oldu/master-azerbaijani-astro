@@ -1,4 +1,7 @@
-/* THEME VARIABLES */
+/* ========================================= */
+/*           THEME VARIABLES                 */
+/* ========================================= */
+
 :root {
 	--bg: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
 	--text: white;
@@ -8,7 +11,8 @@
 	--footer-bg: rgba(0, 0, 0, 0.2);
 }
 
-html.dark {
+/* IMPORTANT: must match JS = html.classList.add("dark-mode") */
+html.dark-mode {
 	--bg: #0d1117;
 	--text: #e8e8e8;
 	--header-bg: #0f1a24;
@@ -16,6 +20,10 @@ html.dark {
 	--card-border: rgba(255, 255, 255, 0.08);
 	--footer-bg: rgba(255, 255, 255, 0.05);
 }
+
+/* ========================================= */
+/*             GLOBAL RESET                  */
+/* ========================================= */
 
 * {
 	margin: 0;
@@ -30,9 +38,13 @@ body {
 	color: var(--text);
 	display: flex;
 	flex-direction: column;
+	transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* Global typography */
+/* ========================================= */
+/*            TYPOGRAPHY                     */
+/* ========================================= */
+
 p {
 	font-size: 1.2rem;
 	line-height: 1.7;
@@ -47,9 +59,13 @@ h1 {
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 	margin-bottom: 30px;
 	color: var(--text);
+	transition: color 0.4s ease;
 }
 
-/* Main content containers */
+/* ========================================= */
+/*        MAIN PAGE CONTAINER STYLES         */
+/* ========================================= */
+
 .container,
 .page-container {
 	text-align: center;
@@ -64,9 +80,13 @@ h1 {
 	margin: 20px auto;
 	flex: 1;
 	color: var(--text);
+	transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* Header and navigation */
+/* ========================================= */
+/*                HEADER                     */
+/* ========================================= */
+
 header {
 	display: flex;
 	align-items: center;
@@ -81,6 +101,7 @@ header {
 	z-index: 2000;
 	background: var(--header-bg);
 	padding: 10px 20px;
+	transition: background 0.4s ease;
 }
 
 header .logo img {
@@ -89,10 +110,9 @@ header .logo img {
 	max-width: 100%;
 }
 
-/* Desktop nav */
-nav {
-	text-align: center;
-}
+/* ========================================= */
+/*                 NAVIGATION                */
+/* ========================================= */
 
 nav a {
 	text-decoration: none;
@@ -118,20 +138,23 @@ nav a:hover {
 nav a.active {
 	transform: scale(1.15);
 	color: #ff8c00;
+	background: rgba(255, 255, 255, 0.18);
 	text-shadow:
 		1px 1px 0 #cc6600,
 		-1px 1px 0 #cc6600,
 		1px -1px 0 #cc6600,
 		-1px -1px 0 #cc6600,
 		0 0 5px rgba(255, 140, 0, 0.9);
-	background: rgba(255, 255, 255, 0.18);
 }
 
 nav a.active:hover {
 	transform: scale(1.2);
 }
 
-/* Mobile hamburger */
+/* ========================================= */
+/*        MOBILE NAV + HAMBURGER             */
+/* ========================================= */
+
 .hamburger {
 	display: none;
 	font-size: 2.5rem;
@@ -142,7 +165,6 @@ nav a.active:hover {
 	z-index: 2100;
 }
 
-/* Mobile menu overlay */
 .mobile-nav {
 	display: none;
 	position: fixed;
@@ -180,37 +202,39 @@ nav a.active:hover {
 	background: rgba(255, 255, 255, 0.25);
 }
 
-/* Hero section */
+/* ========================================= */
+/*                  HERO                     */
+/* ========================================= */
+
 .hero {
 	text-align: center;
 	padding: 0px 20px 40px;
 	color: var(--text);
-	border-radius: 15px;
 	margin-bottom: 20px;
 }
 
 .hero p {
 	font-size: 1.5rem;
 	opacity: 0.9;
-	margin-bottom: 15px;
 	line-height: 1.5;
 	max-width: 900px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto 15px;
 	color: var(--text);
 }
 
-/* Shared lead paragraph style */
+/* Shared lead paragraph (landing pages) */
 .lead-text {
 	font-size: 1.5rem;
 	opacity: 0.9;
-	line-height: 1.5;
 	max-width: 900px;
 	margin: 0 auto 40px;
 	color: var(--text);
 }
 
-/* Latest posts */
+/* ========================================= */
+/*             LATEST POSTS                  */
+/* ========================================= */
+
 .latest-posts {
 	text-align: center;
 	margin-bottom: 60px;
@@ -223,8 +247,6 @@ nav a.active:hover {
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 	margin-bottom: 60px;
 	transition: transform 0.2s, color 0.2s;
-	cursor: default;
-	color: var(--text);
 }
 
 .latest-posts h2:hover {
@@ -240,18 +262,18 @@ nav a.active:hover {
 }
 
 .post-card {
-	background: rgba(255, 255, 255, 0.85);
 	padding: 20px;
 	border-radius: 15px;
 	width: 100%;
 	max-width: 300px;
 	text-align: center;
-	border: 1px solid var(--card-border);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	border: 1px solid var(--card-border);
+	background: rgba(255, 255, 255, 0.85);
 	color: #000;
 }
 
-html.dark .post-card {
+html.dark-mode .post-card {
 	background: rgba(255, 255, 255, 0.08);
 	color: var(--text);
 }
@@ -267,7 +289,10 @@ html.dark .post-card {
 	font-weight: 600;
 }
 
-/* Word of the Day */
+/* ========================================= */
+/*        WORD OF THE DAY SECTION            */
+/* ========================================= */
+
 .word-of-day {
 	text-align: center;
 	margin-bottom: 60px;
@@ -277,11 +302,9 @@ html.dark .post-card {
 .word-of-day h2 {
 	font-size: 3rem;
 	font-weight: 700;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 	margin-bottom: 60px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 	transition: transform 0.2s, color 0.2s;
-	cursor: default;
-	color: var(--text);
 }
 
 .word-of-day h2:hover {
@@ -296,7 +319,10 @@ html.dark .post-card {
 	color: var(--text);
 }
 
-/* Social icons */
+/* ========================================= */
+/*             SOCIAL ICONS                  */
+/* ========================================= */
+
 .social-icons {
 	display: flex;
 	justify-content: center;
@@ -315,7 +341,7 @@ html.dark .post-card {
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-html.dark .icon-card {
+html.dark-mode .icon-card {
 	background: rgba(255, 255, 255, 0.1);
 }
 
@@ -329,7 +355,10 @@ html.dark .icon-card {
 	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Contact */
+/* ========================================= */
+/*                 CONTACT                   */
+/* ========================================= */
+
 .contact {
 	text-align: center;
 	font-size: 0.9rem;
@@ -343,7 +372,10 @@ html.dark .icon-card {
 	text-decoration: none;
 }
 
-/* Footer */
+/* ========================================= */
+/*                  FOOTER                   */
+/* ========================================= */
+
 footer {
 	text-align: center;
 	color: var(--text);
@@ -352,7 +384,7 @@ footer {
 	background: var(--footer-bg);
 }
 
-/* Fade-in animation for footer credit */
+/* Fade-in animation */
 .footer-credit {
 	opacity: 0;
 	animation: footerFade 1.2s ease-in forwards;
@@ -363,7 +395,10 @@ footer {
 	to { opacity: 1; }
 }
 
-/* ABOUT PAGE text */
+/* ========================================= */
+/*               ABOUT PAGE                  */
+/* ========================================= */
+
 .about-page p {
 	font-size: 1.5rem;
 	opacity: 0.9;
@@ -376,7 +411,10 @@ footer {
 	color: var(--text);
 }
 
-/* Responsive */
+/* ========================================= */
+/*               RESPONSIVE                  */
+/* ========================================= */
+
 @media (max-width: 900px) {
 	.post-grid {
 		grid-template-columns: repeat(2, 1fr);

@@ -5,9 +5,6 @@
     <img src="/images/logo-1.png" alt="Master Azerbaijani Logo" />
   </a>
 
-  <!-- Theme Toggle (Desktop) -->
-  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
-
   <!-- Mobile hamburger -->
   <div class="hamburger" onclick="toggleMenu()">☰</div>
 
@@ -19,6 +16,9 @@
     <a href="/help">Help</a>
     <a href="/contact">Contact</a>
     <a href="/app-coming-soon">App Coming Soon</a>
+
+    <!-- Theme Toggle (Desktop, sits next to Home links) -->
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
   </nav>
 </header>
 
@@ -30,19 +30,22 @@
   <a href="/help">Help</a>
   <a href="/contact">Contact</a>
   <a href="/app-coming-soon">App Coming Soon</a>
+
+  <!-- Theme Toggle (Mobile version) -->
+  <button id="theme-toggle-mobile" class="theme-toggle mobile-toggle">🌙</button>
 </div>
 
 <style>
-  /* Theme toggle button */
+  /* Theme toggle button styling */
   .theme-toggle {
     cursor: pointer;
     background: rgba(255, 255, 255, 0.15);
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
     color: white;
     font-size: 1.3rem;
     padding: 6px 12px;
     border-radius: 8px;
-    margin-right: 20px;
+    margin-left: 10px;
     transition: background 0.3s ease, transform 0.3s ease;
   }
 
@@ -51,57 +54,83 @@
     transform: scale(1.1);
   }
 
-  /* Show toggle button only on desktop */
+  /* Mobile-specific toggle */
+  .mobile-toggle {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+
+  /* Desktop only for the nav toggle */
   @media (max-width: 768px) {
-    .theme-toggle {
+    nav .theme-toggle {
       display: none;
     }
   }
 </style>
 
 <script is:inline>
-  // Mobile menu toggle
+  // ----------------------------
+  // MOBILE MENU
+  // ----------------------------
   function toggleMenu() {
-    const menu = document.getElementById('mobileNav');
-    menu.classList.toggle('open');
+    const menu = document.getElementById("mobileNav");
+    menu.classList.toggle("open");
   }
 
-  // Theme toggle logic
-  function toggleTheme() {
-    const html = document.documentElement;
-    const isDark = html.classList.toggle('dark');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  }
-
-  // Load stored theme on page load
+  // ----------------------------
+  // ACTIVE LINK HIGHLIGHT
+  // ----------------------------
   (function () {
-    const saved = localStorage.getItem('theme');
-    if (saved === 'dark') {
-      document.documentElement.classList.add('dark');
-    }
-  })();
-
-  // Active link logic
-  (function () {
-    const links = document.querySelectorAll('nav a');
+    const links = document.querySelectorAll("nav a");
     let current = window.location.pathname;
 
-    // Normalize Astro trailing slash
     if (current !== "/" && current.endsWith("/")) {
       current = current.slice(0, -1);
     }
 
-    links.forEach(function (link) {
+    links.forEach((link) => {
       let href = link.getAttribute("href");
-
       if (href !== "/" && href.endsWith("/")) {
         href = href.slice(0, -1);
       }
-
       if (href === current) {
         link.classList.add("active");
-        link.setAttribute("aria-current", "page");
       }
     });
+  })();
+
+  // ----------------------------
+  // DARK MODE TOGGLE (Desktop + Mobile)
+  // ----------------------------
+  (function () {
+    const html = document.documentElement;
+    const desktopToggle = document.getElementById("theme-toggle");
+    const mobileToggle = document.getElementById("theme-toggle-mobile");
+
+    // Load saved preference
+    const saved = localStorage.getItem("theme");
+    if (saved === "dark") {
+      html.classList.add("dark-mode");
+    } else if (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      html.classList.add("dark-mode");
+    }
+
+    updateIcons();
+
+    function toggleTheme() {
+      html.classList.toggle("dark-mode");
+      const isDark = html.classList.contains("dark-mode");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      updateIcons();
+    }
+
+    function updateIcons() {
+      const icon = html.classList.contains("dark-mode") ? "☀️" : "🌙";
+      if (desktopToggle) desktopToggle.textContent = icon;
+      if (mobileToggle) mobileToggle.textContent = icon;
+    }
+
+    if (desktopToggle) desktopToggle.addEventListener("click", toggleTheme);
+    if (mobileToggle) mobileToggle.addEventListener("click", toggleTheme);
   })();
 </script>
