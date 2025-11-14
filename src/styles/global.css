@@ -1,3 +1,22 @@
+/* THEME VARIABLES */
+:root {
+	--bg: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+	--text: white;
+	--header-bg: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+	--card-bg: rgba(255, 255, 255, 0.1);
+	--card-border: rgba(255, 255, 255, 0.2);
+	--footer-bg: rgba(0, 0, 0, 0.2);
+}
+
+html.dark {
+	--bg: #0d1117;
+	--text: #e8e8e8;
+	--header-bg: #0f1a24;
+	--card-bg: rgba(255, 255, 255, 0.05);
+	--card-border: rgba(255, 255, 255, 0.08);
+	--footer-bg: rgba(255, 255, 255, 0.05);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -7,8 +26,8 @@
 body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	min-height: 100vh;
-	background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
-	color: white;
+	background: var(--bg);
+	color: var(--text);
 	display: flex;
 	flex-direction: column;
 }
@@ -19,6 +38,7 @@ p {
 	line-height: 1.7;
 	max-width: 850px;
 	margin: 0 auto 20px;
+	color: var(--text);
 }
 
 h1 {
@@ -26,36 +46,24 @@ h1 {
 	font-weight: 700;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 	margin-bottom: 30px;
+	color: var(--text);
 }
 
 /* Main content containers */
-.container {
-	text-align: center;
-	max-width: 1200px;
-	width: 90%;
-	padding: 140px 20px;
-	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(10px);
-	border-radius: 20px;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-	margin: 20px auto;
-	flex: 1;
-}
-
-/* New unified page container – identical to .container for now */
+.container,
 .page-container {
 	text-align: center;
 	max-width: 1200px;
 	width: 90%;
 	padding: 140px 20px;
-	background: rgba(255, 255, 255, 0.1);
+	background: var(--card-bg);
 	backdrop-filter: blur(10px);
 	border-radius: 20px;
-	border: 1px solid rgba(255, 255, 255, 0.2);
+	border: 1px solid var(--card-border);
 	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 	margin: 20px auto;
 	flex: 1;
+	color: var(--text);
 }
 
 /* Header and navigation */
@@ -71,7 +79,7 @@ header {
 	left: 0;
 	width: 100%;
 	z-index: 2000;
-	background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+	background: var(--header-bg);
 	padding: 10px 20px;
 }
 
@@ -88,7 +96,7 @@ nav {
 
 nav a {
 	text-decoration: none;
-	color: white;
+	color: var(--text);
 	margin: 0 15px;
 	font-weight: 600;
 	display: inline-block;
@@ -130,7 +138,7 @@ nav a.active:hover {
 	position: absolute;
 	right: 20px;
 	cursor: pointer;
-	color: white;
+	color: var(--text);
 	z-index: 2100;
 }
 
@@ -176,13 +184,9 @@ nav a.active:hover {
 .hero {
 	text-align: center;
 	padding: 0px 20px 40px;
-	color: white;
+	color: var(--text);
 	border-radius: 15px;
 	margin-bottom: 20px;
-}
-
-.hero h1 {
-	/* h1 base style already set globally */
 }
 
 .hero p {
@@ -193,22 +197,24 @@ nav a.active:hover {
 	max-width: 900px;
 	margin-left: auto;
 	margin-right: auto;
+	color: var(--text);
 }
 
-/* Shared "lead" text style – use on key intro paragraphs */
+/* Shared lead paragraph style */
 .lead-text {
 	font-size: 1.5rem;
 	opacity: 0.9;
 	line-height: 1.5;
 	max-width: 900px;
 	margin: 0 auto 40px;
+	color: var(--text);
 }
 
 /* Latest posts */
 .latest-posts {
 	text-align: center;
 	margin-bottom: 60px;
-	color: white;
+	color: var(--text);
 }
 
 .latest-posts h2 {
@@ -216,10 +222,9 @@ nav a.active:hover {
 	font-weight: 700;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 	margin-bottom: 60px;
-	transition:
-		transform 0.2s,
-		color 0.2s;
+	transition: transform 0.2s, color 0.2s;
 	cursor: default;
+	color: var(--text);
 }
 
 .latest-posts h2:hover {
@@ -241,10 +246,14 @@ nav a.active:hover {
 	width: 100%;
 	max-width: 300px;
 	text-align: center;
-	border: 1px solid rgba(255, 255, 255, 0.4);
-	transition:
-		transform 0.3s ease,
-		box-shadow 0.3s ease;
+	border: 1px solid var(--card-border);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	color: #000;
+}
+
+html.dark .post-card {
+	background: rgba(255, 255, 255, 0.08);
+	color: var(--text);
 }
 
 .post-card:hover {
@@ -262,7 +271,7 @@ nav a.active:hover {
 .word-of-day {
 	text-align: center;
 	margin-bottom: 60px;
-	color: white;
+	color: var(--text);
 }
 
 .word-of-day h2 {
@@ -270,10 +279,9 @@ nav a.active:hover {
 	font-weight: 700;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 	margin-bottom: 60px;
-	transition:
-		transform 0.2s,
-		color 0.2s;
+	transition: transform 0.2s, color 0.2s;
 	cursor: default;
+	color: var(--text);
 }
 
 .word-of-day h2:hover {
@@ -285,6 +293,7 @@ nav a.active:hover {
 	font-size: 1.2rem;
 	opacity: 0.9;
 	margin-bottom: 40px;
+	color: var(--text);
 }
 
 /* Social icons */
@@ -303,9 +312,11 @@ nav a.active:hover {
 	width: 80px;
 	height: 80px;
 	text-align: center;
-	transition:
-		transform 0.3s ease,
-		box-shadow 0.3s ease;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+html.dark .icon-card {
+	background: rgba(255, 255, 255, 0.1);
 }
 
 .icon-card img {
@@ -318,13 +329,13 @@ nav a.active:hover {
 	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Contact section */
+/* Contact */
 .contact {
 	text-align: center;
 	font-size: 0.9rem;
 	opacity: 0.9;
 	margin-bottom: 40px;
-	color: white;
+	color: var(--text);
 }
 
 .contact a {
@@ -335,13 +346,24 @@ nav a.active:hover {
 /* Footer */
 footer {
 	text-align: center;
-	color: white;
+	color: var(--text);
 	padding: 20px;
 	font-size: 0.9rem;
-	background: rgba(0, 0, 0, 0.2);
+	background: var(--footer-bg);
 }
 
-/* ABOUT PAGE — match homepage hero text feel */
+/* Fade-in animation for footer credit */
+.footer-credit {
+	opacity: 0;
+	animation: footerFade 1.2s ease-in forwards;
+}
+
+@keyframes footerFade {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+/* ABOUT PAGE text */
 .about-page p {
 	font-size: 1.5rem;
 	opacity: 0.9;
@@ -351,11 +373,7 @@ footer {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-}
-
-.about-page h1 {
-	/* h1 base style already set globally */
-	margin-bottom: 30px;
+	color: var(--text);
 }
 
 /* Responsive */
