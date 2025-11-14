@@ -10,7 +10,7 @@ interface Props {
   image?: ImageMetadata;
 }
 
-const CUSTOM_OG_IMAGE = "/og-masterazerbaijani.jpg";
+const CUSTOM_OG_IMAGE = "https://masterazerbaijani.com/og-masterazerbaijani.jpg";
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const { title, description, image = FallbackImage } = Astro.props;
@@ -27,12 +27,9 @@ const { title, description, image = FallbackImage } = Astro.props;
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
-  <!-- Apple Title (fixes “touch icon title” warning) -->
+  <!-- Apple Touch Title -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content="Master Azerbaijani" />
-
-  <!-- Manifest (uncomment after adding site.webmanifest) -->
-  <!-- <link rel="manifest" href="/site.webmanifest" /> -->
 
   <!-- Sitemap & RSS -->
   <link rel="sitemap" href="/sitemap-index.xml" />
@@ -63,6 +60,8 @@ const { title, description, image = FallbackImage } = Astro.props;
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content={CUSTOM_OG_IMAGE} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
