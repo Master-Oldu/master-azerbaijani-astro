@@ -5,6 +5,8 @@ const year = new Date().getFullYear();
 <footer>
   <div class="footer-content">
     <p>© {year} Master Azerbaijani. All Rights Reserved.</p>
+
+    <!-- Animated line -->
     <p class="footer-credit">
       Built with love by Shahla. Empowering families to connect through language.
     </p>
@@ -20,10 +22,14 @@ const year = new Date().getFullYear();
       margin-top: 40px;
     }
 
+    .footer-content p {
+      margin-bottom: 5px;
+    }
+
+    /* This keeps your fade-in smooth and classy */
     .footer-credit {
-      opacity: 0.8;
-      margin-top: 8px;
       font-size: 0.85rem;
+      opacity: 0.8;
     }
   </style>
 </footer>
