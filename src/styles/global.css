@@ -13,7 +13,7 @@
 
 /* IMPORTANT: must match JS = html.classList.add("dark-mode") */
 html.dark-mode {
-	--bg: #0d1117;
+	--bg: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
 	--text: #e8e8e8;
 	--header-bg: #0f1a24;
 	--card-bg: rgba(255, 255, 255, 0.05);
@@ -222,7 +222,7 @@ nav a.active:hover {
 	color: var(--text);
 }
 
-/* Shared lead paragraph (landing pages) */
+/* Shared lead paragraph */
 .lead-text {
 	font-size: 1.5rem;
 	opacity: 0.9;
@@ -244,8 +244,8 @@ nav a.active:hover {
 .latest-posts h2 {
 	font-size: 3rem;
 	font-weight: 700;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 	margin-bottom: 60px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 	transition: transform 0.2s, color 0.2s;
 }
 
@@ -384,7 +384,6 @@ footer {
 	background: var(--footer-bg);
 }
 
-/* Fade-in animation */
 .footer-credit {
 	opacity: 0;
 	animation: footerFade 1.2s ease-in forwards;
