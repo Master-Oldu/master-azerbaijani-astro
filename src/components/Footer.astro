@@ -1,6 +1,29 @@
 ---
+const year = new Date().getFullYear();
 ---
 
 <footer>
-  © 2025 Master Azerbaijani
+  <div class="footer-content">
+    <p>© {year} Master Azerbaijani. All Rights Reserved.</p>
+    <p class="footer-credit">
+      Built with love by Shahla — empowering families to connect through language.
+    </p>
+  </div>
+
+  <style>
+    footer {
+      text-align: center;
+      color: white;
+      padding: 30px 20px;
+      font-size: 0.95rem;
+      background: rgba(0, 0, 0, 0.25);
+      margin-top: 40px;
+    }
+
+    .footer-credit {
+      opacity: 0.8;
+      margin-top: 8px;
+      font-size: 0.85rem;
+    }
+  </style>
 </footer>
