@@ -12,7 +12,13 @@ interface Props {
 
 const CUSTOM_OG_IMAGE = "https://masterazerbaijani.com/og-masterazerbaijani.jpg";
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+// Fix: ALWAYS ensure canonical URL ends with a trailing slash
+const path = Astro.url.pathname;
+const normalizedPath =
+  path === "/" ? "/" : (path.endsWith("/") ? path : path + "/");
+
+const canonicalURL = new URL(normalizedPath, Astro.site);
+
 const { title, description, image = FallbackImage } = Astro.props;
 ---
 
