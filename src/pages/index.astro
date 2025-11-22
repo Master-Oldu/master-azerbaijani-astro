@@ -2,6 +2,13 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
+import { getCollection } from 'astro:content';
+
+// Fetch and sort blog posts by newest first
+const posts = (await getCollection('blog'))
+  .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
+  .slice(0, 6);
 ---
 
 <BaseHead 
@@ -12,6 +19,7 @@ import Footer from '../components/Footer.astro';
 <Header />
 
 <main class="page-container">
+
   <!-- HERO -->
   <div class="hero">
     <h1>Master Azerbaijani</h1>
@@ -25,13 +33,17 @@ import Footer from '../components/Footer.astro';
   <!-- LATEST POSTS -->
   <div class="latest-posts">
     <h2>Latest Posts</h2>
+
     <div class="post-grid">
-      <div class="post-card"><a href="#">5 Fun Ways to Learn Azerbaijani</a></div>
-      <div class="post-card"><a href="#">Why Learning Your Heritage Language Matters</a></div>
-      <div class="post-card"><a href="#">Azerbaijani Alphabet Made Easy</a></div>
-      <div class="post-card"><a href="#">Common Phrases for Everyday Use</a></div>
-      <div class="post-card"><a href="#">Tips for Practicing Azerbaijani Daily</a></div>
-      <div class="post-card"><a href="#">5 Common Phrases for Travelers</a></div>
+      {
+        posts.map((post) => (
+          <div class="post-card">
+            <a href={`/blog/${post.id}`}>
+              {post.data.title}
+            </a>
+          </div>
+        ))
+      }
     </div>
   </div>
 
@@ -41,19 +53,56 @@ import Footer from '../components/Footer.astro';
     <p>Coming soon: snackable vocabulary lessons to get you speaking Azerbaijani fast!</p>
 
     <div class="social-icons">
-      <a href="#" target="_blank" class="icon-card">
+
+      <!-- Instagram -->
+      <a 
+        href="https://www.instagram.com/masterazerbaijani/" 
+        target="_blank" 
+        class="icon-card"
+        aria-label="Instagram"
+      >
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-          alt="Instagram" />
+          alt="Instagram"
+        />
       </a>
-      <a href="#" target="_blank" class="icon-card">
+
+      <!-- YouTube -->
+      <a 
+        href="https://www.youtube.com/@MasterAzerbaijani"
+        target="_blank" 
+        class="icon-card"
+        aria-label="YouTube"
+      >
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"
-          alt="YouTube" />
+          alt="YouTube"
+        />
       </a>
-      <a href="#" target="_blank" class="icon-card">
+
+      <!-- TikTok -->
+      <a
+        href="https://www.tiktok.com/@masterazerbaijani"
+        target="_blank" 
+        class="icon-card"
+        aria-label="TikTok"
+      >
         <img src="/images/tiktok.svg" alt="TikTok" />
       </a>
+
+      <!-- Facebook -->
+      <a
+        href="https://www.facebook.com/profile.php?id=61583629125594"
+        target="_blank"
+        class="icon-card"
+        aria-label="Facebook"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
+          alt="Facebook"
+        />
+      </a>
+
     </div>
   </div>
 

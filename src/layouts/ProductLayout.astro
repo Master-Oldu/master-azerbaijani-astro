@@ -1,0 +1,134 @@
+---
+const { title, description, heroImage } = Astro.props;
+---
+
+<style>
+  :root {
+    --brand-blue: #013a78;
+    --brand-teal: #00b7a8;
+    --text-dark: #1a1a1a;
+    --text-light: #666;
+    --bg-light: #fafafa;
+    --max-width: 900px;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Lexend", sans-serif;
+    color: var(--text-dark);
+    background: white;
+    line-height: 1.6;
+  }
+
+  header {
+    width: 100%;
+    padding: 2rem 1.5rem 0;
+    text-align: center;
+  }
+
+  header img.hero {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 2rem;
+  }
+
+  main {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+  }
+
+  .price {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--brand-blue);
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 0.9rem 1.4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.15s ease-in-out;
+  }
+
+  .btn.primary {
+    background: var(--brand-blue);
+    color: white;
+  }
+  .btn.primary:hover {
+    background: #012c5c;
+  }
+
+  .btn.secondary {
+    background: var(--bg-light);
+    border: 1px solid #ddd;
+    color: var(--text-dark);
+  }
+  .btn.secondary:hover {
+    background: #f0f0f0;
+  }
+
+  .content {
+    margin-top: 2rem;
+    font-size: 1.05rem;
+  }
+
+  .content h2,
+  .content h3 {
+    font-weight: 700;
+    margin-top: 2.2rem;
+    color: var(--brand-blue);
+  }
+
+  .gallery {
+    margin-top: 3rem;
+  }
+  .gallery h2 {
+    margin-bottom: 1rem;
+  }
+  .gallery img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+  }
+
+  .final-cta {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  .final-cta .btn.large {
+    padding: 1.2rem 2rem;
+    font-size: 1.2rem;
+  }
+  .final-cta p {
+    margin-top: 0.7rem;
+    color: var(--text-light);
+  }
+</style>
+
+<header>
+  {heroImage && <img src={heroImage} alt={title} class="hero" />}
+</header>
+
+<main>
+  <slot />
+</main>

@@ -2,6 +2,9 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
 ---
 
 <BaseHead 
@@ -28,41 +31,13 @@ import Footer from '../../components/Footer.astro';
   </p>
 
   <div class="post-grid">
-    <div class="post-card">
-      <a href="#" class="coming-soon">
-        5 Fun Ways to Learn Azerbaijani (Coming Soon)
-      </a>
-    </div>
-
-    <div class="post-card">
-      <a href="#" class="coming-soon">
-        Why Learning Your Heritage Language Matters (Coming Soon)
-      </a>
-    </div>
-
-    <div class="post-card">
-      <a href="#" class="coming-soon">
-        Azerbaijani Alphabet Made Easy (Coming Soon)
-      </a>
-    </div>
-
-    <div class="post-card">
-      <a href="#" class="coming-soon">
-        Common Phrases for Everyday Use (Coming Soon)
-      </a>
-    </div>
-
-    <div class="post-card">
-      <a href="#" class="coming-soon">
-        Tips for Practicing Azerbaijani Daily (Coming Soon)
-      </a>
-    </div>
-
-    <div class="post-card">
-      <a href="#" class="coming-soon">
-        5 Common Phrases for Travelers (Coming Soon)
-      </a>
-    </div>
+    {posts.map((post) => (
+      <div class="post-card">
+        <a href={`/blog/${post.id}`}>
+          {post.data.title}
+        </a>
+      </div>
+    ))}
   </div>
 </main>
 

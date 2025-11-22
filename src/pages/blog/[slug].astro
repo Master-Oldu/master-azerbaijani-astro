@@ -1,0 +1,35 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import BlogPost from '../../layouts/BlogPost.astro';
+
+// Build static paths from the blog collection
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+
+  // Optional debug if you want to verify
+  console.log(
+    'DEBUG BLOG PATHS:',
+    posts.map((p) => ({ id: p.id, slug: p.slug }))
+  );
+
+  return posts.map((post) => ({
+    params: { slug: post.slug }, // this will be e.g. "learn-azerbaijani-without-textbooks-interactive-methods"
+    props: { post },
+  }));
+}
+
+type Props = { post: CollectionEntry<'blog'> };
+const { post } = Astro.props;
+
+// Recommended way in Astro 4/5: use post.render()
+const { Content } = await post.render();
+
+// Frontmatter for the layout
+const frontmatter = {
+  ...post.data,
+};
+---
+
+<BlogPost {...frontmatter}>
+  <Content />
+</BlogPost>

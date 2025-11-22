@@ -8,79 +8,178 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { 
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  coverImage,
+  coverImageAlt,
+  author
+} = Astro.props;
+{console.log("DEBUG COVER IMAGE:", coverImage)}
 ---
 
 <html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
-	</head>
+  <head>
+    <BaseHead title={title} description={description} />
 
-	<body>
-		<Header />
-		<main>
-			<article>
-				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
-				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
-					</div>
-					<slot />
-				</div>
-			</article>
-		</main>
-		<Footer />
-	</body>
+    <style>
+      /**********************************************
+       HERO IMAGE
+      **********************************************/
+      .hero-image img {
+        display: block;
+        width: 100%;
+        max-width: 1020px;
+        margin: 0 auto;
+        border-radius: 12px;
+        box-shadow: var(--box-shadow);
+      }
+
+      /**********************************************
+       TITLE BLOCK
+      **********************************************/
+      .post-title-block {
+        max-width: 900px;
+        margin: 40px auto 40px;
+        text-align: center;
+      }
+
+      .post-title {
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        font-size: 2.3rem;
+        text-align: center;
+      }
+
+      .post-meta {
+        max-width: 900px;
+        margin: 0 auto;
+        padding-left: 20px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        opacity: 0.85;
+        font-size: 0.95rem;
+      }
+
+      .post-meta .updated {
+        font-style: italic;
+        opacity: 0.75;
+      }
+
+      /**********************************************
+       BLOG PAGE ALIGNMENT FIX
+      **********************************************/
+      .page-container.blog-page {
+        text-align: left !important;
+      }
+
+      /**********************************************
+       BLOG CONTENT
+      **********************************************/
+      .blog-content {
+        max-width: 900px;
+        margin: 50px auto 0;
+        text-align: left !important;
+      }
+
+      .blog-content p {
+        margin-bottom: 1.4rem;
+        line-height: 1.7;
+        max-width: 900px;
+      }
+
+      /**********************************************
+       HEADINGS
+      **********************************************/
+      .blog-content h2,
+      .blog-content h3,
+      .blog-content h4 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        line-height: 1.3;
+        text-align: left !important;
+      }
+
+      /**********************************************
+       LISTS
+      **********************************************/
+      .page-container.blog-page .blog-content ul,
+      .page-container.blog-page .blog-content ol {
+        padding-left: 3rem !important;
+        list-style-position: outside !important;
+      }
+
+      .page-container.blog-page .blog-content li {
+        margin-bottom: 0.6rem;
+        line-height: 1.7;
+      }
+
+      /**********************************************
+       IMAGES
+      **********************************************/
+      .blog-content img {
+        max-width: 100%;
+        margin: 1rem 0;
+        border-radius: 10px;
+      }
+
+      /**********************************************
+       BLOCKQUOTES
+      **********************************************/
+      .blog-content blockquote {
+        border-left: 4px solid #fc723b;
+        padding-left: 1rem;
+        margin: 1.2rem 0;
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="page-container blog-page">
+{console.log("DEBUG COVER:", coverImage)}
+
+      <!-- Hero image -->
+      <div class="hero-image">
+        <img 
+          src={coverImage || "/images/alphabet_crop.jpg"} 
+          alt={coverImageAlt || title} 
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+
+      <!-- Title + Author + Date -->
+      <div class="post-title-block">
+        <h1 class="post-title">{title}</h1>
+
+        <div class="post-meta">
+          {author && <div>By {author}</div>}
+          <div><FormattedDate date={pubDate} /></div>
+
+          {updatedDate && (
+            <div class="updated">
+              Last updated on <FormattedDate date={updatedDate} />
+            </div>
+          )}
+        </div>
+      </div>
+
+      <hr style="margin: 40px auto; max-width: 900px;" />
+
+      <!-- Blog content -->
+      <article class="blog-content">
+        <slot />
+      </article>
+
+    </main>
+
+    <Footer />
+  </body>
 </html>
