@@ -113,7 +113,7 @@ This approach yields 365 new Azerbaijani words per year, enough vocabulary for b
 
 You can source daily words from language learning apps, Azerbaijani social media accounts, or any reliable vocabulary resource. The key is consistency, not the source.
 
-<u>**Pro tip:**</u> Follow **@MasterAzerbaijani** on YouTube, Instagram, TikTok, or Facebook for daily Azerbaijani words with pronunciation guides and cultural context. Perfect for this challenge!
+<u>**Pro tip:**</u> Follow <u>**@MasterAzerbaijani**</u> on [YouTube](https://www.youtube.com/@MasterAzerbaijani), [Instagram](https://www.instagram.com/masterazerbaijani/), [TikTok](https://www.tiktok.com/@masterazerbaijani), or [Facebook](https://www.facebook.com/profile.php?id=61583629125594) for daily Azerbaijani words with pronunciation guides and cultural context. Perfect for this challenge!
 
 ## Method 5: Learn with Your Azerbaijani Person
 

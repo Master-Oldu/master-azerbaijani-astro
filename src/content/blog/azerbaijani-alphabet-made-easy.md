@@ -34,11 +34,11 @@ Here’s your simple cheat sheet with vowels, consonants, pronunciations, and ex
 
 ### Vowels 
  
-<img src="/images/vowels.png" alt="Azerbaijani Vowels Poster" width="1000" />
+<img src="/images/vowels.png" alt="Azerbaijani Vowels Poster" width="900" />
 
 ### Consonants 
  
-<img src="/images/consonants.png" alt="Azerbaijani Consonants Poster" width="1000" />
+<img src="/images/consonants.png" alt="Azerbaijani Consonants Poster" width="900" />
 
 
 ## Secret Sauce Letters: What Trips Up English Speakers?

@@ -33,7 +33,7 @@ const posts = await getCollection('blog');
   <div class="post-grid">
     {posts.map((post) => (
       <div class="post-card">
-        <a href={`/blog/${post.id}`}>
+<a href={`/blog/${post.id.replace('.md', '')}`}>
           {post.data.title}
         </a>
       </div>
