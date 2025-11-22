@@ -1,7 +1,7 @@
 ---
 title: "Azerbaijani Alphabet Made Easy"
 description: "A clear, friendly guide to mastering the Azerbaijani alphabet — including tricky letters, pronunciation tips, clusters, visuals, and cultural insight."
-pubDate: 2025-11-20T00:00:00Z
+pubDate: 2025-11-11T00:00:00Z
 author: "Shahla"
 tags:
   - azerbaijani-alphabet

@@ -1,7 +1,7 @@
 ---
 title: "Common Azerbaijani Phrases for Everyday Conversations: The Azerbaijani You'll Actually Use"
 description: "Your go-to starter kit for speaking Azerbaijani like a real human, not a textbook. Practical everyday phrases you’ll actually use with family, friends, and native speakers."
-pubDate: 2025-11-25T00:00:00Z
+pubDate: 2025-11-30T00:00:00Z
 author: "Shahla"
 tags:
   - learn-azerbaijani

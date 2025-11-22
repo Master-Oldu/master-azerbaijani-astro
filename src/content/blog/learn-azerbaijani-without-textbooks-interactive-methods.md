@@ -1,7 +1,7 @@
 ---
 title: "How to Learn Azerbaijani Without Boring Textbooks: 5 Interactive Methods That Actually Work"
 description: "Learn Azerbaijani without textbooks using 5 proven interactive methods — sticky notes, songs, conversations, daily words, and immersive learning. Ideal for English speakers and heritage learners."
-pubDate: 2025-11-15T00:00:00Z
+pubDate: 2025-11-01T00:00:00Z
 author: "Shahla"
 tags:
   - learn-azerbaijani
