@@ -35,7 +35,25 @@
   <button id="theme-toggle-mobile" class="theme-toggle mobile-toggle">🌙</button>
 </div>
 
+<!-- Mobile Backdrop (click anywhere to close menu) -->
+<div class="mobile-backdrop" id="mobileBackdrop"></div>
+
 <style>
+  /* Backdrop behind mobile menu */
+  .mobile-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(2px);
+    display: none;
+    z-index: 8;
+  }
+
+  /* Menu should sit in front of backdrop */
+  .mobile-nav.open + .mobile-backdrop {
+    display: block;
+  }
+
   /* Theme toggle button styling */
   .theme-toggle {
     cursor: pointer;
@@ -70,12 +88,24 @@
 
 <script is:inline>
   // ----------------------------
-  // MOBILE MENU
+  // MOBILE MENU WITH BACKDROP CLOSE
   // ----------------------------
   function toggleMenu() {
     const menu = document.getElementById("mobileNav");
-    menu.classList.toggle("open");
+    const backdrop = document.getElementById("mobileBackdrop");
+
+    const opened = menu.classList.toggle("open");
+    backdrop.style.display = opened ? "block" : "none";
   }
+
+  // Close menu when clicking the backdrop
+  document.getElementById("mobileBackdrop").addEventListener("click", () => {
+    const menu = document.getElementById("mobileNav");
+    const backdrop = document.getElementById("mobileBackdrop");
+
+    menu.classList.remove("open");
+    backdrop.style.display = "none";
+  });
 
   // ----------------------------
   // ACTIVE LINK HIGHLIGHT
@@ -100,14 +130,13 @@
   })();
 
   // ----------------------------
-  // DARK MODE TOGGLE (Desktop + Mobile)
+  // DARK MODE TOGGLE
   // ----------------------------
   (function () {
     const html = document.documentElement;
     const desktopToggle = document.getElementById("theme-toggle");
     const mobileToggle = document.getElementById("theme-toggle-mobile");
 
-    // Load saved preference
     const saved = localStorage.getItem("theme");
     if (saved === "dark") {
       html.classList.add("dark-mode");
