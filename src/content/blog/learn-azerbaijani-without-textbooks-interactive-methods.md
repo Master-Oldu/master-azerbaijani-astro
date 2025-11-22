@@ -14,7 +14,7 @@ coverImageAlt: "Azerbaijani sticky notes on household items"
 
 Staring at grammar tables and memorizing vocabulary lists from dusty textbooks is enough to kill anyone's motivation to learn Azerbaijani. If you've tried the traditional approach and felt overwhelmed or bored, you're not alone! There's a better way to master this beautiful language.
 
-Learning Azerbaijani doesn't have to feel like homework. If you're just starting out, check out guides to the **Azerbaijani Alphabet** to get familiar with the basics. Whether you're reconnecting with your heritage, learning for someone special, or exploring Azerbaijani culture, these five interactive methods will help you build real conversational skills without ever cracking open a textbook.
+Learning Azerbaijani doesn't have to feel like homework. If you're just starting out, check out guides to the **[Azerbaijani Alphabet](/blog/azerbaijani-alphabet-made-easy)** to get familiar with the basics. Whether you're reconnecting with your heritage, learning for someone special, or exploring Azerbaijani culture, these five interactive methods will help you build real conversational skills without ever cracking open a textbook.
 
 <u>**A note from me:**</u> As a native Azerbaijani speaker, I've watched (and still watching) my husband and children learn the language using these methods. What I'm sharing here isn't theory from a textbook; it's what actually worked in our home when my very own English speakers tried to connect with our culture and family.
 
@@ -32,21 +32,21 @@ Create constant Azerbaijani exposure in your daily environment. By strategically
 
 **Week 1:** Begin with five items you interact with daily:
 
-- “qapı” [gah-puh] (door) — on your front door
-- “masa” [mah-sah] (table) — on your dining table
-- “su” [soo] (water) — on your water bottle
-- “işıq” [ee-shuhg] (light) — on your light switch
-- “güzgü” [gooz-goo] (mirror) — on your bathroom mirror
+- “qapı” [qa-pı] | door: on your front door
+- “masa” [ma-sa] | table: on your dining table
+- “su” [su] | water: on your water bottle
+- “işıq” [i-şıq] | light: on your light switch
+- “güzgü” [güz-gü] | mirror: on your bathroom mirror
 
 Spend the weekend reinforcing these five words. Quiz yourself, practice pronunciation, and make sure they feel natural before moving to Week 2.
 
 **Week 2:** Add five kitchen essentials:
 
-- "fincan" [fin-jahn] (cup) — on your favorite coffee/tea mug  
-- "çörək" [cheu-rahk] (bread) — on your bread box or kitchen counter  
-- "tava" [tah-vah] (pan) — on your most-used cooking pan  
-- "soyuducu" [soy-oo-doo-joo] (refrigerator) — on your fridge door  
-- "bıçaq" [buh-chahg] (knife) — on your knife block or kitchen drawer
+- "fincan" [fin-can] | cup: on your favorite coffee/tea mug  
+- "çörək" [çö-rək] | bread: on your bread box or kitchen counter  
+- "tava" [ta-va] | pan: on your most-used cooking pan  
+- "soyuducu" [so-yu-du-cu] | refrigerator: on your fridge door  
+- "bıçaq" [bı-çaq] | knife: on your knife block or kitchen drawer
 
 Continue this pattern, adding five new sticky notes each week, and use the weekend to review all five words and practice saying them naturally. By month's end, you'll have 20 Azerbaijani words that are part of your daily routine.
 
@@ -62,19 +62,19 @@ Start with greeting someone warmly (works anywhere with Azerbaijani speakers):
 
 Practice this complete conversation daily for 2–3 weeks:
 
-- "Salam! Necəsən?" [sah-lahm! neh-jeh-sahn] (Hello! How are you?)  
-- "Yaxşıyam, sağ ol" [yahkh-shuh-yahm, sahgh ol] (I'm good, thank you)  
-- "Oldu! Hələlik!" [ol-doo! hah-lah-leek] (Alright! See you later!)
+- "Salam! Necəsən?" [Sa-lam Ne-cə-sən] | Hello! How are you?  
+- "Yaxşıyam, sağ ol" [Yax-şı-yam sağ ol] | I'm good, thank you  
+- "Oldu! Hələlik!" [Ol-du Hə-lə-lik] | Alright! See you later!
 
 Practice this conversation everywhere: in the mirror while getting ready, in the car, while cooking. The goal is to make it so automatic that you can greet any Azerbaijani person confidently, whether they're your neighbor, a family member, or someone you meet at a cultural event.
 
 **Next scenarios to tackle:**
 
-- Introducing yourself: "Mənim adım..." [mah-neem ah-duhm] (My name is...)  
-- Asking for directions: "Bağışlayın, ... haradadır?" [bah-guhsh-lah-yuhn, ... hah-rah-dah-duhr]  
-- Making small talk: "Hava necədir?" [hah-vah neh-jah-deer]
+- Introducing yourself: "Mənim adım..." [Mə-nim a-dım...] | My name is...  
+- Asking for directions: "Bağışlayın, ... haradadır?" [Ba-ğış-la-yın, ... ha-ra-da-dır] | I'm sorry, where is..?
+- Making small talk: "Hava necədir?" [Ha-va ne-cə-dir] | How is the weather?
 
-This approach builds confidence because you develop genuine conversational abilities rather than a collection of disconnected phrases. For more everyday phrases beyond greetings, explore our collection of **Common Phrases for Everyday Conversations.**
+This approach builds confidence because you develop genuine conversational abilities rather than a collection of disconnected phrases. For more everyday phrases beyond greetings, explore our collection of **[Common Phrases for Everyday Conversations](/blog/common-azerbaijani-phrases-everyday-conversation).**
 
 ## Method 3: Master One Azerbaijani Song
 
@@ -131,7 +131,7 @@ This person becomes your built-in teacher, practice partner, and motivation all 
 
 This personal connection transforms abstract language learning into relationship building. You're not just learning Azerbaijani; you're deepening your connection with someone who matters to you.
 
-<u>**The emotional advantage:**</u> Learning to say "Səni sevirəm" or "Sağ ol" in someone's native language creates bonds that go far beyond vocabulary acquisition.
+<u>**The emotional advantage:**</u> Learning to say "Səni sevirəm" (I love you) or "Sağ ol" (Thank you) in someone's native language creates bonds that go far beyond vocabulary acquisition.
 
 ## Making It All Work Together
 

@@ -28,14 +28,33 @@ const {
       /**********************************************
        HERO IMAGE
       **********************************************/
-      .hero-image img {
-        display: block;
-        width: 100%;
-        max-width: 1020px;
-        margin: 0 auto;
-        border-radius: 12px;
-        box-shadow: var(--box-shadow);
-      }
+.hero-image {
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  display: block;
+}
+
+/* Limit height on medium+ screens */
+@media (min-width: 768px) {
+  .hero-image img {
+    max-height: 400px;
+    object-fit: contain;
+  }
+}
+
+/* Even tighter on large screens */
+@media (min-width: 1200px) {
+  .hero-image img {
+    max-height: 480px;
+  }
+}
 
       /**********************************************
        TITLE BLOCK
