@@ -157,36 +157,68 @@ import BaseHead from '../../components/BaseHead.astro';
     You may not resell, redistribute, or upload the digital files anywhere.
   </p>
 
-  <!-- BUY BUTTON -->
+<!-- BUY BUTTON -->
 <div style="margin-top: 60px; text-align: center;">
 
   <a 
     href="https://masterazerbaijani.lemonsqueezy.com/buy/3d95c852-62f7-4bb1-baf1-a7eaa1966174?embed=1"
     class="lemonsqueezy-button price-button"
     style="
-      padding: 15px 30px;
+      padding: 18px 34px;
       border-radius: 12px;
       color: white;
       text-decoration: none;
       font-size: 1.4rem;
-      font-weight: 700;
-      display: inline-block;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
       transition: 0.3s;
     "
   >
-    <span style="text-decoration: line-through; margin-right: 8px; opacity: 0.85;">
+
+    <span 
+      style="
+        text-decoration: line-through;
+        opacity: 0.85;
+        font-weight: 600;
+      "
+    >
       $29.99
     </span>
 
-    <span>
-      $19.99
+    <span style="font-weight: 900;">
+      Get the Full Bundle for $19.99
     </span>
+
   </a>
+
+  <!-- BADGE -->
+  <div 
+    style="
+      margin-top: 10px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      opacity: 0.85;
+      color: #fc723b;
+    "
+  >
+    Limited-time launch price
+  </div>
 </div>
 
 <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
 
-  <!-- CONTACT -->
+<style>
+  .price-button {
+    background: #ff8c00;
+  }
+  .price-button:hover {
+    background: #e67c00;
+  }
+</style>
+
+ <!-- CONTACT -->
   <p style="margin-top: 30px; opacity: 0.85;">
     Need help? Email <a href="mailto:hello@masterazerbaijani.com" style="color:#ff8c00;">hello@masterazerbaijani.com</a>
   </p>
