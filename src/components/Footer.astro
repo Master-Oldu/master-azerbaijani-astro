@@ -8,6 +8,7 @@ const year = new Date().getFullYear();
     <div class="footer-section brand">
       <img src="/images/logo-1.png" alt="Master Azerbaijani Logo" class="footer-logo" />
       <p>Your trusted source for learning real Azerbaijani, built by a diaspora native.</p>
+      <p class="est">Est. 2025</p>
     </div>
 
     <div class="footer-section">
@@ -34,14 +35,15 @@ const year = new Date().getFullYear();
     <div class="footer-section">
       <h4>Legal</h4>
       <ul>
-<li><a href="/legal/privacy-policy/">Privacy Policy</a></li>
-<li><a href="/legal/terms-of-service/">Terms of Service</a></li>
-<li><a href="/legal/cookie-policy/">Cookie Policy</a></li>
+        <li><a href="/legal/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/legal/terms-of-service/">Terms of Service</a></li>
+        <li><a href="/legal/cookie-policy/">Cookie Policy</a></li>
       </ul>
     </div>
 
   </div>
 
+  <!-- RESTORED TO ORIGINAL, PERFECTLY CENTERED -->
   <div class="footer-bottom">
     <p>© {year} Master Azerbaijani. All rights reserved.</p>
     <p class="credit">Developed by <strong>AZ made EZ</strong></p>
@@ -64,21 +66,37 @@ const year = new Date().getFullYear();
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     max-width: 1100px;
     margin: 0 auto 30px;
+    justify-items: center;
   }
 
   .footer-logo {
     height: 40px;
     width: auto;
     display: block;
+    max-width: 170px;
+    filter: drop-shadow(0 0 3px rgba(255,255,255,0.7));
     margin: 0;
-max-width: 170px;
-filter: drop-shadow(0 0 3px rgba(255,255,255,0.7));
   }
 
   .brand {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .brand p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    line-height: 1.3;
+  }
+
+  .est {
+    opacity: 0.85;
+    font-size: 0.85rem;
+    margin-top: 0;
   }
 
   .footer-section h4 {
@@ -114,6 +132,7 @@ filter: drop-shadow(0 0 3px rgba(255,255,255,0.7));
     text-decoration: underline;
   }
 
+  /* ORIGINAL, CLEAN, CENTERED BOTTOM */
   .footer-bottom {
     text-align: center;
     font-size: 0.85rem;
@@ -122,13 +141,14 @@ filter: drop-shadow(0 0 3px rgba(255,255,255,0.7));
     color: white;
   }
 
-  .credit {
-    margin-top: 4px;
-    opacity: 0.8;
+  .footer-bottom p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
   }
 
-  .brand p {
-    max-width: 260px;
-    color: white;
+  .credit {
+    margin-top: 2px;
+    opacity: 0.8;
   }
 </style>
