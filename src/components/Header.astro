@@ -17,7 +17,6 @@
     <a href="/contact">Contact</a>
     <a href="/app-coming-soon">App Coming Soon</a>
 
-    <!-- Theme Toggle (Desktop, sits next to Home links) -->
     <button id="theme-toggle" class="theme-toggle">🌙</button>
   </nav>
 </header>
@@ -31,29 +30,13 @@
   <a href="/contact">Contact</a>
   <a href="/app-coming-soon">App Coming Soon</a>
 
-  <!-- Theme Toggle (Mobile version) -->
   <button id="theme-toggle-mobile" class="theme-toggle mobile-toggle">🌙</button>
+
+  <!-- Invisible click-anywhere-to-close zone -->
+  <div class="mobile-exit-zone" id="mobileExitZone"></div>
 </div>
 
-<!-- Mobile Backdrop (click anywhere to close menu) -->
-<div class="mobile-backdrop" id="mobileBackdrop"></div>
-
 <style>
-  /* Backdrop behind mobile menu */
-  .mobile-backdrop {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.4);
-    backdrop-filter: blur(2px);
-    display: none;
-    z-index: 8;
-  }
-
-  /* Menu should sit in front of backdrop */
-  .mobile-nav.open + .mobile-backdrop {
-    display: block;
-  }
-
   /* Theme toggle button styling */
   .theme-toggle {
     cursor: pointer;
@@ -78,33 +61,33 @@
     font-size: 2rem;
   }
 
-  /* Desktop only for the nav toggle */
   @media (max-width: 768px) {
     nav .theme-toggle {
       display: none;
     }
   }
+
+  /* Invisible exit zone (inside menu) */
+  .mobile-exit-zone {
+    position: absolute;
+    inset: 0;
+    z-index: -1; /* behind the menu items */
+  }
 </style>
 
 <script is:inline>
   // ----------------------------
-  // MOBILE MENU WITH BACKDROP CLOSE
+  // MOBILE MENU (no redesign)
   // ----------------------------
   function toggleMenu() {
     const menu = document.getElementById("mobileNav");
-    const backdrop = document.getElementById("mobileBackdrop");
-
-    const opened = menu.classList.toggle("open");
-    backdrop.style.display = opened ? "block" : "none";
+    menu.classList.toggle("open");
   }
 
-  // Close menu when clicking the backdrop
-  document.getElementById("mobileBackdrop").addEventListener("click", () => {
+  // Click anywhere inside menu but outside links to close it
+  document.getElementById("mobileExitZone").addEventListener("click", () => {
     const menu = document.getElementById("mobileNav");
-    const backdrop = document.getElementById("mobileBackdrop");
-
     menu.classList.remove("open");
-    backdrop.style.display = "none";
   });
 
   // ----------------------------
