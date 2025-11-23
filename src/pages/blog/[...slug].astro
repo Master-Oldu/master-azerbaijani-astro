@@ -5,15 +5,8 @@ import BlogPost from '../../layouts/BlogPost.astro';
 // Build static paths from the blog collection
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-
-  // Optional debug if you want to verify
-  console.log(
-    'DEBUG BLOG PATHS:',
-    posts.map((p) => ({ id: p.id, slug: p.slug }))
-  );
-
   return posts.map((post) => ({
-    params: { slug: post.slug }, // this will be e.g. "learn-azerbaijani-without-textbooks-interactive-methods"
+    params: { slug: post.slug },
     props: { post },
   }));
 }
@@ -21,15 +14,48 @@ export async function getStaticPaths() {
 type Props = { post: CollectionEntry<'blog'> };
 const { post } = Astro.props;
 
-// Recommended way in Astro 4/5: use post.render()
-const { Content } = await post.render();
+// Determine publish date and "coming soon"
+const publishDate = new Date(post.data.publishDate);
+const today = new Date();
+const isFuture = publishDate > today;
 
-// Frontmatter for the layout
-const frontmatter = {
-  ...post.data,
-};
+// If it's published, render normal content
+let Content;
+if (!isFuture) {
+  const rendered = await post.render();
+  Content = rendered.Content;
+}
+
+// Frontmatter for BlogPost layout
+const frontmatter = { ...post.data };
 ---
-
-<BlogPost {...frontmatter}>
-  <Content />
-</BlogPost>
+{isFuture ? (
+  <BlogPost {...frontmatter}>
+    <div style="
+      max-width: 700px;
+      margin: 60px auto;
+      text-align: center;
+      padding: 30px;
+    ">
+      <h1>Coming Soon</h1>
+      <p style="font-size: 1.3rem; opacity: 0.9;">
+        This blog post will be published on:
+      </p>
+      <p style="font-size: 1.4rem; font-weight: 700;">
+        {publishDate.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        })}
+      </p>
+      <p style="margin-top: 20px; opacity: 0.8;">
+        We publish new posts every 10 days.  
+        Check back soon!
+      </p>
+    </div>
+  </BlogPost>
+) : (
+  <BlogPost {...frontmatter}>
+    <Content />
+  </BlogPost>
+)}

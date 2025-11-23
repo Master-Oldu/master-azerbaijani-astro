@@ -16,7 +16,7 @@ Staring at grammar tables and memorizing vocabulary lists from dusty textbooks i
 
 Learning Azerbaijani doesn't have to feel like homework. If you're just starting out, check out guides to the **[Azerbaijani Alphabet](/blog/azerbaijani-alphabet-made-easy)** to get familiar with the basics. Whether you're reconnecting with your heritage, learning for someone special, or exploring Azerbaijani culture, these five interactive methods will help you build real conversational skills without ever cracking open a textbook.
 
-<u>**A note from me:**</u> As a native Azerbaijani speaker, I've watched (and still watching) my husband and children learn the language using these methods. What I'm sharing here isn't theory from a textbook; it's what actually worked in our home when my very own English speakers tried to connect with our culture and family.
+<u>**A note from me:**</u> As a native Azerbaijani speaker, I've watched (and still watch) my husband and children learn the language using these methods. What I'm sharing here isn't theory from a textbook; it's what actually worked in our home when my very own English speakers tried to connect with our culture and family.
 
 ## Why Traditional Language Learning Methods Fall Short
 
@@ -159,7 +159,7 @@ Each method targets different learning styles:
 
 Don't try to implement all five methods perfectly from day one. Start with Method 1 (five sticky notes) and Method 4 (one daily word) this week. Add Method 3 (choosing your song) next week or the other week, then gradually incorporate conversation practice and personal connections.
 
-<u>**Remember:**</u> the goal isn't perfect Azerbaijani overnight. It's building sustainable habits that naturally develop your language skills over time. Small, consistent actions beat intense study sessions that you can't maintain. [For more ideas on building sustainable language habits, read our Tips for Practicing Azerbaijani Daily.]
+<u>**Remember:**</u> the goal isn't perfect Azerbaijani overnight. It's building sustainable habits that naturally develop your language skills over time. Small, consistent actions beat intense study sessions that you can't maintain. For more ideas on building sustainable language habits, read our **[Tips for Practicing Azerbaijani Daily.](/blog/tips-for-practicing-azerbaijani-daily)]**
 
 ## Ready to Start Your Interactive Azerbaijani Journey?
 
@@ -167,6 +167,6 @@ These five methods prove that learning Azerbaijani can be engaging, practical, a
 
 Want to accelerate your learning with structured daily vocabulary? **[Join our waitlist](https://masterazerbaijani.com/coming-soon)** to be the first to know when our comprehensive Azerbaijani learning app launches.
 
-And don't forget to follow us for daily Azerbaijani vocabulary on **YouTube, Instagram, and TikTok**! Every day, we share a new word with pronunciation, usage examples, and cultural context. Perfect for supporting your Method 4 daily word challenge!
+And don't forget to follow us for daily Azerbaijani vocabulary on **[YouTube](https://www.youtube.com/@MasterAzerbaijani), [Instagram](https://www.instagram.com/masterazerbaijani/), [TikTok](https://www.tiktok.com/@masterazerbaijani),** or **[Facebook](https://www.facebook.com/profile.php?id=61583629125594)**! Every day, we share a new word with pronunciation, usage examples, and cultural context. Perfect for supporting your Method 4 daily word challenge!
 
 **Uğurlar!** (Good luck!) Your Azerbaijani learning journey starts today.
