@@ -11,13 +11,13 @@ layout: "../../layouts/LegalLayout.astro"
 Master Azerbaijani (“we,” “us,” or “our”) respects your privacy.  
 This Privacy Policy explains how we collect, use, and protect your information when you visit **masterazerbaijani.com** or interact with our services.
 
-We aim to keep this policy simple, transparent, and compliant with applicable laws including U.S. privacy requirements, the GDPR (EU), and the CCPA/CPRA (California).
+We aim to keep this policy simple, transparent, and compliant with applicable laws, including U.S. privacy requirements, the GDPR (EU), and the CCPA/CPRA (California).
 
 ---
 
 # 1. Information We Collect
 
-We currently collect **very limited personal information**, and only when you choose to provide it.
+We currently collect **very limited personal information, and only** when you choose to provide it.
 
 ### 1.1. Information You Provide Directly
 - **Email communication**  
@@ -29,20 +29,20 @@ We currently collect **very limited personal information**, and only when you ch
   - Any responses you provide  
   These submissions are securely stored in **Google Workspace**.
 
-We do **not** collect:
-- Names (unless you enter it manually)
+We **DO NOT** collect:
+- Names (unless you enter them manually)
 - Phone numbers
 - Addresses
 - Demographic data
 
 ### 1.2. Information Automatically Collected
-We currently **do not** use:
+We currently **DO NOT** use:
 - Google Analytics  
 - Tracking pixels  
 - Cookies  
 - Behavioral or advertising trackers  
 
-Your browsing activity is **not** profiled, tracked, or analyzed.
+Your browsing activity **IS NOT** profiled, tracked, or analyzed.
 
 ---
 
@@ -55,7 +55,7 @@ We use the minimal data we collect for:
 - Improving the site’s content and functionality  
 - Ensuring site security and reliability  
 
-We do **not** sell, rent, or trade your information.
+We **DO NOT** sell, rent, or trade your information.
 
 ---
 
@@ -63,8 +63,8 @@ We do **not** sell, rent, or trade your information.
 
 If you are located in the EU/EEA, we process your data under these legal bases:
 
-- **Consent** — when you join the waitlist  
-- **Legitimate interest** — responding to emails, maintaining site security  
+- **Consent**: when you join the waitlist  
+- **Legitimate interest**: responding to emails, maintaining site security  
 
 ---
 
@@ -72,12 +72,12 @@ If you are located in the EU/EEA, we process your data under these legal bases:
 
 We only share data with trusted service providers necessary to operate this website:
 
-- **Netlify** – website hosting  
-- **Google Workspace** – email + Google Form storage  
-- **Lemon Squeezy** – handles all purchases, payments, and taxes  
-- **GitHub** – code hosting (no user data stored)  
+- **Netlify**: website hosting  
+- **Google Workspace**: email + Google Form storage  
+- **Lemon Squeezy**: handles all purchases, payments, and taxes  
+- **GitHub**: code hosting (no user data stored)  
 
-We do not share or sell your information to advertisers.
+We **DO NOT** share or sell your information to advertisers.
 
 ---
 
@@ -85,7 +85,7 @@ We do not share or sell your information to advertisers.
 
 All product purchases are securely processed by **Lemon Squeezy**.
 
-We **do not** receive, process, or store:
+We **DO NOT** receive, process, or store:
 - Credit card numbers  
 - Billing addresses  
 - Payment account details  
@@ -97,7 +97,7 @@ Lemon Squeezy’s own Privacy Policy governs your checkout data.
 # 6. International Visitors
 
 Our website is accessible globally.  
-Your data may be processed in the United States where we are based.
+Your data may be processed in the United States, where we are based.
 
 We maintain reasonable safeguards to protect personal information regardless of your location.
 
@@ -129,7 +129,7 @@ You may request:
 - Disclosure of collected data  
 - Deletion  
 - Notice of data sharing  
-We do **not** sell personal information.
+We **DO NOT** sell personal information.
 
 To exercise rights, email us at:
 

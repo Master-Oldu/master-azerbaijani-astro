@@ -18,7 +18,7 @@ If you do not agree, please discontinue use immediately.
 # 1. Use of the Website
 
 You may use this website solely for personal, non-commercial purposes and in compliance with applicable law.  
-You agree not to:
+You agree **NOT TO**:
 
 - Copy or redistribute content without permission  
 - Attempt to harm, disrupt, or exploit the website  
@@ -29,16 +29,16 @@ You agree not to:
 
 # 2. Intellectual Property
 
-All content on this site — including text, images, graphics, blog posts, downloadable products, and the Master Azerbaijani brand — is owned by us or licensed to us.
+All content on this site, including text, images, graphics, blog posts, downloadable products, and the Master Azerbaijani brand, is owned by us or licensed to us.
 
-You may not:
+You **MAY NOT**:
 - Reproduce  
 - Sell  
 - Distribute  
 - Modify  
 any materials without written permission.
 
-Purchasing a digital download grants you **personal use only**, not commercial redistribution.
+Purchasing a digital download grants you **personal use only**, **NOT** commercial redistribution.
 
 ---
 
@@ -51,7 +51,7 @@ By purchasing, you also agree to Lemon Squeezy’s:
 - Privacy Policy  
 - Refund Policy  
 
-We do not store payment details, credit card information, or billing data.
+We **DO NOT** store payment details, credit card information, or billing data.
 
 ---
 
@@ -101,7 +101,7 @@ Our total liability for any claim shall not exceed **the amount you paid for app
 
 # 8. Governing Law
 
-These Terms are governed by the laws of the **United States** and the **State of California** (or your chosen state—let me know if you want a different one).
+These Terms are governed by the laws of the **United States** and the **State of California**.
 
 ---
 

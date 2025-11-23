@@ -10,7 +10,7 @@ layout: "../../layouts/LegalLayout.astro"
 
 Master Azerbaijani (“we,” “us,” “our”) currently **does not use cookies** or similar tracking technologies on **masterazerbaijani.com**.
 
-We do not use:
+We **DO NOT** use:
 - Google Analytics  
 - Advertising cookies  
 - Behavioral tracking  
@@ -38,7 +38,7 @@ These platforms operate under their own cookie policies and practices.
 If we introduce analytics, app functionality, or embedded videos that require cookies, we will:
 
 - Update this Cookie Policy  
-- Provide clear notice on the site  
+- Provide a clear notice on the site  
 - Obtain consent where required (e.g., EU visitors)
 
 ---
