@@ -159,7 +159,7 @@ Each method targets different learning styles:
 
 Don't try to implement all five methods perfectly from day one. Start with Method 1 (five sticky notes) and Method 4 (one daily word) this week. Add Method 3 (choosing your song) next week or the other week, then gradually incorporate conversation practice and personal connections.
 
-<u>**Remember:**</u> the goal isn't perfect Azerbaijani overnight. It's building sustainable habits that naturally develop your language skills over time. Small, consistent actions beat intense study sessions that you can't maintain. For more ideas on building sustainable language habits, read our **[Tips for Practicing Azerbaijani Daily.](/blog/practice-azerbaijani-daily-effortless-habits)]**
+<u>**Remember:**</u> the goal isn't perfect Azerbaijani overnight. It's building sustainable habits that naturally develop your language skills over time. Small, consistent actions beat intense study sessions that you can't maintain. For more ideas on building sustainable language habits, read our **[Tips for Practicing Azerbaijani Daily.](/blog/practice-azerbaijani-daily-effortless-habits)**
 
 ## Ready to Start Your Interactive Azerbaijani Journey?
 
