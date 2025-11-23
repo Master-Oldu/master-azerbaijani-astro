@@ -5,12 +5,17 @@ const year = new Date().getFullYear();
 <footer class="footer">
   <div class="footer-grid">
 
+    <!-- BRAND BLOCK -->
     <div class="footer-section brand">
       <img src="/images/logo-1.png" alt="Master Azerbaijani Logo" class="footer-logo" />
-      <p>Your trusted source for learning real Azerbaijani, built by a diaspora native.</p>
-      <p class="est">Est. 2025</p>
+
+      <p class="footer-text">Your trusted source for learning real Azerbaijani, built by a diaspora native.</p>
+      <p class="footer-text">Est. 2025</p>
+      <p class="footer-text">© {year} Master Azerbaijani. All rights reserved.</p>
+      <p class="footer-text">Developed by <strong>AZ made EZ</strong></p>
     </div>
 
+    <!-- QUICK LINKS -->
     <div class="footer-section">
       <h4>Quick Links</h4>
       <ul>
@@ -22,6 +27,7 @@ const year = new Date().getFullYear();
       </ul>
     </div>
 
+    <!-- FOLLOW -->
     <div class="footer-section">
       <h4>Follow</h4>
       <ul>
@@ -32,6 +38,7 @@ const year = new Date().getFullYear();
       </ul>
     </div>
 
+    <!-- LEGAL -->
     <div class="footer-section">
       <h4>Legal</h4>
       <ul>
@@ -42,73 +49,61 @@ const year = new Date().getFullYear();
     </div>
 
   </div>
-
-  <!-- RESTORED TO ORIGINAL, PERFECTLY CENTERED -->
-  <div class="footer-bottom">
-    <p>© {year} Master Azerbaijani. All rights reserved.</p>
-    <p class="credit">Developed by <strong>AZ made EZ</strong></p>
-  </div>
 </footer>
 
 <style>
   .footer {
     background: #004A77;
     color: white;
-    padding: 50px 20px 30px;
+    padding: 50px 20px 40px;
     margin-top: 60px;
     font-size: 0.95rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255,255,255,0.2);
   }
 
   .footer-grid {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     max-width: 1100px;
-    margin: 0 auto 30px;
+    margin: 0 auto;
     justify-items: center;
   }
 
   .footer-logo {
     height: 40px;
     width: auto;
-    display: block;
-    max-width: 170px;
     filter: drop-shadow(0 0 3px rgba(255,255,255,0.7));
-    margin: 0;
   }
 
+  /* BRAND BLOCK */
   .brand {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    text-align: center;
     align-items: center;
+    text-align: center;
+    gap: 4px;
   }
 
-  .brand p {
+  /* UNIFIED TEXT STYLE */
+  .footer-text {
+    font-size: 0.75rem !important;
     margin: 0;
     padding: 0;
-    color: white;
+    opacity: 0.9;
     line-height: 1.3;
+    color: white;
   }
 
-  .est {
-    opacity: 0.85;
-    font-size: 0.85rem;
-    margin-top: 0;
+  .footer-text strong {
+    font-weight: 600;
   }
 
+  /* LINKS */
   .footer-section h4 {
     margin-bottom: 10px;
     font-weight: 600;
     color: white;
-  }
-
-  .footer-section p {
-    color: white;
-    opacity: 0.9;
-    line-height: 1.4;
   }
 
   .footer-section ul {
@@ -130,25 +125,5 @@ const year = new Date().getFullYear();
   .footer-section a:hover {
     opacity: 1;
     text-decoration: underline;
-  }
-
-  /* ORIGINAL, CLEAN, CENTERED BOTTOM */
-  .footer-bottom {
-    text-align: center;
-    font-size: 0.85rem;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
-  }
-
-  .footer-bottom p {
-    margin: 0;
-    padding: 0;
-    line-height: 1.3;
-  }
-
-  .credit {
-    margin-top: 2px;
-    opacity: 0.8;
   }
 </style>
