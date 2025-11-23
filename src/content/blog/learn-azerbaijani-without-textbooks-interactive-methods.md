@@ -66,7 +66,7 @@ Practice this complete conversation daily for 2–3 weeks:
 - "Yaxşıyam, sağ ol" [Yax-şı-yam sağ ol] | I'm good, thank you  
 - "Oldu! Hələlik!" [Ol-du Hə-lə-lik] | Alright! See you later!
 
-Practice this conversation everywhere: in the mirror while getting ready, in the car, while cooking. The goal is to make it so automatic that you can greet any Azerbaijani person confidently, whether they're your neighbor, a family member, or someone you meet at a cultural event.
+Practice this conversation everywhere: in the mirror while getting ready, in the car, or while cooking. The goal is to make it so automatic that you can greet any Azerbaijani person confidently, whether they're your neighbor, a family member, or someone you meet at a cultural event.
 
 **Next scenarios to tackle:**
 

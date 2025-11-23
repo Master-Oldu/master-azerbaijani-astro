@@ -1,7 +1,7 @@
 ---
 title: "Practice Azerbaijani Daily: Effortless Habits That Actually Work"
 description: "Build real Azerbaijani fluency with six effortless daily habits that fit naturally into your routine. No textbooks, no apps; just real progress."
-pubDate: 2025-12-10T00:00:00Z
+pubDate: 2025-12-20T00:00:00Z
 author: "Shahla"
 tags:
   - learn-azerbaijani
@@ -14,7 +14,7 @@ coverImageAlt: "A person practicing Azerbaijani during daily routines"
 
 You tell yourself you'll practice Azerbaijani this weekend when you have more time. But weekends come and go, life gets busy, and suddenly it's been three weeks since you studied anything. Sound familiar?
 
-The secret to learning Azerbaijani isn't finding more time; it's making better use of the moments you already have. These six effortless daily habits take less than two minutes each but compound into real fluency over time. No apps, no textbooks, no excuses.
+The secret to learning Azerbaijani isn't finding more time; it's making better use of the moments you already have. These six effortless daily habits take less than a few minutes each but compound into real fluency over time. No apps, no textbooks, no excuses.
 
 ## Why Daily Practice Beats Weekend Cramming
 
@@ -34,7 +34,7 @@ Start with these basics:
 - **"Durdum"** [Dur-dum] | I got up  
 - **"Üzümü yudum"** [Ü-zü-mü yu-dum] | I washed my face  
 - **"Geyinirəm"** [Ge-yi-ni-rəm] | I'm getting dressed  
-- **"Çay hazırdır"** [Çay ha-zır-dır] | Tea is ready  
+- **"Çay/Kofe hazırdır"** [Çay/Ko-fe ha-zır-dır] | Tea/Coffee is ready  
 
 Why this works: You're practicing vocabulary in the exact context where you need it. These aren't random words from a list; they're your actual morning happening in Azerbaijani. Your brain creates strong associations between actions and words.
 
@@ -59,7 +59,7 @@ Real-world applications:
 
 - Waiting 30 seconds? Count to *otuz*  
 - Sets at the gym? "Beş, altı, yeddi..."  
-- Microwaving for 2 minutes? Count to *iyirmi*  
+- Microwaving for 2 minutes? Count to *iyirmi* slowly 
 
 **Pro tip:** When you check the time, say it in Azerbaijani: *"Saat dörd."*
 
