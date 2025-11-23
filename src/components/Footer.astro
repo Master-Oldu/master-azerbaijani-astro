@@ -2,34 +2,132 @@
 const year = new Date().getFullYear();
 ---
 
-<footer>
-  <div class="footer-content">
-    <p>© {year} Master Azerbaijani. All Rights Reserved.</p>
+<footer class="footer">
+  <div class="footer-grid">
 
-    <!-- Animated line -->
-    <p class="footer-credit">
-      Built with love by Shahla. Empowering families to connect through language.
-    </p>
+    <div class="footer-section brand">
+      <img src="/images/logo-1.png" alt="Master Azerbaijani Logo" class="footer-logo" />
+      <p>Your trusted source for learning real Azerbaijani, built by a diaspora native.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/product/alphabet-bundle/">Alphabet Bundle</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Follow</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/masterazerbaijani/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@masterazerbaijani" target="_blank">TikTok</a></li>
+        <li><a href="https://www.youtube.com/@MasterAzerbaijani" target="_blank">YouTube</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61583629125594" target="_blank">Facebook</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+<li><a href="/legal/privacy-policy/">Privacy Policy</a></li>
+<li><a href="/legal/terms-of-service/">Terms of Service</a></li>
+<li><a href="/legal/cookie-policy/">Cookie Policy</a></li>
+      </ul>
+    </div>
+
   </div>
 
-  <style>
-    footer {
-      text-align: center;
-      color: white;
-      padding: 30px 20px;
-      font-size: 0.95rem;
-      background: rgba(0, 0, 0, 0.25);
-      margin-top: 40px;
-    }
-
-    .footer-content p {
-      margin-bottom: 5px;
-    }
-
-    /* This keeps your fade-in smooth and classy */
-    .footer-credit {
-      font-size: 0.85rem;
-      opacity: 0.8;
-    }
-  </style>
+  <div class="footer-bottom">
+    <p>© {year} Master Azerbaijani. All rights reserved.</p>
+    <p class="credit">Developed by <strong>AZ made EZ</strong></p>
+  </div>
 </footer>
+
+<style>
+  .footer {
+    background: #004A77;
+    color: white;
+    padding: 50px 20px 30px;
+    margin-top: 60px;
+    font-size: 0.95rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .footer-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 1100px;
+    margin: 0 auto 30px;
+  }
+
+  .footer-logo {
+    height: 40px;
+    width: auto;
+    display: block;
+    margin: 0;
+filter: drop-shadow(0 0 3px rgba(255,255,255,0.7));
+  }
+
+  .brand {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-section h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .footer-section p {
+    color: white;
+    opacity: 0.9;
+    line-height: 1.4;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-section li {
+    margin-bottom: 6px;
+  }
+
+  .footer-section a {
+    color: white !important;
+    text-decoration: none;
+    opacity: 0.9;
+  }
+
+  .footer-section a:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.85rem;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+
+  .credit {
+    margin-top: 4px;
+    opacity: 0.8;
+  }
+
+  .brand p {
+    max-width: 260px;
+    color: white;
+  }
+</style>
