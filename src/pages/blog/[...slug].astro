@@ -15,9 +15,9 @@ type Props = { post: CollectionEntry<'blog'> };
 const { post } = Astro.props;
 
 // Determine publish date and "coming soon"
-const publishDate = new Date(post.data.publishDate);
+const pubDate = new Date(post.data.pubDate);
 const today = new Date();
-const isFuture = publishDate > today;
+const isFuture = pubDate > today;
 
 // If it's published, render normal content
 let Content;
@@ -42,7 +42,7 @@ const frontmatter = { ...post.data };
         This blog post will be published on:
       </p>
       <p style="font-size: 1.4rem; font-weight: 700;">
-        {publishDate.toLocaleDateString('en-US', {
+        {pubDate.toLocaleDateString('en-US', {
           year: 'numeric',
           month: 'long',
           day: 'numeric'
