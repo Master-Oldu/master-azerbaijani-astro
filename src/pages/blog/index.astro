@@ -16,7 +16,7 @@ const posts = (await getCollection("blog"))
 
 <Header />
 
-<main class="page-container about-page">
+<main class="page-container blog-page">
   <h1>Blog</h1>
 
   <p
@@ -32,15 +32,32 @@ const posts = (await getCollection("blog"))
     cultural insights, and updates about the platform.
   </p>
 
-  <div class="post-grid">
-    {posts.map((post) => (
-      <div class="post-card">
-<a href={`/blog/${post.id.replace('.md', '')}`}>
-          {post.data.title}
-        </a>
+<div class="post-grid">
+  {posts.map((post) => (
+    <a class="post-card" href={`/blog/${post.slug}`}>
+      <div class="post-image">
+        <img src={post.data.coverImage} alt={post.data.coverImageAlt} />
       </div>
-    ))}
-  </div>
+
+      <div class="post-info">
+        <h3>{post.data.title}</h3>
+
+        <p class="post-date">
+          {new Date(post.data.pubDate).toLocaleDateString("en-US", {
+            month: "short",
+            day: "numeric",
+            year: "numeric"
+          })}
+        </p>
+
+        <p class="post-excerpt">
+          {post.data.description}
+        </p>
+      </div>
+    </a>
+  ))}
+</div>
+
 </main>
 
 <Footer />

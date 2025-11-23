@@ -267,6 +267,20 @@ nav a.active:hover {
 	gap: 20px;
 	justify-items: center;
 }
+/* Fix post card thumbnail size (homepage only) */
+.latest-posts .post-image {
+  width: 100%;
+  height: 160px;          /* forces consistent small thumbnail */
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+
+.latest-posts .post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* keeps it clean */
+  display: block;
+}
 
 .post-card {
 	padding: 20px;
@@ -294,6 +308,69 @@ html.dark-mode .post-card {
 	text-decoration: none;
 	color: #ff8c00;
 	font-weight: 600;
+}
+/* Slightly smaller post title */
+.latest-posts .post-card h3 {
+  font-size: 1.15rem;   /* previous default was ~1.4–1.6rem */
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 6px;
+}
+
+/* Smaller, cleaner excerpt text */
+.latest-posts .post-excerpt {
+  font-size: 0.95rem;     /* smaller text */
+  line-height: 1.4;
+  opacity: 0.85;
+  margin-top: 8px;
+}
+
+/* Remove underlines from homepage post cards */
+.latest-posts .post-card,
+.latest-posts .post-card *,
+.latest-posts .post-card a {
+  text-decoration: none !important;
+}
+
+/* ========================================= */
+/*           BLOG INDEX STYLING FIXES        */
+/* ========================================= */
+
+/* Blog index thumbnail sizing */
+.blog-page .post-image {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+
+.blog-page .post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Remove underline on blog index cards */
+.blog-page .post-card,
+.blog-page .post-card *,
+.blog-page .post-card a {
+  text-decoration: none !important;
+}
+
+/* Blog index title */
+.blog-page .post-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+/* Blog index description */
+.blog-page .post-excerpt {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  line-height: 1.4;
 }
 
 /* ========================================= */

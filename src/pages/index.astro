@@ -24,10 +24,27 @@ const posts = (await getCollection('blog'))
   <!-- HERO -->
   <div class="hero">
     <h1>Master Azerbaijani</h1>
-    <p>Learn Azerbaijani from a diaspora native! Fun, bite-sized lessons for English speakers.</p>
+
     <p>
-      Master it like a pro! Bridge generations in your family, embrace your heritage,
-      and explore a language that opens doors; whether at home, with loved ones, or on your travels.
+      Master Azerbaijani is a modern, native-built language-learning platform focused on
+      clear, practical Azerbaijani that people actually use in real life. Every lesson,
+      example, and pronunciation is created by a native speaker with deep diaspora insight.
+    </p>
+
+    <p>
+      Our mission is simple: help families connect, help heritage learners reclaim their
+      language, and give beginners a fast, confident start with everyday Azerbaijani.
+    </p>
+
+    <p>
+      Learn real Azerbaijani from a diaspora native. Fast, focused lessons designed for
+      English speakers who want practical language they can use immediately.
+    </p>
+
+    <p>
+      Master it like a pro! Bridge generations in your family, reconnect with your roots,
+      and speak a language that opens doors at home, with loved ones, and wherever life
+      takes you.
     </p>
   </div>
 
@@ -38,11 +55,27 @@ const posts = (await getCollection('blog'))
     <div class="post-grid">
       {
         posts.map((post) => (
-          <div class="post-card">
-            <a href={`/blog/${post.slug}`}>
-              {post.data.title}
-            </a>
-          </div>
+          <a class="post-card" href={`/blog/${post.slug}`}>
+            <div class="post-image">
+              <img src={post.data.coverImage} alt={post.data.coverImageAlt} />
+            </div>
+
+            <div class="post-info">
+              <h3>{post.data.title}</h3>
+
+              <p class="post-date">
+                {new Date(post.data.pubDate).toLocaleDateString("en-US", {
+                  month: "short",
+                  day: "numeric",
+                  year: "numeric"
+                })}
+              </p>
+
+              <p class="post-excerpt">
+                {post.data.description}
+              </p>
+            </div>
+          </a>
         ))
       }
     </div>
