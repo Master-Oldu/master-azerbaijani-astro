@@ -126,4 +126,19 @@ const year = new Date().getFullYear();
     opacity: 1;
     text-decoration: underline;
   }
+
+  /* ========================================================= */
+  /*     MOBILE – Slight Narrowing on Portrait (Nothing else)  */
+  /* ========================================================= */
+  @media (max-width: 480px) and (orientation: portrait) {
+    .footer {
+      padding: 40px 10px;
+    }
+
+    .footer-grid {
+      max-width: 92% !important;
+      width: 92% !important;
+      gap: 25px;
+    }
+  }
 </style>
