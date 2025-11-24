@@ -290,10 +290,22 @@ nav a.active:hover {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-  /* Match team-card */
+  /* Match team-card light mode */
   background: #A6E8D5;
   color: #2a2a2a;
   border: none;
+}
+
+/* Post title color */
+.post-card h3 {
+  color: #043a7a;
+}
+
+/* Date + excerpt text */
+.post-card .post-excerpt,
+.post-card .post-date {
+  color: #2a2a2a;
+  opacity: 0.85;
 }
 
 .post-card:hover {
