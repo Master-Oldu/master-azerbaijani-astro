@@ -4,8 +4,14 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
 
-const posts = (await getCollection("blog"))
-  .filter((post) => new Date(post.data.pubDate) <= new Date())
+const posts = (await getCollection('blog'))
+  .filter(p => {
+    // In dev, show everything
+    if (import.meta.env.DEV) return true;
+
+    // In production, hide future posts
+    return new Date(p.data.pubDate) <= new Date();
+  })
   .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
 ---
 
