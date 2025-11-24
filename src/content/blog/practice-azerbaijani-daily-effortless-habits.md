@@ -14,7 +14,7 @@ coverImageAlt: "A person practicing Azerbaijani during daily routines"
 
 You tell yourself you'll practice Azerbaijani this weekend when you have more time. But weekends come and go, life gets busy, and suddenly it's been three weeks since you studied anything. Sound familiar?
 
-The secret to learning Azerbaijani isn't finding more time; it's making better use of the moments you already have. These six effortless daily habits take less than a few minutes each but compound into real fluency over time. No apps, no textbooks, no excuses.
+The secret to learning Azerbaijani isn't finding more time; it's making better use of the moments you already have. These **six** effortless daily habits take less than a few minutes each but compound into real fluency over time. No apps, no textbooks, no excuses.
 
 ## Why Daily Practice Beats Weekend Cramming
 

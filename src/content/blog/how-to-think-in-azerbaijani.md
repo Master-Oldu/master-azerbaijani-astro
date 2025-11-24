@@ -24,7 +24,6 @@ Fluency begins when you stop thinking in *English* and start thinking in *Azerba
 
 Here’s how you make that shift without losing your mind.
 
----
 
 ## 1. Accept that word-for-word translation will sabotage you
 
@@ -40,7 +39,6 @@ This is why people can memorize hundreds of words yet still freeze in real conve
 
 If you’re newer to the language, set yourself up with the basics first. **[Azerbaijani Alphabet Made Easy](/blog/azerbaijani-alphabet-made-easy)** is where you want to start, so your brain stops trying to read Azerbaijani like English.
 
----
 
 ## 2. Think in chunks, not individual words
 
@@ -60,7 +58,6 @@ These aren’t words. They’re thought units.
 
 That’s why learners who practice with real-life phrases progress faster. If you want a list of chunks you’ll actually use daily, check out **[Common Phrases for Everyday Conversations: The Azerbaijani You'll Actually Use](/blog/common-azerbaijani-phrases-everyday-conversation)**. Your brain will thank you.
 
----
 
 ## 3. Switch your emotional language too
 
@@ -79,7 +76,6 @@ A 2024 Frontiers in Communication study found that heritage-language speakers co
 
 If you truly want to think like an Azerbaijani, your emotional reactions should start switching, too.
 
----
 
 ## 4. Practice micro-dialogues with yourself
 
@@ -95,7 +91,6 @@ These mini internal conversations trick the brain into **thinking first, transla
 
 If you need some fun ways to build this habit without burning out, **[How to Learn Azerbaijani Without Boring Textbooks: 5 Interactive Methods](/blog/learn-azerbaijani-without-textbooks-interactive-methods)** has creative exercises that feel nothing like studying.
 
----
 
 ## 5. Stop judging your Azerbaijani! Fluency grows from permission, not perfection
 
@@ -103,7 +98,6 @@ The fastest learners aren’t the most “talented.” They’re the ones who st
 
 There’s a reason travelers who barely know the language sometimes speak more naturally because they’re not overthinking it. If you want to practice thinking in Azerbaijani without obsessing over grammar, try **[5 Common Phrases for Travelers to Azerbaijan](/blog/common-phrases-for-travelers)**. Tourist-level confidence works surprisingly well.
 
----
 
 ## A Last Little Push From Me
 

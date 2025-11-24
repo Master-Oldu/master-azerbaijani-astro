@@ -14,7 +14,7 @@ coverImage: "/images/heritage-language.png"
 coverImageAlt: "Azerbaijani heritage language concept illustration"
 ---
 
-## Especially if Azerbaijani is part of your life story.
+## Especially if Azerbaijani is part of your life story
 
 If you grew up hearing Azerbaijani at home but mostly live your life in English, you’ve probably felt that tiny ache when a word slips away… or when your kids suddenly respond in English even when you try speaking Azerbaijani. That moment is when most people realize the heritage language isn’t “just a language.” It’s memory, identity, and the emotional wiring between generations.
 
@@ -45,7 +45,7 @@ Sometimes, even one phrase can change a moment. This is why even simple expressi
 
 Most people think culture is holidays, food, and music. But it’s also the tiny things: how we make jokes, how we argue, how we show affection, how we shade someone politely without them realizing it until three hours later.
 
-A big thing that happens when you relearn your heritage language is that you stop translating and start thinking in it. Your brain switches context. It’s the difference between “I know some words” and “I get it now.” If you want to reach that point faster, **[How to Think in Azerbaijani (Not Translate from English)](/blog/how-to-think-in-azerbaijani.md)** breaks it down in a way that actually works.
+A big thing that happens when you relearn your heritage language is that you stop translating and start thinking in it. Your brain switches context. It’s the difference between "I know some words" and “I get it now.” If you want to reach that point faster, **[How to Think in Azerbaijani (Not Translate from English)](/blog/how-to-think-in-azerbaijani.md)** breaks it down in a way that actually works.
 
 ## It gives your kids a cultural safety net that will matter more than they realize
 

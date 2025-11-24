@@ -27,12 +27,12 @@ Since 1991, the Azerbaijani language uses a Latin-based alphabet with 32 letters
 
 Yes, you’ll meet new friends like **ə, ğ, ş, ö, ü**, but they follow consistent rules.  
 
-If you want a quick crash course, read **[Azerbaijani Alphabet Made Easy](/blog/azerbaijani-alphabet-made-easy)**; it covers everything without wasting your time.
+If you want a quick crash course, read **[Azerbaijani Alphabet Made Easy](/blog/azerbaijani-alphabet-made-easy)**. It covers everything without wasting your time.
 
 ### **2. Pronunciation is predictable**  
 Azerbaijani is phonetic. What you see is (mostly) what you say.
 
-If pronunciation stresses you out, start with **[The Secret to Perfect Azerbaijani Pronunciation: It’s Not What You Think](/blog/perfect-azerbaijani-pronunciation)**. It’ll save you months of trial and error.
+If pronunciation stresses you out, start with **[The Secret to Perfect Azerbaijani Pronunciation (It’s Not What You Think)](/blog/perfect-azerbaijani-pronunciation)**. It’ll save you months of trial and error.
 
 ### **3. Grammar is logical, not chaotic**  
 Azerbaijani builds words with suffixes piled on like Lego pieces. It looks scary until you realize the system is surprisingly consistent.
@@ -43,7 +43,7 @@ Learn a suffix once → use it everywhere.
 ## The Reality Check: Where You’ll Struggle
 
 ### **1. Word order feels backwards**  
-Azerbaijani is **SOV** (**S**ubject→**O**bject→**V**erb). Your English brain will fight this for a while.
+Azerbaijani is an **SOV** language (**S**ubject→**O**bject→**V**erb), which means the verb usually comes at the end of the sentence. Your English brain (or any first language that uses **SVO** word order) will fight this for a while.
 
 ### **2. Suffixes will gang up on you**  
 That nice, logical system can create monsters like:
@@ -57,7 +57,7 @@ Comfortable? Not at first.
 ### **3. Resources aren’t everywhere**  
 Azerbaijani isn’t Spanish or Mandarin. You’ll need to do more research to find high-quality content.
 
-If you want engaging alternatives, try **[How to Learn Azerbaijani Without Boring Textbooks: 5 Interactive Methods](/blog/learn-azerbaijani-without-textbooks-interactive-methods)**.
+If you want engaging alternatives, try **[How to Learn Azerbaijani Without Boring Textbooks](/blog/learn-azerbaijani-without-textbooks-interactive-methods)**.
 
 ### **4. Speaking practice isn’t handed to you**  
 Unless you have Azerbaijani relatives or live in Azerbaijan, real conversation practice won’t magically appear.
@@ -67,7 +67,7 @@ If you want structured speaking practice that doesn’t feel chaotic or random, 
 Until then, explore language exchange options on your own and keep your exposure high.
 
 
-## The Timeline (Realistic, Not Instagram-Fantasy)
+## The Timeline (Realistic, Not the Cute Version)
 
 ### **0–3 months**  
 - Alphabet  
@@ -106,8 +106,8 @@ Adults obsess over suffix order and accuracy. It slows you down.
 Speak early. Fix later.
 
 ### **Immerse creatively**  
-- Change phone language  
-- Follow Azerbaijani accounts  
+- Daily 30-second self-talk in Azerbaijani  
+- Follow Azerbaijani social media accounts/pages  
 - Watch shows  
 - Listen to songs  
 
@@ -120,7 +120,9 @@ Top 1,000 words = 80% of everyday conversation.
 Five minutes a day beats weekend cram sessions.
 
 ### **Get a language partner early**  
-Do it before you feel “ready.”
+- Do it before you feel “ready.”
+
+Don’t wait until you think your Azerbaijani is “good enough” to talk to someone. Start early, even when you’re terrible.
 
 For everyday habit ideas:  
 **[Practice Azerbaijani Daily: Effortless Habits That Actually Work](/blog/practice-azerbaijani-daily-effortless-habits)**
@@ -133,6 +135,8 @@ You’ll understand jokes, expressions, tea culture, and family dynamics. The st
 
 ### **2. Cognitive flexibility**  
 Agglutinative languages reshape how your brain organizes ideas. You’ll feel the shift.
+
+*Note:* Agglutinative languages build meaning through stacked suffixes, not separate words.
 
 ### **3. The community genuinely roots for you**  
 Azerbaijanis appreciate effort.  
@@ -165,7 +169,7 @@ It’s the pride of reading an article without constantly checking a dictionary.
 It’s the satisfaction of forming a sentence without translating first.  
 It’s the connection to a culture that actually wants you to succeed.
 
-Most languages give you communication.  
+Languages give you communication.  
 Azerbaijani gives you communication *plus* belonging.
 
 If the journey calls to you:
