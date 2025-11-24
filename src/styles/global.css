@@ -283,20 +283,17 @@ nav a.active:hover {
 }
 
 .post-card {
-	padding: 20px;
-	border-radius: 15px;
-	width: 100%;
-	max-width: 300px;
-	text-align: center;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-	border: 1px solid var(--card-border);
-	background: rgba(255, 255, 255, 0.85);
-	color: #000;
-}
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-html.dark-mode .post-card {
-	background: rgba(255, 255, 255, 0.08);
-	color: var(--text);
+  /* Match team-card */
+  background: #A6E8D5;
+  color: #2a2a2a;
+  border: none;
 }
 
 .post-card:hover {
