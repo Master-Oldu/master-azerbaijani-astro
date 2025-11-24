@@ -19,43 +19,49 @@ const pubDate = new Date(post.data.pubDate);
 const today = new Date();
 const isFuture = pubDate > today;
 
-// If it's published, render normal content
+// Always render content in DEV, even if future-dated
 let Content;
-if (!isFuture) {
-  const rendered = await post.render();
-  Content = rendered.Content;
-}
+const rendered = await post.render();
+Content = rendered.Content;
 
 // Frontmatter for BlogPost layout
 const frontmatter = { ...post.data };
 ---
-{isFuture ? (
-  <BlogPost {...frontmatter}>
-    <div style="
-      max-width: 700px;
-      margin: 60px auto;
-      text-align: center;
-      padding: 30px;
-    ">
-      <h1>Coming Soon</h1>
-      <p style="font-size: 1.3rem; opacity: 0.9;">
-        This blog post will be published on:
-      </p>
-      <p style="font-size: 1.4rem; font-weight: 700;">
-        {pubDate.toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
-        })}
-      </p>
-      <p style="margin-top: 20px; opacity: 0.8;">
-        We publish new posts every 10 days.  
-        Check back soon!
-      </p>
-    </div>
-  </BlogPost>
-) : (
+{import.meta.env.DEV ? (
+  /* DEV MODE: Always show full content */
   <BlogPost {...frontmatter}>
     <Content />
   </BlogPost>
+) : (
+  /* PROD MODE: Lock future posts */
+  isFuture ? (
+    <BlogPost {...frontmatter}>
+      <div style="
+        max-width: 700px;
+        margin: 60px auto;
+        text-align: center;
+        padding: 30px;
+      ">
+        <h1>Coming Soon</h1>
+        <p style="font-size: 1.3rem; opacity: 0.9;">
+          This blog post will be published on:
+        </p>
+        <p style="font-size: 1.4rem; font-weight: 700;">
+          {pubDate.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          })}
+        </p>
+        <p style="margin-top: 20px; opacity: 0.8;">
+          We publish new posts every 10 days.  
+          Check back soon!
+        </p>
+      </div>
+    </BlogPost>
+  ) : (
+    <BlogPost {...frontmatter}>
+      <Content />
+    </BlogPost>
+  )
 )}

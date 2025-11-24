@@ -7,7 +7,13 @@ import { getCollection } from 'astro:content';
 
 // Fetch and sort blog posts by newest first
 const posts = (await getCollection('blog'))
-  .filter((post) => new Date(post.data.pubDate) <= new Date())
+  .filter((post) => {
+    // In dev, show ALL posts (even future-dated)
+    if (import.meta.env.DEV) return true;
+
+    // In production, only show posts whose pubDate has passed
+    return new Date(post.data.pubDate) <= new Date();
+  })
   .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
   .slice(0, 6);
 ---
