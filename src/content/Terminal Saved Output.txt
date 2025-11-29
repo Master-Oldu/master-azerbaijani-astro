@@ -1,0 +1,95 @@
+Last login: Fri Nov 28 14:24:51 on ttys000
+shahlaalyasiry@Shahlas-MacBook-Pro ~ % pip3 install boto3 python-dotenv
+
+Collecting boto3
+  Downloading boto3-1.41.5-py3-none-any.whl.metadata (6.8 kB)
+Collecting python-dotenv
+  Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+Collecting botocore<1.42.0,>=1.41.5 (from boto3)
+  Downloading botocore-1.41.5-py3-none-any.whl.metadata (5.9 kB)
+Collecting jmespath<2.0.0,>=0.7.1 (from boto3)
+  Downloading jmespath-1.0.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting s3transfer<0.16.0,>=0.15.0 (from boto3)
+  Downloading s3transfer-0.15.0-py3-none-any.whl.metadata (1.7 kB)
+Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from botocore<1.42.0,>=1.41.5->boto3) (2.9.0.post0)
+Requirement already satisfied: urllib3!=2.2.0,<3,>=1.25.4 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from botocore<1.42.0,>=1.41.5->boto3) (2.5.0)
+Requirement already satisfied: six>=1.5 in /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages (from python-dateutil<3.0.0,>=2.1->botocore<1.42.0,>=1.41.5->boto3) (1.17.0)
+Downloading boto3-1.41.5-py3-none-any.whl (139 kB)
+Downloading botocore-1.41.5-py3-none-any.whl (14.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.3/14.3 MB 23.1 MB/s  0:00:00
+Downloading jmespath-1.0.1-py3-none-any.whl (20 kB)
+Downloading s3transfer-0.15.0-py3-none-any.whl (85 kB)
+Downloading python_dotenv-1.2.1-py3-none-any.whl (21 kB)
+Installing collected packages: python-dotenv, jmespath, botocore, s3transfer, boto3
+Successfully installed boto3-1.41.5 botocore-1.41.5 jmespath-1.0.1 python-dotenv-1.2.1 s3transfer-0.15.0
+shahlaalyasiry@Shahlas-MacBook-Pro ~ % cd "~/Library/CloudStorage/GoogleDrive-hello@masterazerbaijani.com/My Drive/WordAgent"
+touch .env
+
+cd: no such file or directory: ~/Library/CloudStorage/GoogleDrive-hello@masterazerbaijani.com/My Drive/WordAgent
+shahlaalyasiry@Shahlas-MacBook-Pro ~ % ls ~/Library/CloudStorage/
+
+GoogleDrive-hello@masterazerbaijani.com	OneDrive-SecurityPal
+shahlaalyasiry@Shahlas-MacBook-Pro ~ % ls "~/Library/CloudStorage/GoogleDrive-hello@masterazerbaijani.com"
+
+ls: ~/Library/CloudStorage/GoogleDrive-hello@masterazerbaijani.com: No such file or directory
+shahlaalyasiry@Shahlas-MacBook-Pro ~ % ls ~/Library/CloudStorage/
+
+GoogleDrive-hello@masterazerbaijani.com	OneDrive-SecurityPal
+shahlaalyasiry@Shahlas-MacBook-Pro ~ % find ~/Library/CloudStorage -maxdepth 1 -type d -print
+
+/Users/shahlaalyasiry/Library/CloudStorage
+/Users/shahlaalyasiry/Library/CloudStorage/GoogleDrive-hello@masterazerbaijani.com
+/Users/shahlaalyasiry/Library/CloudStorage/OneDrive-SecurityPal
+shahlaalyasiry@Shahlas-MacBook-Pro ~ % cd ~/Library/CloudStorage/GoogleDrive-hello@masterazerbaijani.com
+
+shahlaalyasiry@Shahlas-MacBook-Pro GoogleDrive-hello@masterazerbaijani.com % ls
+
+My Drive	Shared drives
+shahlaalyasiry@Shahlas-MacBook-Pro GoogleDrive-hello@masterazerbaijani.com % cd ~/Library/CloudStorage/GoogleDrive-hello@masterazerbaijani.com/"My Drive"
+
+shahlaalyasiry@Shahlas-MacBook-Pro My Drive % cd WordAgent
+
+shahlaalyasiry@Shahlas-MacBook-Pro WordAgent % touch .env
+
+shahlaalyasiry@Shahlas-MacBook-Pro WordAgent % open -e .env
+
+shahlaalyasiry@Shahlas-MacBook-Pro WordAgent % python3 - << 'EOF'
+from dotenv import load_dotenv
+import os
+load_dotenv()
+print("ACCESS KEY:", os.getenv("R2_ACCESS_KEY_ID")[:6], "...OK")
+print("SECRET KEY:", os.getenv("R2_SECRET_ACCESS_KEY")[:6], "...OK")
+print("ACCOUNT:", os.getenv("R2_ACCOUNT_ID"))
+print("BUCKET:", os.getenv("R2_BUCKET"))
+EOF
+
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/dotenv/main.py", line 374, in load_dotenv
+    dotenv_path = find_dotenv()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/dotenv/main.py", line 322, in find_dotenv
+    assert frame.f_back is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+shahlaalyasiry@Shahlas-MacBook-Pro WordAgent % find ~/Library/CloudStorage -name .env
+
+/Users/shahlaalyasiry/Library/CloudStorage/GoogleDrive-hello@masterazerbaijani.com/My Drive/WordAgent/.env
+find: /Users/shahlaalyasiry/Library/CloudStorage/OneDrive-SecurityPal/.Trash: No such file or directory
+shahlaalyasiry@Shahlas-MacBook-Pro WordAgent % find ~/ -name .env 2>/dev/null
+
+/Users/shahlaalyasiry/Library/CloudStorage/GoogleDrive-hello@masterazerbaijani.com/My Drive/WordAgent/.env
+touch test_env.py
+open -e test_env.py
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+print("ACCESS:", os.getenv("R2_ACCESS_KEY_ID"))
+print("SECRET:", os.getenv("R2_SECRET_ACCESS_KEY"))
+print("ACCOUNT:", os.getenv("R2_ACCOUNT_ID"))
+print("BUCKET:", os.getenv("R2_BUCKET"))
+print("PREFIX:", os.getenv("R2_BASE_PREFIX"))
+
+
