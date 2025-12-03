@@ -36,8 +36,7 @@ We **DO NOT** collect:
 - Demographic data
 
 ### 1.2. Information Automatically Collected
-We currently **DO NOT** use:
-- Google Analytics  
+We currently **DO NOT** use: 
 - Tracking pixels  
 - Cookies  
 - Behavioral or advertising trackers  
@@ -73,7 +72,7 @@ If you are located in the EU/EEA, we process your data under these legal bases:
 We only share data with trusted service providers necessary to operate this website:
 
 - **Netlify**: website hosting  
-- **Google Workspace**: email + Google Form storage  
+- **Google Workspace**: email + storage  
 - **Lemon Squeezy**: handles all purchases, payments, and taxes  
 - **GitHub**: code hosting (no user data stored)  
 
