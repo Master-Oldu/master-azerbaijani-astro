@@ -6,7 +6,7 @@ import BaseHead from '../../components/BaseHead.astro';
 
 <BaseHead 
   title="Master Azerbaijani: Alphabet Bundle"
-  description="The most complete Azerbaijani Alphabet Bundle ever created. 32 letters, 33 sounds, posters, guides, and native-designed visuals. Perfect for learners, families, and classrooms."
+  description="The most complete Azerbaijijani Alphabet Bundle ever created. 32 letters, 33 sounds, posters, guides, and native-designed visuals. Perfect for learners, families, and classrooms."
 >
   <meta property="og:title" content="Master Azerbaijani: Alphabet Bundle" />
   <meta property="og:description" content="A complete native-designed Azerbaijani Alphabet Bundle with posters, guides, high-res files, and everything you need to master the alphabet." />
@@ -51,30 +51,14 @@ import BaseHead from '../../components/BaseHead.astro';
     }
   </style>
 
-  <!-- CTA -->
+  <!-- CTA 1 -->
   <div style="text-align:center; margin: 25px 0 50px 0;">
     <a 
       href="https://masterazerbaijani.lemonsqueezy.com/buy/94b3c3cf-6f31-4e20-a182-e69bb4b3e309"
       class="lemonsqueezy-button price-button"
-      style="
-        padding: 18px 34px;
-        border-radius: 12px;
-        color: white;
-        text-decoration: none;
-        font-size: 1.4rem;
-        font-weight: 800;
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        transition: 0.3s;
-      "
     >
-      <span style="text-decoration: line-through; opacity: 0.85; font-weight: 600;">
-        $29.99
-      </span>
-      <span style="font-weight: 900;">
-        Get the Full Bundle for $19.99
-      </span>
+      <span class="old">$29.99</span>
+      <span class="new">Get the Full Bundle for $19.99</span>
     </a>
 
     <div style="margin-top: 10px; font-size: 0.95rem; font-weight: 600; opacity: 0.85; color: #fc723b;">
@@ -112,9 +96,10 @@ import BaseHead from '../../components/BaseHead.astro';
 
   <!-- SECOND CTA -->
   <div style="text-align:center; margin-bottom: 70px;">
-    <a href="https://masterazerbaijani.lemonsqueezy.com/buy/94b3c3cf-6f31-4e20-a182-e69bb4b3e309"
+    <a
+      href="https://masterazerbaijani.lemonsqueezy.com/buy/94b3c3cf-6f31-4e20-a182-e69bb4b3e309"
       class="lemonsqueezy-button price-button"
-      style="padding: 16px 30px; border-radius: 12px; color: white; font-size: 1.3rem; font-weight: 800;">
+    >
       Download the Full Bundle
     </a>
   </div>
@@ -162,7 +147,6 @@ import BaseHead from '../../components/BaseHead.astro';
 
   <p>All files come in <strong>PDF</strong>, <strong>PNG</strong>, and <strong>SVG</strong> for perfect printing at home or professionally.</p>
 
-  <!-- FIXED BULLETS -->
   <ul style="max-width: 900px; margin: 20px auto 40px; font-size: 1.2rem; line-height: 1.7; text-align: left;">
     <li>Best for: 24×36, 18×24, 11×17, A3, A4, Letter</li>
     <li>PNG/PDF are high-resolution</li>
@@ -172,7 +156,6 @@ import BaseHead from '../../components/BaseHead.astro';
   <!-- FAQ -->
   <h2 style="margin-top: 60px;">FAQs</h2>
 
-  <!-- FIXED BULLETS -->
   <ul style="max-width: 900px; margin: 20px auto; font-size:1.15rem; line-height:1.7; text-align: left;">
     <li><strong>Can I print these at home?</strong><br/>Yes, use PNGs for home printers or PDFs for shops like Staples and Office Depot.</li>
     <li><strong>Why do my colors look different when printed?</strong><br/>Use “Best Quality” and correct paper type. PNGs print slightly brighter; PDFs more accurate.</li>
@@ -184,18 +167,69 @@ import BaseHead from '../../components/BaseHead.astro';
 
   <!-- FINAL CTA -->
   <div style="margin: 70px 0 40px; text-align:center;">
-    <a href="https://masterazerbaijani.lemonsqueezy.com/buy/94b3c3cf-6f31-4e20-a182-e69bb4b3e309"
+    <a
+      href="https://masterazerbaijani.lemonsqueezy.com/buy/94b3c3cf-6f31-4e20-a182-e69bb4b3e309"
       class="lemonsqueezy-button price-button"
-      style="padding:18px 34px; border-radius:12px; color:white; font-size:1.4rem; font-weight:900;">
+    >
       Get Your Alphabet Bundle Now for $19.99
     </a>
   </div>
 
   <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
 
+  <!-- ORIGINAL BUTTON COLORS -->
   <style>
     .price-button { background: #ff8c00; }
     .price-button:hover { background: #e67c00; }
+  </style>
+
+  <!-- UPDATED RESPONSIVE BUTTON CSS -->
+  <style>
+    /* DESKTOP — exact look preserved */
+    .price-button {
+      padding: 18px 34px;
+      border-radius: 12px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: 0.3s;
+      flex-wrap: nowrap;
+      justify-content: center;
+      text-align: center;
+      line-height: 1.2;
+      max-width: 100%;
+    }
+
+    .old {
+      text-decoration: line-through;
+      opacity: 0.85;
+      font-weight: 600;
+    }
+
+    .new {
+      font-weight: 900;
+    }
+
+    /* MOBILE — stacked text, tighter spacing */
+    @media (max-width: 480px) {
+      .price-button {
+        font-size: 1.05rem;
+        padding: 14px 20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 4px;
+        border-radius: 10px;
+      }
+
+      .price-button span {
+        display: block;
+        width: 100%;
+      }
+    }
   </style>
 
   <!-- TERMS -->
