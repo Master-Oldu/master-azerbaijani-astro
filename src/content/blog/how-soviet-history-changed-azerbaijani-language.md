@@ -1,5 +1,5 @@
 ---
-title: "to be added"
+title: "how-soviet-history-changed-azerbaijani-language"
 description: "to be added"
 pubDate: 2026-04-10T00:00:00Z
 author: "Shahla"

@@ -1,5 +1,5 @@
 ---
-title: "to be added"
+title: "the-poetry-of-nizami-how-literature-shapes-modern-azerbaijani"
 description: "to be added"
 pubDate: 2026-05-20T00:00:00Z
 author: "Shahla"
