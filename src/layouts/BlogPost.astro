@@ -5,6 +5,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import ShareButtons from '../components/ShareButtons.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -196,6 +197,11 @@ const {
       <article class="blog-content">
         <slot />
       </article>
+
+      <!-- Share buttons -->
+      <div style="max-width: 900px; margin: 40px auto 0;">
+        <ShareButtons title={title} />
+      </div>
 
     </main>
 

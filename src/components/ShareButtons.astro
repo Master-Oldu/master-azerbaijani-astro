@@ -1,0 +1,88 @@
+---
+const { title } = Astro.props;
+const url = Astro.url.href;
+---
+
+<div class="share-container">
+
+  <button
+    class="share-box"
+    type="button"
+    onClick={async () => {
+      try {
+        await navigator.clipboard.writeText(url);
+        alert("Link copied");
+      } catch {
+        alert("Copy failed");
+      }
+    }}
+  >
+    Copy link
+  </button>
+
+  <a
+    class="share-box"
+    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    X
+  </a>
+
+  <a
+    class="share-box"
+    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    LinkedIn
+  </a>
+
+  <a
+    class="share-box"
+    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Facebook
+  </a>
+
+  <a
+    class="share-box"
+    href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`${title} ${url}`)}`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    WhatsApp
+  </a>
+</div>
+
+<style>
+.share-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* SHARE BOXES */
+.share-box {
+  min-width: 92px;
+  text-align: center;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #8fd9c5;
+  background-color: #A6E8D5;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #013a78; /* keeps text readable + on-brand */
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+.share-box:hover {
+  background-color: #94dcc6;
+  border-color: #7ccfb9;
+  transform: translateY(-1px);
+}
+</style>
