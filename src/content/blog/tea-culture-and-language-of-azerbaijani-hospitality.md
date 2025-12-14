@@ -13,9 +13,7 @@ coverImage: "/images/tea-culture-azerbaijani-hospitality.png"
 coverImageAlt: "Traditional Azerbaijani tea served in armudu glasses with preserves"
 ---
 
-# Tea Culture and the Language of Azerbaijani Hospitality
-
-In Azerbaijan, tea is not a moment in the visit.  
+## In Azerbaijan, tea is not a moment in the visit.  
 It is the background of the visit.
 
 It starts when you arrive, continues while you talk, reappears after food, shows up again if someone baked something new, celebrates something, and somehow keeps coming without ever being announced as a second round.
