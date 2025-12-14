@@ -1,6 +1,6 @@
 ---
 title: "How Soviet History Changed the Azerbaijani Language"
-description: "A clear look at how Soviet rule reshaped Azerbaijani scripts, vocabulary, sentence structure, and everyday speech — and why learners still feel its effects today."
+description: "A clear look at how Soviet rule reshaped Azerbaijani scripts, vocabulary, sentence structure, and everyday speech, and why learners still feel its effects today."
 pubDate: 2026-04-10T00:00:00Z
 author: "Shahla"
 tags:

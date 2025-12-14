@@ -10,7 +10,7 @@ tags:
   - language-learning
   - phonetics
   - listening-skills
-coverImage: "/images/written-vs-spoken-azerbaijani.jpg"
+coverImage: "/images/written-vs-spoken-azerbaijani.png"
 coverImageAlt: "Written and spoken forms of Azerbaijani contrasted through sound and text"
 ---
 
@@ -32,7 +32,6 @@ And it has nothing to do with your ability.
 
 It has to do with the difference between **standard (written) Azerbaijani** and **spoken Azerbaijani**.
 
----
 
 ## Standard Azerbaijani Exists for a Reason
 
@@ -40,6 +39,7 @@ Standard Azerbaijani is the form you see in:
 - textbooks
 - lessons
 - written materials
+- media
 - structured learning apps
 - formal speech
 
@@ -61,7 +61,6 @@ Every rule is doing its job.
 This is not artificial language.  
 It is **instructional language**.
 
----
 
 ## Spoken Azerbaijani Has a Different Job
 
@@ -76,13 +75,12 @@ It cares about being fast and efficient.
 
 That’s where learners get blindsided.
 
----
 
 ## What Spoken Azerbaijani Actually Does to Sentences
 
 Let’s take **real transformations learners actually hear**, not sanitized examples.
 
-### Example 1: Future tense compression
+### Future tense compression
 
 **Standard (what you learn):**
 - **bu gecə gələcəksən**
@@ -90,6 +88,7 @@ Let’s take **real transformations learners actually hear**, not sanitized exam
 **Spoken forms you will hear:**
 - **beyjə gələjən**
 - **beyjə gələjsən**
+- **bu gecə gələcən**
 - **bu gecə gələceysən**
 
 What changed:
@@ -101,15 +100,15 @@ What changed:
 Meaning does not change.  
 Structure becomes invisible.
 
----
 
-### Example 2: Present negative drift
+### Let's present a negative drift
 
 **Standard:**
 - **yemirəm**  
   *I am not eating*
 
 **Spoken variants:**
+- **yimirəm**
 - **yemiyəm**
 - **yeməyirəm**
 - **yemerəm**
@@ -120,9 +119,8 @@ Different surface forms.
 
 This is phonetic erosion, not new grammar.
 
----
 
-### Example 3: Wanting something (high-frequency verb)
+### Wanting something (high-frequency verb)
 
 **Standard:**
 - **istəyirəm**  
@@ -141,26 +139,6 @@ Learners often hear these and assume:
 
 They are not.
 
----
-
-### Example 4: Future first person
-
-**Standard:**
-- **gələcəyəm**  
-  *I will come*
-
-**Spoken variants:**
-- **gələjəm**
-- **gələcəm**
-- **gələcem**
-
-This is one of the first places learners realize:
-> “I know this word, but I don’t recognize it.”
-
-You do know it.  
-You’re just hearing the compressed form.
-
----
 
 ## Why This Feels So Disorienting
 
@@ -182,7 +160,6 @@ Learners don’t yet.
 
 That’s the gap.
 
----
 
 ## The Mistake Learners Make at This Point
 
@@ -202,7 +179,6 @@ The result:
 
 You don’t learn clarity by copying compression.
 
----
 
 ## The Correct Way to Use This Knowledge
 
@@ -221,7 +197,6 @@ Example:
 
 Understanding comes before imitation.
 
----
 
 ## One Uncomfortable but Necessary Truth
 
@@ -237,23 +212,41 @@ They rely on it unconsciously.
 
 Learners need it consciously.
 
----
+## Do These Changes Depend on Region?
+
+Yes, but not in the way learners usually expect.
+
+The gap between written and spoken Azerbaijani exists **everywhere**.  
+What changes by region is **how far speech compresses and which sounds erode first**.
+
+Broadly speaking:
+- Western varieties tend to show heavier consonant shifts and suffix reduction
+- Southern speech often stretches vowels and reshapes verb endings
+- Northern varieties may preserve certain consonants while reducing vowels
+- Central and eastern urban speech sits closer to the written standard
+
+These are tendencies, not rules.
+
+You will hear multiple versions of the same verb even within one family.
+
+That is why learning regions first does not help beginners.  
+You need the standard form as a reference point before regional patterns make sense.
+
 
 ## Why Standard Azerbaijani Should Come First
 
-Standard Azerbaijani:
+**Standard Azerbaijani:**
 - preserves structure
 - makes patterns visible
 - builds reliable listening skills
 - gives you a reference point
 
-Spoken Azerbaijani:
+**Spoken Azerbaijani:**
 - assumes you already know all of that
 
 This is not a hierarchy of correctness.  
 It is a sequence of learning.
 
----
 
 ## What This Means Going Forward
 
@@ -266,12 +259,11 @@ Once you know that, the confusion stops feeling personal.
 
 And learning speeds up.
 
----
 
 ## Bottom Line
 
-Written Azerbaijani teaches you **how the language works**.  
-Spoken Azerbaijani shows you **how the language moves**.
+Written Azerbaijani teaches you how the language ***works***.  
+Spoken Azerbaijani shows you how the language ***moves***.
 
 You need both.  
 But you need them in the right order.
