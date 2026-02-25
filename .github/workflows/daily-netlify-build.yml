@@ -2,7 +2,7 @@ name: Daily Netlify Build
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # Runs every day at 06:00 Pacific Time
+    - cron: "0 3 * * *"   # Runs every day at 7-8pm Pacific Time
   workflow_dispatch:
 
 jobs:
