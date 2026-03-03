@@ -6,7 +6,7 @@ layout: "../../layouts/LegalLayout.astro"
 
 # Privacy Policy
 
-**Last updated: November 01, 2025**
+**Last updated: March 02, 2026**
 
 Master Azerbaijani (“we,” “us,” or “our”) respects your privacy.  
 This Privacy Policy explains how we collect, use, and protect your information when you visit **masterazerbaijani.com** or interact with our services.
@@ -143,14 +143,35 @@ We do not knowingly collect data from minors.
 
 ---
 
-# 10. Changes to This Policy
+# 10. Mobile App Privacy (Master Azerbaijani App)
+
+This Privacy Policy applies to both the **Master Azerbaijani website** and the **Master Azerbaijani mobile application**.
+
+When using the Master Azerbaijani mobile app, we may collect limited information necessary to operate the app, including:
+- Account-related information (such as email, if provided)
+- App usage data (for functionality and improvement)
+- Purchase and entitlement information related to in-app purchases
+
+The mobile app:
+- Does **not** collect sensitive personal data  
+- Does **not** sell user data  
+- Does **not** share personal data with third parties except as required to operate the app (for example, Google Play services)
+
+Payment processing for in-app purchases is handled by the app store platform. We do not store or process payment card details.
+
+For questions related to the mobile app or this policy, contact:
+**hello@masterazerbaijani.com**
+
+---
+
+# 11. Changes to This Policy
 
 We may update this Privacy Policy as our services evolve.  
 The “Last Updated” date will reflect the most recent revision.
 
 ---
 
-# 11. Contact Us
+# 12. Contact Us
 
 If you have questions about this Privacy Policy:
 
