@@ -1,7 +1,7 @@
 ---
 title: "Account Deletion"
 description: "Request deletion of your Master Azerbaijani account and data"
-layout: "../../layouts/LegalLayout.astro"
+layout: "../layouts/LegalLayout.astro"
 ---
 
 # Account and Data Deletion
