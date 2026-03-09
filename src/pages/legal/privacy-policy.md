@@ -6,7 +6,7 @@ layout: "../../layouts/LegalLayout.astro"
 
 # Privacy Policy
 
-**Last updated: March 02, 2026**
+**Last updated: March 09, 2026**
 
 Master Azerbaijani (“we,” “us,” or “our”) respects your privacy.  
 This Privacy Policy explains how we collect, use, and protect your information when you visit **masterazerbaijani.com** or interact with our services.
@@ -158,6 +158,17 @@ The mobile app:
 - Does **not** share personal data with third parties except as required to operate the app (for example, Google Play services)
 
 Payment processing for in-app purchases is handled by the app store platform. We do not store or process payment card details.
+
+### Account Deletion
+
+Users may delete their account directly from within the Master Azerbaijani mobile app.
+
+To delete your account:
+Settings → Delete Account
+
+Deleting your account permanently removes your account and associated learning data, including saved progress and vocabulary.
+
+Account deletion cannot be undone.
 
 For questions related to the mobile app or this policy, contact:
 **hello@masterazerbaijani.com**
