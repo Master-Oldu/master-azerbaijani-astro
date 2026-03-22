@@ -1,38 +1,23 @@
----
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
----
+<!-- Flag -->
+<div class="flag" style="font-size:4rem; margin-bottom:20px;">🇦🇿</div>
 
-<BaseHead 
-  title="Master Azerbaijani App"
-  description="Master Azerbaijani is a structured language learning app designed for heritage families and curious learners. Now available on the App Store."
-/>
+<!-- Title -->
+<h1>Master Azerbaijani</h1>
 
-<Header />
-
-<main class="page-container about-page">
-
-  <!-- Flag -->
-  <div class="flag" style="font-size:4rem; margin-bottom:20px;">🇦🇿</div>
-
-  <!-- Title -->
-  <h1>Master Azerbaijani</h1>
-
-  <!-- Subtitle -->
-  <p
-    style="
-      font-size:1.5rem;
-      opacity:0.9;
-      margin-bottom:30px;
-      text-shadow:2px 2px 4px rgba(0,0,0,0.3);
-      max-width:900px;
-      margin-left:auto;
-      margin-right:auto;
-    "
-  >
-    Connect with your heritage. Bridge generations. Build belonging.
-  </p>
+<!-- Subtitle -->
+<p
+  style="
+    font-size:1.5rem;
+    opacity:0.9;
+    margin-bottom:30px;
+    text-shadow:2px 2px 4px rgba(0,0,0,0.3);
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+  "
+>
+  Connect with your heritage. Bridge generations. Build belonging.
+</p>
 
 <!-- Status Box -->
 <div
@@ -55,60 +40,25 @@ import Footer from '../../components/Footer.astro';
     Project Status
   </h3>
 
-  <div
-    style="
-      display:flex;
-      flex-direction:column;
-      gap:14px;
-      font-size:1rem;
-      align-items:center;
-    "
-  >
+  <div style="display:flex; flex-direction:column; gap:14px; align-items:center;">
 
     <div style="display:flex; gap:10px; align-items:center;">
       <span>Apple App Store</span>
-      <span
-        style="
-          color:#00d084;
-          font-weight:600;
-          font-size:0.95rem;
-          background:rgba(0,208,132,0.12);
-          padding:4px 10px;
-          border-radius:999px;
-        "
-      >
+      <span style="color:#0f9d58; font-weight:700; font-size:0.95rem; background:#e6f4ea; padding:4px 10px; border-radius:999px;">
         Live
       </span>
     </div>
 
     <div style="display:flex; gap:10px; align-items:center;">
       <span>Google Play</span>
-      <span
-        style="
-          color:#ffb020;
-          font-weight:600;
-          font-size:0.95rem;
-          background:rgba(255,176,32,0.12);
-          padding:4px 10px;
-          border-radius:999px;
-        "
-      >
+      <span style="color:#b26a00; font-weight:700; font-size:0.95rem; background:#fff4e5; padding:4px 10px; border-radius:999px;">
         In testing
       </span>
     </div>
 
     <div style="display:flex; gap:10px; align-items:center;">
       <span>Audio narration</span>
-      <span
-        style="
-          color:#4dabf7;
-          font-weight:600;
-          font-size:0.95rem;
-          background:rgba(77,171,247,0.12);
-          padding:4px 10px;
-          border-radius:999px;
-        "
-      >
+      <span style="color:#1c7ed6; font-weight:700; font-size:0.95rem; background:#e7f1ff; padding:4px 10px; border-radius:999px;">
         Expanding
       </span>
     </div>
@@ -117,130 +67,135 @@ import Footer from '../../components/Footer.astro';
 
 </div>
 
-  <!-- App Store Button -->
-  <a
-    href="https://apps.apple.com/us/app/master-azerbaijani/id6760097533"
-target="_blank"
+<!-- App Store Button -->
+<a
+  href="https://apps.apple.com/us/app/master-azerbaijani/id6760097533"
+  target="_blank"
   rel="noopener noreferrer"
-    class="download-btn"
+  style="
+    display:inline-block;
+    background:#ff8c00;
+    color:#185a9d;
+    font-weight:700;
+    padding:15px 30px;
+    border-radius:12px;
+    text-decoration:none;
+    font-size:1.2rem;
+    margin-bottom:40px;
+  "
+>
+  Download on the App Store (Free to start)
+</a>
+
+<!-- Screenshots -->
+<section style="margin:50px 0;">
+
+  <h2 style="margin-bottom:25px;">Inside the App</h2>
+
+  <div
     style="
-      display:inline-block;
-      background:#ff8c00;
-      color:#185a9d;
-      font-weight:700;
-      padding:15px 30px;
-      border-radius:12px;
-      text-decoration:none;
-      font-size:1.2rem;
-      margin-bottom:40px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+      max-width:900px;
+      margin:auto;
     "
   >
-    Download on the App Store (Free to start)
-  </a>
 
-  <!-- Screenshots -->
-  <section style="margin:50px 0;">
-
-    <h2 style="margin-bottom:25px;">Inside the App</h2>
-
-    <div
-      style="
-        display:grid;
-        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-        gap:20px;
-        max-width:900px;
-        margin:auto;
-      "
-    >
-
-      <div>
-        <img src="/images/app-screenshot-1.png" alt="Alphabet lesson screen" style="width:100%; border-radius:10px;" />
-        <p style="margin-top:8px;">Alphabet foundations and pronunciation</p>
-      </div>
-
-      <div>
-        <img src="/images/app-screenshot-2.png" alt="Vocabulary learning screen" style="width:100%; border-radius:10px;" />
-        <p style="margin-top:8px;">Vocabulary with native audio guidance</p>
-      </div>
-
-      <div>
-        <img src="/images/app-screenshot-3.png" alt="Structured lesson interface" style="width:100%; border-radius:10px;" />
-        <p style="margin-top:8px;">Structured lessons that build real understanding</p>
-      </div>
-
+    <div>
+      <img src="/images/app-screenshot-1.png" alt="Alphabet lesson screen" style="width:100%; border-radius:10px;" />
+      <p style="margin-top:8px;">Alphabet foundations and pronunciation</p>
     </div>
 
-  </section>
+    <div>
+      <img src="/images/app-screenshot-2.png" alt="Vocabulary learning screen" style="width:100%; border-radius:10px;" />
+      <p style="margin-top:8px;">Vocabulary with native audio guidance</p>
+    </div>
 
-  <!-- Features -->
-  <section
-    style="
-      text-align:left;
-      margin:40px auto;
-      max-width:700px;
-      background:rgba(255,255,255,0.25);
-      padding:25px;
-      border-radius:10px;
-    "
-  >
+    <div>
+      <img src="/images/app-screenshot-3.png" alt="Structured lesson interface" style="width:100%; border-radius:10px;" />
+      <p style="margin-top:8px;">Structured lessons that build real understanding</p>
+    </div>
 
-    <h2 style="text-align:center; margin-bottom:20px;">
-      What the App Includes
-    </h2>
+  </div>
 
-    <ul style="line-height:1.8;">
+</section>
 
-      <li>Structured modules that guide you step-by-step</li>
-      <li>Vocabulary with pronunciation guidance</li>
-      <li>Cultural insights beyond just words</li>
-      <li>Practical phrases for real conversations</li>
-      <li>Designed for heritage learners and families abroad</li>
-
-    </ul>
-
-  </section>
-
-  <!-- Transparency -->
-  <section
-    style="
-      max-width:700px;
-      margin:40px auto;
-      font-size:1.05rem;
-      line-height:1.6;
-    "
-  >
-
-    <h2>Building in the Open</h2>
-
-    <p>
-      Master Azerbaijani is currently being developed by a solo founder.
-      The first version focuses on structured lessons and vocabulary.
-    </p>
-
-    <p>
-      Native Azerbaijani audio is being recorded and added across lessons
-      and will continue expanding through future updates.
-    </p>
-
-    <p>
-      Early users help shape what the app becomes.
-    </p>
-
-  </section>
-
-<!-- Newsletter -->
+<!-- Features -->
 <section
   style="
-    margin:50px auto;
-    max-width:600px;
-    background:rgba(255,255,255,0.2);
-    padding:25px;
-    border-radius:10px;
+    margin:60px auto;
+    max-width:720px;
+    padding:24px 26px;
+    border-radius:14px;
+    background:linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1));
+    border:1px solid rgba(255,255,255,0.25);
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
     text-align:center;
   "
 >
 
-  <h2 style="margin-bottom:10px;">Learn Beyond the App</h2>
+  <h2 style="margin-bottom:20px;">What the App Includes</h2>
+
+  <div style="display:flex; flex-direction:column; gap:14px; align-items:center;">
+
+    <div style="display:flex; gap:10px;"><span style="color:#FA7239;">✓</span><span>Structured modules that guide you step-by-step</span></div>
+    <div style="display:flex; gap:10px;"><span style="color:#FA7239;">✓</span><span>Vocabulary with pronunciation guidance</span></div>
+    <div style="display:flex; gap:10px;"><span style="color:#FA7239;">✓</span><span>Cultural insights beyond just words</span></div>
+    <div style="display:flex; gap:10px;"><span style="color:#FA7239;">✓</span><span>Practical phrases for real conversations</span></div>
+    <div style="display:flex; gap:10px;"><span style="color:#FA7239;">✓</span><span>Designed for heritage learners and families abroad</span></div>
+
+  </div>
+
+</section>
+
+<!-- Transparency -->
+<section
+  style="
+    margin:60px auto;
+    max-width:720px;
+    padding:24px 26px;
+    border-radius:14px;
+    background:linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.08));
+    border:1px solid rgba(255,255,255,0.2);
+    backdrop-filter:blur(8px);
+    text-align:left;
+  "
+>
+
+  <h2 style="margin-bottom:14px; text-align:center;">Building in the Open</h2>
+
+  <p style="margin-bottom:12px;">
+    Master Azerbaijani is being built by a solo founder with a focus on clarity, structure, and real usability.
+  </p>
+
+  <p style="margin-bottom:12px;">
+    The current version prioritizes strong learning foundations. Native Azerbaijani audio is actively being recorded and added across lessons.
+  </p>
+
+  <p style="opacity:0.85;">
+    Early users are not just using the app — they are helping shape what it becomes.
+  </p>
+
+</section>
+
+<!-- Newsletter -->
+<section
+  style="
+    margin:60px auto;
+    max-width:720px;
+    padding:24px 26px;
+    border-radius:14px;
+    background:linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1));
+    border:1px solid rgba(255,255,255,0.25);
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    text-align:center;
+  "
+>
+
+  <h2 style="margin-bottom:12px;">Learn Beyond the App</h2>
 
   <p style="margin-bottom:15px;">
     Get new Azerbaijani language tips, cultural insights, and real-life learning content every 10 days.
@@ -250,7 +205,6 @@ target="_blank"
     Join the newsletter to stay consistent and keep learning.
   </p>
 
-  <!-- Subscribe Button (Google Form) -->
   <a
     href="https://docs.google.com/forms/d/e/1FAIpQLSchAl_aV-b9vF2ah5HPzdfD8OiWQ-J4uwtu_VLt7WfP_tGR3A/viewform"
     target="_blank"
@@ -264,10 +218,7 @@ target="_blank"
       border-radius:8px;
       text-decoration:none;
       font-size:1.1rem;
-      transition:transform 0.2s ease, box-shadow 0.2s ease;
     "
-    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 15px rgba(0,0,0,0.3)'"
-    onmouseout="this.style.transform='none'; this.style.boxShadow='none'"
   >
     Subscribe to Updates
   </a>
@@ -278,34 +229,43 @@ target="_blank"
 
 </section>
 
-  <!-- Roadmap -->
-  <section
-    style="
-      margin:50px auto;
-      max-width:600px;
-      text-align:left;
-    "
-  >
+<!-- Roadmap -->
+<section
+  style="
+    margin:60px auto;
+    max-width:720px;
+    padding:24px 26px;
+    border-radius:14px;
+    background:linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1));
+    border:1px solid rgba(255,255,255,0.25);
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    text-align:center;
+  "
+>
 
-    <h2>Roadmap</h2>
+  <h2 style="margin-bottom:20px;">Roadmap</h2>
 
-    <ul style="line-height:1.8;">
+  <div style="display:flex; flex-direction:column; gap:14px; align-items:center;">
 
-      <li><strong>March 2026</strong> – Initial app launch</li>
-      <li><strong>Spring 2026</strong> – Expanded native audio</li>
-      <li><strong>September 2026</strong> – Additional learning modules</li>
-      <li><strong>March 2027</strong> – Full course completion</li>
+    <div style="display:flex; gap:10px;"><span style="font-weight:600; color:#FA7239;">March 2026</span><span>Initial app launch</span></div>
+    <div style="display:flex; gap:10px;"><span style="font-weight:600; color:#FA7239;">Spring 2026</span><span>Expanded native audio</span></div>
+    <div style="display:flex; gap:10px;"><span style="font-weight:600; color:#FA7239;">September 2026</span><span>Additional learning modules</span></div>
+    <div style="display:flex; gap:10px;"><span style="font-weight:600; color:#FA7239;">March 2027</span><span>Full course completion</span></div>
 
-    </ul>
-
-  </section>
-
-  <!-- Contact -->
-  <div style="margin-top:40px; font-size:1rem;">
-    Questions or feedback?<br />
-    <a href="mailto:hello@masterazerbaijani.com">hello@masterazerbaijani.com</a>
   </div>
 
-</main>
+</section>
 
-<Footer />
+<!-- Contact -->
+<div style="margin-top:50px; text-align:center; font-size:1rem;">
+  Questions or feedback?<br />
+
+  <a href="mailto:hello@masterazerbaijani.com" style="color:#FA7239; text-decoration:none; font-weight:600;">
+    hello@masterazerbaijani.com
+  </a>
+
+  <p style="margin-top:8px; font-size:0.9rem; opacity:0.8;">
+    Usually responds within 24 hours
+  </p>
+</div>
