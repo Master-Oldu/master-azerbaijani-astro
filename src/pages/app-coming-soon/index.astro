@@ -34,28 +34,88 @@ import Footer from '../../components/Footer.astro';
     Connect with your heritage. Bridge generations. Build belonging.
   </p>
 
-  <!-- Status Box -->
+<!-- Status Box -->
+<div
+  style="
+    margin-bottom:40px;
+    max-width:720px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:24px 26px;
+    border-radius:14px;
+    background:linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1));
+    border:1px solid rgba(255,255,255,0.25);
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    text-align:center;
+  "
+>
+
+  <h3 style="margin-bottom:18px; font-size:1.3rem;">
+    Project Status
+  </h3>
+
   <div
     style="
-      font-size:1.1rem;
-      margin-bottom:30px;
-      background:rgba(255,255,255,0.2);
-      padding:20px;
-      border-radius:10px;
-      border:1px solid rgba(255,255,255,0.3);
-      text-align:left;
-      max-width:700px;
-      margin-left:auto;
-      margin-right:auto;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      font-size:1rem;
+      align-items:center;
     "
   >
-    <strong>Project Status</strong>
-    <ul style="margin-top:10px;">
-      <li>Apple App Store: Available now</li>
-      <li>Google Play: Currently in closed testing (Google requires 14-day testing before release)</li>
-      <li>Audio narration: Being added across lessons and expanding over time</li>
-    </ul>
+
+    <div style="display:flex; gap:10px; align-items:center;">
+      <span>Apple App Store</span>
+      <span
+        style="
+          color:#00d084;
+          font-weight:600;
+          font-size:0.95rem;
+          background:rgba(0,208,132,0.12);
+          padding:4px 10px;
+          border-radius:999px;
+        "
+      >
+        Live
+      </span>
+    </div>
+
+    <div style="display:flex; gap:10px; align-items:center;">
+      <span>Google Play</span>
+      <span
+        style="
+          color:#ffb020;
+          font-weight:600;
+          font-size:0.95rem;
+          background:rgba(255,176,32,0.12);
+          padding:4px 10px;
+          border-radius:999px;
+        "
+      >
+        In testing
+      </span>
+    </div>
+
+    <div style="display:flex; gap:10px; align-items:center;">
+      <span>Audio narration</span>
+      <span
+        style="
+          color:#4dabf7;
+          font-weight:600;
+          font-size:0.95rem;
+          background:rgba(77,171,247,0.12);
+          padding:4px 10px;
+          border-radius:999px;
+        "
+      >
+        Expanding
+      </span>
+    </div>
+
   </div>
+
+</div>
 
   <!-- App Store Button -->
   <a
