@@ -5,8 +5,8 @@ import Footer from '../../components/Footer.astro';
 ---
 
 <BaseHead 
-  title="App Coming Soon - Master Azerbaijani"
-  description="The Master Azerbaijani app is launching soon. Learn Azerbaijani through structured levels, real native audio, fun examples, and practical phrases. Join the waitlist today."
+  title="Master Azerbaijani App"
+  description="Master Azerbaijani is a structured language learning app designed for heritage families and curious learners. Now available on the App Store."
 />
 
 <Header />
@@ -34,51 +34,35 @@ import Footer from '../../components/Footer.astro';
     Connect with your heritage. Bridge generations. Build belonging.
   </p>
 
-  <!-- Launch Date Box -->
+  <!-- Status Box -->
   <div
-    class="launch-date"
     style="
-      font-size:1.2rem;
+      font-size:1.1rem;
       margin-bottom:30px;
       background:rgba(255,255,255,0.2);
-      padding:15px;
+      padding:20px;
       border-radius:10px;
       border:1px solid rgba(255,255,255,0.3);
-      text-shadow:2px 2px 4px rgba(0,0,0,0.3);
+      text-align:left;
+      max-width:700px;
+      margin-left:auto;
+      margin-right:auto;
     "
   >
-    <strong>
-      <img src="/images/buta.webp" alt="Coming Soon Icon" style="height:1em; vertical-align:middle;" />
-      Launching Novruz 2026
-    </strong>
-    <br />
-    <em>March 20, 2026… A perfect time for new beginnings</em>
+    <strong>Project Status</strong>
+    <ul style="margin-top:10px;">
+      <li>Apple App Store: Available now</li>
+      <li>Google Play: Currently in closed testing (Google requires 14-day testing before release)</li>
+      <li>Audio narration: Being added across lessons and expanding over time</li>
+    </ul>
   </div>
 
-  <!-- Countdown -->
-  <div
-    id="countdown"
-    class="countdown"
-    style="
-      font-size:2.5rem;
-      font-weight:700;
-      margin-bottom:20px;
-      text-shadow:0 0 10px #fff, 0 0 20px #fff;
-      animation:pulse 1.5s infinite alternate;
-    "
-  >
-    00d 00h 00m 00s
-  </div>
-
-  <!-- Waitlist CTA -->
-  <p style="margin-bottom:15px; font-size:1.1rem;">
-    Be the first to know when we launch:
-  </p>
-
+  <!-- App Store Button -->
   <a
-    href="https://docs.google.com/forms/d/e/1FAIpQLSchAl_aV-b9vF2ah5HPzdfD8OiWQ-J4uwtu_VLt7WfP_tGR3A/viewform?usp=sf_link"
-    target="_blank"
-    class="join-btn"
+    href="https://apps.apple.com/us/app/master-azerbaijani/id6760097533"
+target="_blank"
+  rel="noopener noreferrer"
+    class="download-btn"
     style="
       display:inline-block;
       background:#ff8c00;
@@ -88,108 +72,180 @@ import Footer from '../../components/Footer.astro';
       border-radius:12px;
       text-decoration:none;
       font-size:1.2rem;
-      transition:transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom:40px;
+    "
+  >
+    Download on the App Store (Free to start)
+  </a>
+
+  <!-- Screenshots -->
+  <section style="margin:50px 0;">
+
+    <h2 style="margin-bottom:25px;">Inside the App</h2>
+
+    <div
+      style="
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+        gap:20px;
+        max-width:900px;
+        margin:auto;
+      "
+    >
+
+      <div>
+        <img src="/images/app-screenshot-1.png" alt="Alphabet lesson screen" style="width:100%; border-radius:10px;" />
+        <p style="margin-top:8px;">Alphabet foundations and pronunciation</p>
+      </div>
+
+      <div>
+        <img src="/images/app-screenshot-2.png" alt="Vocabulary learning screen" style="width:100%; border-radius:10px;" />
+        <p style="margin-top:8px;">Vocabulary with native audio guidance</p>
+      </div>
+
+      <div>
+        <img src="/images/app-screenshot-3.png" alt="Structured lesson interface" style="width:100%; border-radius:10px;" />
+        <p style="margin-top:8px;">Structured lessons that build real understanding</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Features -->
+  <section
+    style="
+      text-align:left;
+      margin:40px auto;
+      max-width:700px;
+      background:rgba(255,255,255,0.25);
+      padding:25px;
+      border-radius:10px;
+    "
+  >
+
+    <h2 style="text-align:center; margin-bottom:20px;">
+      What the App Includes
+    </h2>
+
+    <ul style="line-height:1.8;">
+
+      <li>Structured modules that guide you step-by-step</li>
+      <li>Vocabulary with pronunciation guidance</li>
+      <li>Cultural insights beyond just words</li>
+      <li>Practical phrases for real conversations</li>
+      <li>Designed for heritage learners and families abroad</li>
+
+    </ul>
+
+  </section>
+
+  <!-- Transparency -->
+  <section
+    style="
+      max-width:700px;
+      margin:40px auto;
+      font-size:1.05rem;
+      line-height:1.6;
+    "
+  >
+
+    <h2>Building in the Open</h2>
+
+    <p>
+      Master Azerbaijani is currently being developed by a solo founder.
+      The first version focuses on structured lessons and vocabulary.
+    </p>
+
+    <p>
+      Native Azerbaijani audio is being recorded and added across lessons
+      and will continue expanding through future updates.
+    </p>
+
+    <p>
+      Early users help shape what the app becomes.
+    </p>
+
+  </section>
+
+<!-- Newsletter -->
+<section
+  style="
+    margin:50px auto;
+    max-width:600px;
+    background:rgba(255,255,255,0.2);
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+  "
+>
+
+  <h2 style="margin-bottom:10px;">Learn Beyond the App</h2>
+
+  <p style="margin-bottom:15px;">
+    Get new Azerbaijani language tips, cultural insights, and real-life learning content every 10 days.
+  </p>
+
+  <p style="margin-bottom:25px;">
+    Join the newsletter to stay consistent and keep learning.
+  </p>
+
+  <!-- Subscribe Button (Google Form) -->
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSchAl_aV-b9vF2ah5HPzdfD8OiWQ-J4uwtu_VLt7WfP_tGR3A/viewform"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="
+      display:inline-block;
+      background:#ff8c00;
+      color:#185a9d;
+      font-weight:700;
+      padding:12px 24px;
+      border-radius:8px;
+      text-decoration:none;
+      font-size:1.1rem;
+      transition:transform 0.2s ease, box-shadow 0.2s ease;
     "
     onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 15px rgba(0,0,0,0.3)'"
     onmouseout="this.style.transform='none'; this.style.boxShadow='none'"
   >
-    Join the Waitlist
+    Subscribe to Updates
   </a>
 
-  <!-- Features -->
-  <div
-    class="features"
+  <p style="margin-top:12px; font-size:0.9rem; opacity:0.8;">
+    Takes 10 seconds. No spam.
+  </p>
+
+</section>
+
+  <!-- Roadmap -->
+  <section
     style="
+      margin:50px auto;
+      max-width:600px;
       text-align:left;
-      margin:30px 0;
-      background:rgba(255,255,255,0.25);
-      padding:20px;
-      border-radius:10px;
     "
   >
-    <h3
-      style="
-        text-align:center;
-        margin-bottom:20px;
-        font-size:1.3rem;
-        text-shadow:2px 2px 4px rgba(0,0,0,0.3);
-      "
-    >
-      What's Coming:
-    </h3>
 
-    <ul style="list-style:none; padding-left:0;">
-      <li style="padding-left:30px; position:relative; margin-bottom:12px;">
-        Interactive lessons for families and heritage learners
-        <span style="position:absolute; left:0; color:#ff8c00; font-size:1.2rem; font-weight:bold;">✓</span>
-      </li>
+    <h2>Roadmap</h2>
 
-      <li style="padding-left:30px; position:relative; margin-bottom:12px;">
-        Audio pronunciation with native speaker guidance
-        <span style="position:absolute; left:0; color:#ff8c00; font-size:1.2rem; font-weight:bold;">✓</span>
-      </li>
+    <ul style="line-height:1.8;">
 
-      <li style="padding-left:30px; position:relative; margin-bottom:12px;">
-        Cultural context that goes beyond just words
-        <span style="position:absolute; left:0; color:#ff8c00; font-size:1.2rem; font-weight:bold;">✓</span>
-      </li>
+      <li><strong>March 2026</strong> – Initial app launch</li>
+      <li><strong>Spring 2026</strong> – Expanded native audio</li>
+      <li><strong>September 2026</strong> – Additional learning modules</li>
+      <li><strong>March 2027</strong> – Full course completion</li>
 
-      <li style="padding-left:30px; position:relative; margin-bottom:12px;">
-        Designed for busy people living abroad
-        <span style="position:absolute; left:0; color:#ff8c00; font-size:1.2rem; font-weight:bold;">✓</span>
-      </li>
-
-      <li style="padding-left:30px; position:relative; margin-bottom:12px;">
-        Perfect for connecting with grandparents and in-laws
-        <span style="position:absolute; left:0; color:#ff8c00; font-size:1.2rem; font-weight:bold;">✓</span>
-      </li>
-
-      <li style="padding-left:30px; position:relative;">
-        Built by someone who understands the struggle
-        <span style="position:absolute; left:0; color:#ff8c00; font-size:1.2rem; font-weight:bold;">✓</span>
-      </li>
     </ul>
-  </div>
+
+  </section>
 
   <!-- Contact -->
-  <div class="contact" style="margin-top:30px; font-size:1rem;">
-    Questions? Ideas? Just want to chat?<br />
+  <div style="margin-top:40px; font-size:1rem;">
+    Questions or feedback?<br />
     <a href="mailto:hello@masterazerbaijani.com">hello@masterazerbaijani.com</a>
   </div>
 
 </main>
 
 <Footer />
-
-<!-- Countdown Logic -->
-<script is:inline>
-  const countdownElement = document.getElementById('countdown');
-  const launchDate = new Date("March 20, 2026 00:00:00").getTime();
-
-  function updateCountdown() {
-    const now = Date.now();
-    const distance = launchDate - now;
-
-    if (distance < 0) {
-      countdownElement.innerHTML = "Launched!";
-      return;
-    }
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24))/(1000*60*60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60))/(1000*60));
-    const seconds = Math.floor((distance % (1000 * 60))/1000);
-
-    countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-  }
-
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
-</script>
-
-<style is:inline>
-  @keyframes pulse {
-    0% { text-shadow: 0 0 10px #fff, 0 0 20px #fff; }
-    100% { text-shadow: 0 0 20px #fff, 0 0 40px #fff; }
-  }
-</style>
