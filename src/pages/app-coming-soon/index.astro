@@ -1,94 +1,79 @@
-<!-- Flag -->
-<div class="flag" style="font-size:4rem; margin-bottom:20px;">🇦🇿</div>
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
 
-<!-- Title -->
-<h1>Master Azerbaijani</h1>
+<BaseHead 
+  title="Master Azerbaijani App"
+  description="Master Azerbaijani is a structured language learning app designed for heritage families and curious learners. Now available on the App Store."
+/>
+
+<Header />
+
+<main class="page-container about-page">
+
+<div style="text-align:center;">
+
+  <!-- Flag -->
+  <div style="font-size:4rem; margin-bottom:20px;">🇦🇿</div>
+
+  <!-- Title -->
+  <h1>Master Azerbaijani</h1>
 
 <!-- Subtitle -->
 <p
   style="
     font-size:1.5rem;
     opacity:0.9;
-    margin-bottom:30px;
+    margin:0 auto 60px;
     text-shadow:2px 2px 4px rgba(0,0,0,0.3);
     max-width:900px;
-    margin-left:auto;
-    margin-right:auto;
   "
 >
   Connect with your heritage. Bridge generations. Build belonging.
 </p>
 
-<!-- Status Box -->
-<div
-  style="
-    margin-bottom:40px;
-    max-width:720px;
-    margin-left:auto;
-    margin-right:auto;
-    padding:24px 26px;
-    border-radius:14px;
-    background:linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1));
-    border:1px solid rgba(255,255,255,0.25);
-    backdrop-filter:blur(10px);
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
-    text-align:center;
-  "
->
+  <!-- Status Box -->
+  <div style="max-width:720px; margin:0 auto 40px; padding:24px 26px; border-radius:14px; background:linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1)); border:1px solid rgba(255,255,255,0.25); backdrop-filter:blur(10px); box-shadow:0 10px 30px rgba(0,0,0,0.2);">
 
-  <h3 style="margin-bottom:18px; font-size:1.3rem;">
-    Project Status
-  </h3>
+<h3 style="margin-bottom:18px; font-size:1.6rem; font-weight:700; letter-spacing:0.5px;">
+  Project Status
+</h3>
 
-  <div style="display:flex; flex-direction:column; gap:14px; align-items:center;">
-
-    <div style="display:flex; gap:10px; align-items:center;">
-      <span>Apple App Store</span>
-      <span style="color:#0f9d58; font-weight:700; font-size:0.95rem; background:#e6f4ea; padding:4px 10px; border-radius:999px;">
-        Live
-      </span>
-    </div>
-
-    <div style="display:flex; gap:10px; align-items:center;">
-      <span>Google Play</span>
-      <span style="color:#b26a00; font-weight:700; font-size:0.95rem; background:#fff4e5; padding:4px 10px; border-radius:999px;">
-        In testing
-      </span>
-    </div>
-
-    <div style="display:flex; gap:10px; align-items:center;">
-      <span>Audio narration</span>
-      <span style="color:#1c7ed6; font-weight:700; font-size:0.95rem; background:#e7f1ff; padding:4px 10px; border-radius:999px;">
-        Expanding
-      </span>
+    <div style="display:flex; flex-direction:column; gap:14px; align-items:center;">
+      <div style="display:flex; gap:10px;"><span>Apple App Store</span><span style="color:#0f9d58; font-weight:700; background:#e6f4ea; padding:4px 10px; border-radius:999px;">Live</span></div>
+      <div style="display:flex; gap:10px;"><span>Google Play</span><span style="color:#b26a00; font-weight:700; background:#fff4e5; padding:4px 10px; border-radius:999px;">In testing</span></div>
+      <div style="display:flex; gap:10px;"><span>Audio narration</span><span style="color:#1c7ed6; font-weight:700; background:#e7f1ff; padding:4px 10px; border-radius:999px;">Expanding</span></div>
     </div>
 
   </div>
 
+  <!-- Button (FIXED CENTER) -->
+  <div style="margin-bottom:50px;">
+    <a
+      href="https://apps.apple.com/us/app/master-azerbaijani/id6760097533"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="
+        display:inline-block;
+        background:#ff8c00;
+        color:#185a9d;
+        font-weight:700;
+        padding:15px 30px;
+        border-radius:12px;
+        text-decoration:none;
+        font-size:1.2rem;
+      "
+    >
+      Download on the App Store (Free to start)
+    </a>
+  </div>
+
 </div>
 
-<!-- App Store Button -->
-<a
-  href="https://apps.apple.com/us/app/master-azerbaijani/id6760097533"
-  target="_blank"
-  rel="noopener noreferrer"
-  style="
-    display:inline-block;
-    background:#ff8c00;
-    color:#185a9d;
-    font-weight:700;
-    padding:15px 30px;
-    border-radius:12px;
-    text-decoration:none;
-    font-size:1.2rem;
-    margin-bottom:40px;
-  "
->
-  Download on the App Store (Free to start)
-</a>
-
 <!-- Screenshots -->
-<section style="margin:50px 0;">
+<section style="margin:60px 0; text-align:center;">
 
   <h2 style="margin-bottom:25px;">Inside the App</h2>
 
@@ -103,17 +88,17 @@
   >
 
     <div>
-      <img src="/images/app-screenshot-1.png" alt="Alphabet lesson screen" style="width:100%; border-radius:10px;" />
+      <img src="/images/app-screenshot-1.png" style="width:100%; border-radius:10px;" />
       <p style="margin-top:8px;">Alphabet foundations and pronunciation</p>
     </div>
 
     <div>
-      <img src="/images/app-screenshot-2.png" alt="Vocabulary learning screen" style="width:100%; border-radius:10px;" />
+      <img src="/images/app-screenshot-2.png" style="width:100%; border-radius:10px;" />
       <p style="margin-top:8px;">Vocabulary with native audio guidance</p>
     </div>
 
     <div>
-      <img src="/images/app-screenshot-3.png" alt="Structured lesson interface" style="width:100%; border-radius:10px;" />
+      <img src="/images/app-screenshot-3.png" style="width:100%; border-radius:10px;" />
       <p style="margin-top:8px;">Structured lessons that build real understanding</p>
     </div>
 
@@ -122,47 +107,22 @@
 </section>
 
 <!-- Features -->
-<section
-  style="
-    margin:60px auto;
-    max-width:720px;
-    padding:24px 26px;
-    border-radius:14px;
-    background:linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1));
-    border:1px solid rgba(255,255,255,0.25);
-    backdrop-filter:blur(10px);
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
-    text-align:center;
-  "
->
+<section style="margin:60px auto; max-width:720px; padding:24px 26px; border-radius:14px; background:linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1)); border:1px solid rgba(255,255,255,0.25); backdrop-filter:blur(10px); box-shadow:0 10px 30px rgba(0,0,0,0.2); text-align:center;">
 
   <h2 style="margin-bottom:20px;">What the App Includes</h2>
 
   <div style="display:flex; flex-direction:column; gap:14px; align-items:center;">
-
     <div style="display:flex; gap:10px;"><span style="color:#FA7239;">✓</span><span>Structured modules that guide you step-by-step</span></div>
     <div style="display:flex; gap:10px;"><span style="color:#FA7239;">✓</span><span>Vocabulary with pronunciation guidance</span></div>
     <div style="display:flex; gap:10px;"><span style="color:#FA7239;">✓</span><span>Cultural insights beyond just words</span></div>
     <div style="display:flex; gap:10px;"><span style="color:#FA7239;">✓</span><span>Practical phrases for real conversations</span></div>
     <div style="display:flex; gap:10px;"><span style="color:#FA7239;">✓</span><span>Designed for heritage learners and families abroad</span></div>
-
   </div>
 
 </section>
 
 <!-- Transparency -->
-<section
-  style="
-    margin:60px auto;
-    max-width:720px;
-    padding:24px 26px;
-    border-radius:14px;
-    background:linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.08));
-    border:1px solid rgba(255,255,255,0.2);
-    backdrop-filter:blur(8px);
-    text-align:left;
-  "
->
+<section style="margin:60px auto; max-width:720px; padding:24px 26px; border-radius:14px; background:linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.08)); border:1px solid rgba(255,255,255,0.2); backdrop-filter:blur(8px); text-align:left;">
 
   <h2 style="margin-bottom:14px; text-align:center;">Building in the Open</h2>
 
@@ -175,25 +135,13 @@
   </p>
 
   <p style="opacity:0.85;">
-    Early users are not just using the app — they are helping shape what it becomes.
+    Early users aren’t just using the app; they’re helping shape what it becomes. If you see something that could be improved, please speak up and share with us.
   </p>
 
 </section>
 
 <!-- Newsletter -->
-<section
-  style="
-    margin:60px auto;
-    max-width:720px;
-    padding:24px 26px;
-    border-radius:14px;
-    background:linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1));
-    border:1px solid rgba(255,255,255,0.25);
-    backdrop-filter:blur(10px);
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
-    text-align:center;
-  "
->
+<section style="margin:60px auto; max-width:720px; padding:24px 26px; border-radius:14px; background:linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1)); border:1px solid rgba(255,255,255,0.25); backdrop-filter:blur(10px); box-shadow:0 10px 30px rgba(0,0,0,0.2); text-align:center;">
 
   <h2 style="margin-bottom:12px;">Learn Beyond the App</h2>
 
@@ -205,67 +153,40 @@
     Join the newsletter to stay consistent and keep learning.
   </p>
 
-  <a
-    href="https://docs.google.com/forms/d/e/1FAIpQLSchAl_aV-b9vF2ah5HPzdfD8OiWQ-J4uwtu_VLt7WfP_tGR3A/viewform"
-    target="_blank"
-    rel="noopener noreferrer"
-    style="
-      display:inline-block;
-      background:#ff8c00;
-      color:#185a9d;
-      font-weight:700;
-      padding:12px 24px;
-      border-radius:8px;
-      text-decoration:none;
-      font-size:1.1rem;
-    "
-  >
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSchAl_aV-b9vF2ah5HPzdfD8OiWQ-J4uwtu_VLt7WfP_tGR3A/viewform"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-block; background:#ff8c00; color:#185a9d; font-weight:700; padding:12px 24px; border-radius:8px; text-decoration:none;">
     Subscribe to Updates
   </a>
 
   <p style="margin-top:12px; font-size:0.9rem; opacity:0.8;">
-    Takes 10 seconds. No spam.
+    Takes 20 seconds. No spam.
   </p>
 
 </section>
 
 <!-- Roadmap -->
-<section
-  style="
-    margin:60px auto;
-    max-width:720px;
-    padding:24px 26px;
-    border-radius:14px;
-    background:linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1));
-    border:1px solid rgba(255,255,255,0.25);
-    backdrop-filter:blur(10px);
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
-    text-align:center;
-  "
->
+<section style="margin:60px auto; max-width:720px; padding:24px 26px; border-radius:14px; background:linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1)); border:1px solid rgba(255,255,255,0.25); backdrop-filter:blur(10px); box-shadow:0 10px 30px rgba(0,0,0,0.2); text-align:center;">
 
   <h2 style="margin-bottom:20px;">Roadmap</h2>
 
   <div style="display:flex; flex-direction:column; gap:14px; align-items:center;">
-
     <div style="display:flex; gap:10px;"><span style="font-weight:600; color:#FA7239;">March 2026</span><span>Initial app launch</span></div>
     <div style="display:flex; gap:10px;"><span style="font-weight:600; color:#FA7239;">Spring 2026</span><span>Expanded native audio</span></div>
     <div style="display:flex; gap:10px;"><span style="font-weight:600; color:#FA7239;">September 2026</span><span>Additional learning modules</span></div>
     <div style="display:flex; gap:10px;"><span style="font-weight:600; color:#FA7239;">March 2027</span><span>Full course completion</span></div>
-
   </div>
 
 </section>
 
 <!-- Contact -->
-<div style="margin-top:50px; text-align:center; font-size:1rem;">
+<div style="margin-top:50px; text-align:center;">
   Questions or feedback?<br />
-
-  <a href="mailto:hello@masterazerbaijani.com" style="color:#FA7239; text-decoration:none; font-weight:600;">
+  <a href="mailto:hello@masterazerbaijani.com" style="color:#FA7239; font-weight:600; text-decoration:none;">
     hello@masterazerbaijani.com
   </a>
-
-  <p style="margin-top:8px; font-size:0.9rem; opacity:0.8;">
-    Usually responds within 24 hours
-  </p>
 </div>
+</main>
+
+<Footer />
