@@ -15,16 +15,19 @@ export default async (req, context) => {
   const keyLikes = `likes:${post_slug}`;
   const keyDislikes = `dislikes:${post_slug}`;
 
-  // Increment
-  if (vote === "like") {
-    await fetch(`${url}/incr/${keyLikes}`, {
-      headers: { Authorization: `Bearer ${token}` },
-    });
-  } else {
-    await fetch(`${url}/incr/${keyDislikes}`, {
-      headers: { Authorization: `Bearer ${token}` },
-    });
-  }
+// Increment (fixed)
+const command = vote === "like"
+  ? ["INCR", keyLikes]
+  : ["INCR", keyDislikes];
+
+await fetch(`${url}/pipeline`, {
+  method: "POST",
+  headers: {
+    Authorization: `Bearer ${token}`,
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify([command]),
+});
 
   // Get counts
   const [likesRes, dislikesRes] = await Promise.all([
