@@ -208,7 +208,36 @@ const {
 
       const likeCount = document.getElementById("like-count");
       const dislikeCount = document.getElementById("dislike-count");
+const existingVote = localStorage.getItem("voted_" + postSlug);
 
+if (existingVote) {
+  likeBtn.disabled = true;
+  dislikeBtn.disabled = true;
+
+  if (existingVote === "like") {
+    likeBtn.classList.add("active");
+  } else {
+    dislikeBtn.classList.add("active");
+  }
+
+  // fetch counts so user still sees numbers
+  fetch("/.netlify/functions/vote", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      post_slug: postSlug,
+      vote: existingVote,
+    }),
+  })
+    .then(res => res.json())
+    .then(data => {
+      likeCount.textContent = data.likes;
+      dislikeCount.textContent = data.dislikes;
+      resultBox.style.display = "block";
+    });
+}
       async function sendVote(voteType) {
         const res = await fetch("/.netlify/functions/vote", {
           method: "POST",
