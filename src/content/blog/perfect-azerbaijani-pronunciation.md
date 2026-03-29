@@ -147,7 +147,6 @@ If you want to practice speaking without pressure, our **[Tips on Learning Azerb
 
 **Remember:** Relaxation + repetition = <u>clarity</u>.
 
----
 
 ## When Azerbaijani pronunciation finally “clicks”
 
