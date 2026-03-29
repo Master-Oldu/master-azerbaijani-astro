@@ -15,12 +15,22 @@ export default async (req, context) => {
   const keyLikes = `likes:${post_slug}`;
   const keyDislikes = `dislikes:${post_slug}`;
 
-// Increment (fixed)
+if (!url || !token) {
+  return new Response(
+    JSON.stringify({
+      error: "Missing env vars",
+      url,
+      tokenExists: !!token,
+    }),
+    { headers: { "Content-Type": "application/json" } }
+  );
+}
+
 const command = vote === "like"
   ? ["INCR", keyLikes]
   : ["INCR", keyDislikes];
 
-await fetch(`${url}/pipeline`, {
+const incrRes = await fetch(`${url}/pipeline`, {
   method: "POST",
   headers: {
     Authorization: `Bearer ${token}`,
@@ -28,6 +38,8 @@ await fetch(`${url}/pipeline`, {
   },
   body: JSON.stringify([command]),
 });
+
+const incrData = await incrRes.json();
 
   // Get counts
   const [likesRes, dislikesRes] = await Promise.all([
@@ -43,10 +55,9 @@ await fetch(`${url}/pipeline`, {
   const dislikesData = await dislikesRes.json();
 
   return new Response(
-    JSON.stringify({
-      likes: Number(likesData.result || 0),
-      dislikes: Number(dislikesData.result || 0),
-    }),
-    { headers: { "Content-Type": "application/json" } }
-  );
+  JSON.stringify({
+    incrData,
+  }),
+  { headers: { "Content-Type": "application/json" } }
+);
 };
