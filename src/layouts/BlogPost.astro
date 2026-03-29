@@ -227,6 +227,12 @@ const {
         dislikeCount.textContent = data.dislikes;
 
         resultBox.style.display = "block";
+resultBox.style.opacity = "0";
+resultBox.style.transition = "opacity 0.3s ease";
+
+setTimeout(() => {
+  resultBox.style.opacity = "1";
+}, 10);
 
         // FIXED logic
         if (voteType === "like") {
