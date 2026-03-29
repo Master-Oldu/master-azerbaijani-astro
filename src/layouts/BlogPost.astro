@@ -197,7 +197,10 @@ const {
     <Footer />
 
     <script>
-      const postSlug = window.location.pathname;
+     const postSlug = window.location.pathname
+  .replace(/\/$/, "")   // removes trailing slash
+  .split("/")           // splits path
+  .pop();               // gets last part
 
       const likeBtn = document.getElementById("like-btn");
       const dislikeBtn = document.getElementById("dislike-btn");
