@@ -198,6 +198,22 @@ const {
         <slot />
       </article>
 
+<div class="reaction-box" style="max-width: 900px; margin: 40px auto 0;">
+  <p style="font-size: 14px; opacity: 0.8; margin-bottom: 10px;">
+    Was this helpful?
+  </p>
+
+  <div style="display: flex; gap: 10px;">
+    <button id="like-btn">Yes</button>
+    <button id="dislike-btn">No</button>
+  </div>
+
+  <div id="reaction-result" style="margin-top: 10px; display: none; font-size: 13px; opacity: 0.7;">
+    <span id="like-count">0</span> helpful ·
+    <span id="dislike-count">0</span> not helpful
+  </div>
+</div>
+
       <!-- Share buttons -->
       <div style="max-width: 900px; margin: 40px auto 0;">
 <ShareButtons title={title} />
@@ -206,5 +222,50 @@ const {
     </main>
 
     <Footer />
+<script>
+  const postSlug = window.location.pathname;
+
+  const likeBtn = document.getElementById("like-btn");
+  const dislikeBtn = document.getElementById("dislike-btn");
+  const resultBox = document.getElementById("reaction-result");
+
+  const likeCount = document.getElementById("like-count");
+  const dislikeCount = document.getElementById("dislike-count");
+
+  async function sendVote(voteType) {
+    const res = await fetch("/.netlify/functions/vote", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        post_slug: postSlug,
+        vote: voteType,
+      }),
+    });
+
+    const data = await res.json();
+
+    likeCount.textContent = data.likes;
+    dislikeCount.textContent = data.dislikes;
+
+    resultBox.style.display = "block";
+
+    likeBtn.disabled = true;
+    dislikeBtn.disabled = true;
+
+    localStorage.setItem("voted_" + postSlug, voteType);
+  }
+
+  const existingVote = localStorage.getItem("voted_" + postSlug);
+  if (existingVote) {
+    likeBtn.disabled = true;
+    dislikeBtn.disabled = true;
+  }
+
+  likeBtn.addEventListener("click", () => sendVote("like"));
+  dislikeBtn.addEventListener("click", () => sendVote("dislike"));
+</script>
+
   </body>
 </html>
