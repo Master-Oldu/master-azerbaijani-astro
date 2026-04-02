@@ -40,7 +40,7 @@ const posts = (await getCollection('blog'))
 
 <div class="post-grid">
   {posts.map((post) => (
-    <a class="post-card" href={`/blog/${post.slug}`}>
+    <a class="post-card" href={`/blog/${post.slug}/`}>
       <div class="post-image">
         <img src={post.data.coverImage} alt={post.data.coverImageAlt} />
       </div>
