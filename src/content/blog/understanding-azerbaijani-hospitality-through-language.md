@@ -96,9 +96,9 @@ Once you recognize this, interactions stop feeling excessive and start feeling i
 
 This idea connects naturally to **sağ ol** and **siz**.
 
-As discussed in **[Why Azerbaijanis Say "Sağ ol" Instead of Just "Thank You"](blog/why-azerbaijanis-say-sag-ol-instead-of-thank-you),** acknowledgment matters more than closure.
+As discussed in **[Why Azerbaijanis Say "Sağ ol" Instead of Just "Thank You"](/blog/why-azerbaijanis-say-sag-ol-instead-of-thank-you),** acknowledgment matters more than closure.
 
-And as with **siz** in **[Understanding Respect and Formality in Azerbaijani Culture](blog/understanding-respect-and-formality-in-azerbaijani-culture),** hospitality reflects awareness before comfort.
+And as with **siz** in **[Understanding Respect and Formality in Azerbaijani Culture](/blog/understanding-respect-and-formality-in-azerbaijani-culture),** hospitality reflects awareness before comfort.
 
 Even small phrases like:
 - **Sağ olun** (formal) | **Sağ ol** (informal)
