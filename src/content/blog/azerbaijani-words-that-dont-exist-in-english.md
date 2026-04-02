@@ -46,7 +46,7 @@ Or when words aren’t really needed.
 English “thank you” can sound transactional.  
 **Sağ ol** often sounds relational.
 
-That difference matters. We'll cover "Sağ ol” more **[here](/blog/why-azerbaijanis-say-sag-ol-instead-of-thank-you)**. Make sure to check it once it's published in 10 days.
+That difference matters. We'll cover "Sağ ol” more **[here](/blog/why-azerbaijanis-say-sag-ol-instead-of-thank-you/)**. Make sure to check it once it's published in 10 days.
 
 
 ## “Qismət” is not fate. It’s acceptance.
