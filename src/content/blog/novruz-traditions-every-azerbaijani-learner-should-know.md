@@ -166,7 +166,7 @@ Hospitality during Novruz is not optional.
 
 For learners, this explains why Azerbaijani has so many invitation phrases and polite insistence forms. When someone says “Buyurun” or “Əyləşin,” they genuinely mean it. Saying no too fast can feel cold. 
 
-For a deeper look at these words and how they're actually used, see **[Understanding Azerbaijani Hospitality Through Language](/blog/understanding-azerbaijani-hospitality-through-language).**
+For a deeper look at these words and how they're actually used, see **[Understanding Azerbaijani Hospitality Through Language](/blog/understanding-azerbaijani-hospitality-through-language/).**
 
 
 ## Why All This Matters for Azerbaijani Learners
