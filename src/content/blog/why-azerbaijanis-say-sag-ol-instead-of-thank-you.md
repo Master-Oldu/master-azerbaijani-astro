@@ -1,6 +1,6 @@
 ---
-title: "Why Azerbaijanis Say “Sağ ol” Instead of Just “Thank You”
-description: "“Sağ ol” isn’t a direct replacement for “thank you.” It carries acknowledgment, respect, and human connection that English often separates into multiple phrases."
+title: "Why Azerbaijanis Say 'Sag ol' Instead of Just 'Thank You'"
+description: "Sag ol isn't a direct replacement for thank you. It carries acknowledgment, respect, and human connection that English often separates into multiple phrases."
 pubDate: 2026-02-20T00:00:00Z
 author: "Shahla"
 tags:
