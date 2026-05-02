@@ -6,113 +6,161 @@ layout: "../../layouts/LegalLayout.astro"
 
 # Terms of Service
 
-**Last updated: November 01, 2025**
+**Last updated: May 01, 2026**
 
-These Terms of Service (“Terms”) govern your use of **masterazerbaijani.com** and any content or materials we provide.  
-By accessing this website, you agree to these Terms.
+These Terms of Service (“Terms”) govern your use of **masterazerbaijani.com**, the **Master Azerbaijani mobile application**, and any content, lessons, materials, or services we provide.
+
+By accessing our website or using the Master Azerbaijani app, you agree to these Terms.
 
 If you do not agree, please discontinue use immediately.
 
 ---
 
-# 1. Use of the Website
+# 1. Use of the Website and App
 
-You may use this website solely for personal, non-commercial purposes and in compliance with applicable law.  
+You may use the website and app solely for personal, non-commercial learning purposes and in compliance with applicable law.
+
 You agree **NOT TO**:
 
-- Copy or redistribute content without permission  
-- Attempt to harm, disrupt, or exploit the website  
-- Use automated scraping or extraction tools  
+- Copy, redistribute, or resell content without permission  
+- Attempt to harm, disrupt, reverse engineer, or exploit the website or app  
+- Use automated scraping, extraction, or abuse tools  
 - Misrepresent your identity  
+- Use the service for unlawful, abusive, or unauthorized purposes  
 
 ---
 
 # 2. Intellectual Property
 
-All content on this site, including text, images, graphics, blog posts, downloadable products, and the Master Azerbaijani brand, is owned by us or licensed to us.
+All content on this site and in the app, including text, images, graphics, blog posts, lessons, audio, vocabulary, examples, downloadable products, app screens, and the Master Azerbaijani brand, is owned by us or licensed to us.
 
 You **MAY NOT**:
+
 - Reproduce  
 - Sell  
 - Distribute  
 - Modify  
+- Repackage  
+- Upload into another product or dataset  
+
 any materials without written permission.
 
-Purchasing a digital download grants you **personal use only**, **NOT** commercial redistribution.
+Accessing free or paid content grants you a personal, limited, non-transferable right to use the content for your own learning only. It does **not** grant commercial redistribution rights.
 
 ---
 
-# 3. Digital Products & Purchases
+# 3. Accounts and App Access
 
-All digital product sales (such as the Alphabet Bundle) are processed by **Lemon Squeezy**.
+Some app features may require an account.
 
-By purchasing, you also agree to Lemon Squeezy’s:
-- Terms of Service  
-- Privacy Policy  
-- Refund Policy  
+You are responsible for maintaining the accuracy and security of your account information. You agree not to share, sell, or transfer your account access to another person.
+
+We may suspend or terminate access if we reasonably believe the app or website is being misused, abused, copied, attacked, or used in violation of these Terms.
+
+---
+
+# 4. Purchases, Subscriptions, and Payments
+
+Mobile app purchases, subscriptions, and in-app purchases are processed by the applicable app store platform, such as the **Apple App Store** or **Google Play**.
+
+By purchasing through the app, you also agree to the applicable app store’s terms, payment rules, renewal rules, cancellation process, and refund policies.
+
+Website purchases, if offered, may be processed by **Lemon Squeezy** or another third-party payment provider.
 
 We **DO NOT** store payment details, credit card information, or billing data.
 
 ---
 
-# 4. Refund Policy
+# 5. Refund Policy
 
-Digital products are generally non-refundable because they are delivered instantly.  
-However, if you experience an issue with a file or download, contact us at **hello@masterazerbaijani.com** and we will work to resolve it.
+Refunds for mobile app purchases or subscriptions are handled by the applicable app store platform, such as Apple or Google Play, according to their policies.
+
+Digital products purchased directly through our website are generally non-refundable because they are delivered instantly. However, if you experience an issue with a file, download, or access, contact us at **hello@masterazerbaijani.com** and we will work to resolve it.
 
 ---
 
-# 5. External Links
+# 6. Educational Disclaimer
 
-Our site contains links to third-party sites, including social platforms and Lemon Squeezy checkout pages.  
+Master Azerbaijani provides language-learning content for educational and informational purposes only.
+
+We aim to provide accurate, useful, and culturally grounded Azerbaijani learning materials, but we do not guarantee:
+
+- Perfect fluency  
+- Specific learning outcomes  
+- Error-free content  
+- Continuous availability  
+- That every phrase, pronunciation, or usage note will fit every dialect, region, or context  
+
+Use of the website and app is at your own risk.
+
+---
+
+# 7. External Links and Third-Party Services
+
+Our website and app may contain links to third-party sites or services, including:
+
+- Apple App Store  
+- Google Play  
+- Google Forms  
+- Social media platforms  
+- Lemon Squeezy checkout pages, if used  
+
 We are not responsible for:
+
 - their content  
 - their policies  
-- their practices  
+- their payment rules  
+- their privacy practices  
+- their availability  
 
 Use them at your own discretion.
 
 ---
 
-# 6. Disclaimer
+# 8. Account Deletion
 
-The content on this website is provided for educational and informational purposes only.  
-We do not guarantee:
-- error-free content  
-- uninterrupted availability  
-- specific learning outcomes  
+Users may delete their account directly from within the Master Azerbaijani mobile app.
 
-Use of the website is at your own risk.
+To delete your account:
+
+Settings → Delete Account
+
+Deleting your account permanently removes your account and associated learning data, including saved progress and vocabulary.
+
+Account deletion cannot be undone.
 
 ---
 
-# 7. Limitation of Liability
+# 9. Limitation of Liability
 
 To the fullest extent permitted by law, Master Azerbaijani is not liable for:
 
 - Indirect, incidental, or consequential damages  
 - Loss of data  
-- Website downtime  
+- Website or app downtime  
 - Errors or inaccuracies  
+- Loss of access caused by app store, device, internet, or third-party service issues  
 
-Our total liability for any claim shall not exceed **the amount you paid for applicable digital products**, if any.
-
----
-
-# 8. Governing Law
-
-These Terms are governed by the laws of the **United States** and the **State of California**.
+Our total liability for any claim shall not exceed the amount you paid directly to Master Azerbaijani for the applicable product or service, if any.
 
 ---
 
-# 9. Changes to These Terms
+# 10. Governing Law
+
+These Terms are governed by the laws of the **United States** and the **State of California**, without regard to conflict of law principles.
+
+---
+
+# 11. Changes to These Terms
 
 We may update these Terms at any time.  
 The “Last Updated” date reflects the latest version.
 
+Continued use of the website or app after changes are posted means you accept the updated Terms.
+
 ---
 
-# 10. Contact Us
+# 12. Contact Us
 
 For questions about these Terms:
 

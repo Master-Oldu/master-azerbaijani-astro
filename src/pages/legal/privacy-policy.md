@@ -6,7 +6,7 @@ layout: "../../layouts/LegalLayout.astro"
 
 # Privacy Policy
 
-**Last updated: March 09, 2026**
+**Last updated: May 01, 2026**
 
 Master Azerbaijani (“we,” “us,” or “our”) respects your privacy.  
 This Privacy Policy explains how we collect, use, and protect your information when you visit **masterazerbaijani.com** or interact with our services.
@@ -23,11 +23,12 @@ We currently collect **very limited personal information, and only** when you ch
 - **Email communication**  
   If you contact us by email, we receive your email address and any information you include in your message.
 
-- **App waitlist sign-up (Google Form)**  
-  If you sign up to be notified when our app launches, we collect your:
-  - Email address  
-  - Any responses you provide  
-  These submissions are securely stored in **Google Workspace**.
+- **Newsletter or update sign-up**
+  If you sign up to receive updates, learning content, or app-related announcements, we collect your:
+  - Email address
+  - Any responses you provide
+
+  These submissions may be stored in **Google Workspace** or another form/email service we use.
 
 We **DO NOT** collect:
 - Names (unless you enter them manually)
@@ -36,12 +37,20 @@ We **DO NOT** collect:
 - Demographic data
 
 ### 1.2. Information Automatically Collected
-We currently **DO NOT** use: 
-- Tracking pixels  
-- Cookies  
-- Behavioral or advertising trackers  
 
-Your browsing activity **IS NOT** profiled, tracked, or analyzed.
+We may collect limited website usage information through Google Analytics, such as:
+
+- Pages visited
+- Traffic source
+- Device type
+- Browser type
+- General location, such as country or region
+- Engagement with pages and outbound links
+
+We use this information to understand how visitors use the website and improve our content, app download flow, and learning resources.
+
+We do **not** use behavioral advertising cookies on our website.
+We do **not** sell personal information.
 
 ---
 
@@ -50,9 +59,10 @@ Your browsing activity **IS NOT** profiled, tracked, or analyzed.
 We use the minimal data we collect for:
 
 - Responding to your emails  
-- Notifying you about our app launch (if you sign up)  
+- Sending learning updates, newsletter content, or app-related announcements if you sign up  
 - Improving the site’s content and functionality  
-- Ensuring site security and reliability  
+- Ensuring site security and reliability 
+- Understanding website traffic and improving the website experience 
 
 We **DO NOT** sell, rent, or trade your information.
 
@@ -62,19 +72,21 @@ We **DO NOT** sell, rent, or trade your information.
 
 If you are located in the EU/EEA, we process your data under these legal bases:
 
-- **Consent**: when you join the waitlist  
-- **Legitimate interest**: responding to emails, maintaining site security  
+- **Consent**: when you sign up for updates, newsletters, or optional communications
+- **Legitimate interest**: responding to emails, maintaining site security, improving website functionality, and understanding general website usage 
 
 ---
 
 # 4. How We Share Your Information
 
-We only share data with trusted service providers necessary to operate this website:
+We only share data with trusted service providers necessary to operate this website and app:
 
 - **Netlify**: website hosting  
 - **Google Workspace**: email + storage  
-- **Lemon Squeezy**: handles all purchases, payments, and taxes  
-- **GitHub**: code hosting (no user data stored)  
+- **Google Analytics**: website usage analytics
+- **Apple App Store and Google Play**: mobile app distribution and in-app purchase processing
+- **Lemon Squeezy**: handles website purchases, payments, and taxes, if used
+- **GitHub**: code hosting
 
 We **DO NOT** share or sell your information to advertisers.
 
@@ -82,14 +94,14 @@ We **DO NOT** share or sell your information to advertisers.
 
 # 5. Payments
 
-All product purchases are securely processed by **Lemon Squeezy**.
+Website purchases, if offered, may be securely processed by **Lemon Squeezy**. Mobile app purchases and subscriptions are processed by the applicable app store platform, such as the Apple App Store or Google Play.
 
 We **DO NOT** receive, process, or store:
 - Credit card numbers  
 - Billing addresses  
 - Payment account details  
 
-Lemon Squeezy’s own Privacy Policy governs your checkout data.
+Lemon Squeezy, Apple, and Google’s own privacy policies govern checkout and app store payment data, as applicable.
 
 ---
 
@@ -106,7 +118,8 @@ We maintain reasonable safeguards to protect personal information regardless of 
 
 We retain:
 - Email communications: as long as needed to respond  
-- App waitlist submissions: until the app launches (or until you request deletion)
+- Newsletter or update sign-ups: until you unsubscribe or request deletion
+- Website analytics data: retained according to our Google Analytics settings
 
 You may request deletion at any time.
 
@@ -155,7 +168,7 @@ When using the Master Azerbaijani mobile app, we may collect limited information
 The mobile app:
 - Does **not** collect sensitive personal data  
 - Does **not** sell user data  
-- Does **not** share personal data with third parties except as required to operate the app (for example, Google Play services)
+- Does **not** share personal data with third parties except as required to operate the app, provide app store services, process in-app purchases, or maintain app functionality.
 
 Payment processing for in-app purchases is handled by the app store platform. We do not store or process payment card details.
 
