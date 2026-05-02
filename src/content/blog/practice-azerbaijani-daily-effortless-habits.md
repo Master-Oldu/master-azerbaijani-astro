@@ -170,7 +170,7 @@ Don’t start all six habits tomorrow. Start with two this week:
 
 If you do just that for 30 days, you will feel real progress.
 
-Want structured daily vocabulary to support these habits? **Join our waitlist** to be the first to know when our Azerbaijani learning app launches.
+Want structured vocabulary and guided lessons to support these habits? **[Download the Master Azerbaijani app](https://masterazerbaijani.com/download-app/)** and start building your Azerbaijani step by step.
 
 **Hər gün bir az, hər gün bir addım!**  
 A little bit every day, one step at a time.

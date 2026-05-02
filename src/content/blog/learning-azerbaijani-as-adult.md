@@ -62,7 +62,7 @@ If you want engaging alternatives, try **[How to Learn Azerbaijani Without Borin
 ### **4. Speaking practice isn’t handed to you**  
 Unless you have Azerbaijani relatives or live in Azerbaijan, real conversation practice won’t magically appear.
 
-If you want structured speaking practice that doesn’t feel chaotic or random, **[Join our waitlist](https://masterazerbaijani.com/coming-soon)**. You’ll be the first to know when guided speaking exercises, pronunciation feedback, and real-life dialogues go live.
+If you want structured speaking practice that doesn’t feel chaotic or random, **[download the Master Azerbaijani app](https://masterazerbaijani.com/download-app/)**. It gives you guided lessons, pronunciation support, and practical Azerbaijani you can build step by step.
 
 Until then, explore language exchange options on your own and keep your exposure high.
 

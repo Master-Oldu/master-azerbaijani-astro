@@ -165,7 +165,7 @@ Don't try to implement all five methods perfectly from day one. Start with Metho
 
 These five methods prove that learning Azerbaijani can be engaging, practical, and deeply personal. You don't need expensive courses or boring textbooks, just creativity, consistency, and connection.
 
-Want to accelerate your learning with structured daily vocabulary? **[Join our waitlist](https://masterazerbaijani.com/coming-soon)** to be the first to know when our comprehensive Azerbaijani learning app launches.
+Want to accelerate your learning with structured vocabulary and guided lessons? **[Download the Master Azerbaijani app](https://masterazerbaijani.com/download-app/)** and start learning Azerbaijani step by step.
 
 And don't forget to follow us for daily Azerbaijani vocabulary on **[YouTube](https://www.youtube.com/@MasterAzerbaijani), [Instagram](https://www.instagram.com/masterazerbaijani/), [TikTok](https://www.tiktok.com/@masterazerbaijani),** or **[Facebook](https://www.facebook.com/profile.php?id=61583629125594)**! Every day, we share a new word with pronunciation, usage examples, and cultural context. Perfect for supporting your Method 4 daily word challenge!
 
