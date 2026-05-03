@@ -50,21 +50,12 @@ import Footer from '../../components/Footer.astro';
   </div>
 
 <!-- Download Buttons -->
-<div style="margin-bottom:50px; display:flex; flex-wrap:wrap; gap:16px; justify-content:center;">
+<div class="download-buttons">
   <a
     href="https://apps.apple.com/us/app/master-azerbaijani/id6760097533"
     target="_blank"
     rel="noopener noreferrer"
-    style="
-      display:inline-block;
-      background:#ff8c00;
-      color:#185a9d;
-      font-weight:700;
-      padding:15px 30px;
-      border-radius:12px;
-      text-decoration:none;
-      font-size:1.2rem;
-    "
+    class="download-app-button"
   >
     Download on the App Store
   </a>
@@ -73,16 +64,7 @@ import Footer from '../../components/Footer.astro';
     href="https://play.google.com/store/apps/details?id=com.masterazerbaijani.app"
     target="_blank"
     rel="noopener noreferrer"
-    style="
-      display:inline-block;
-      background:#ff8c00;
-      color:#185a9d;
-      font-weight:700;
-      padding:15px 30px;
-      border-radius:12px;
-      text-decoration:none;
-      font-size:1.2rem;
-    "
+    class="download-app-button"
   >
     Get it on Google Play
   </a>
@@ -171,12 +153,14 @@ import Footer from '../../components/Footer.astro';
     Join the newsletter to stay consistent and keep learning.
   </p>
 
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSchAl_aV-b9vF2ah5HPzdfD8OiWQ-J4uwtu_VLt7WfP_tGR3A/viewform"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="display:inline-block; background:#ff8c00; color:#185a9d; font-weight:700; padding:12px 24px; border-radius:8px; text-decoration:none;">
-    Subscribe to Updates
-  </a>
+<a
+  href="https://docs.google.com/forms/d/e/1FAIpQLSchAl_aV-b9vF2ah5HPzdfD8OiWQ-J4uwtu_VLt7WfP_tGR3A/viewform"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="download-app-button subscribe-button"
+>
+  Subscribe to Updates
+</a>
 
   <p style="margin-top:12px; font-size:0.9rem; opacity:0.8;">
     Takes 20 seconds. No spam.

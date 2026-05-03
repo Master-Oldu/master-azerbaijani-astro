@@ -242,6 +242,14 @@ nav a.active:hover {
 /*             DOWNLOAD APP BUTTON           */
 /* ========================================= */
 
+.download-buttons {
+	margin-bottom: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	justify-content: center;
+}
+
 .download-app-button {
 	display: inline-block;
 	background: #ff8c00;
@@ -265,6 +273,11 @@ nav a.active:hover {
 	color: #043a7a;
 }
 
+.subscribe-button {
+	padding: 12px 24px;
+	border-radius: 8px;
+	font-size: 1rem;
+}
 
 /* ========================================= */
 /*             LATEST POSTS                  */
