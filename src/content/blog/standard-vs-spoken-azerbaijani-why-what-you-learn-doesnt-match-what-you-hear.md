@@ -78,7 +78,7 @@ That’s where learners get blindsided.
 
 ## What Spoken Azerbaijani Actually Does to Sentences
 
-Let’s take **real transformations learners actually hear**, not sanitized examples.
+Let’s take **real transformations learners actually hear**, not sanitized examples. These forms vary by region, age, and speaker. The point is not to memorize every version. The point is to recognize that spoken Azerbaijani often compresses clear written forms.
 
 ### Future tense compression
 
@@ -101,14 +101,15 @@ Meaning does not change.
 Structure becomes invisible.
 
 
-### Let's present a negative drift
+### Negative verbs also shift
 
 **Standard:**
 - **yemirəm**  
   *I am not eating*
 
-**Spoken variants:**
+**Spoken variants you may hear:**
 - **yimirəm**
+- **yemirəm** with a reduced middle vowel
 - **yemiyəm**
 - **yeməyirəm**
 - **yemerəm**
@@ -126,8 +127,8 @@ This is phonetic erosion, not new grammar.
 - **istəyirəm**  
   *I want*
 
-**Spoken variants:**
-- **istiyirəm**
+**Spoken variants you may hear:**
+- **istiyirəm** with third i dropped
 - **istiyəm**
 - **isterəm**
 - **istirəm**
@@ -260,7 +261,7 @@ Once you know that, the confusion stops feeling personal.
 And learning speeds up.
 
 
-## Bottom Line
+## Structure First, Compression Later
 
 Written Azerbaijani teaches you how the language ***works***.  
 Spoken Azerbaijani shows you how the language ***moves***.
@@ -272,3 +273,11 @@ Structure first.
 Compression later.
 
 That’s how fluent listeners are built.
+
+## Build the Foundation Before Chasing Native Speed
+
+If spoken Azerbaijani feels too fast or unclear, the answer is not to memorize compressed forms first. The answer is to build the standard structure clearly enough that your ear can recognize what native speakers are reducing.
+
+The Master Azerbaijani app starts with the foundations, then builds toward pronunciation, real phrases, grammar, listening awareness, and everyday communication step by step.
+
+**[Start with the free first module](/download-app/)**

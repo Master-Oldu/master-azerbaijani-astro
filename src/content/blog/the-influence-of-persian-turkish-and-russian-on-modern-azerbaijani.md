@@ -16,7 +16,7 @@ coverImageAlt: "Layers of Azerbaijani language history represented through scrip
 
 ## Languages Do Not Evolve in a Vacuum
 
-Modern Azerbaijani is the result of centuries of contact, pressure, adaptation, survival — and **literary exchange**.
+Modern Azerbaijani is the result of centuries of contact, pressure, adaptation, survival, and **literary exchange**.
 
 This matters because not all influence works the same way.
 
@@ -26,7 +26,7 @@ Some dominate institutions through power.
 
 Azerbaijani experienced all three.
 
-Understanding this history is not about turning Azerbaijani into a “mixed” or “borrowed” language. Every language on earth is influenced by others. The question is *how* those influences entered, *where* they stayed, and *what they did not replace*.
+Understanding this history does not mean treating Azerbaijani as a “mixed” or “borrowed” language. Every language on earth is influenced by others. The question is *how* those influences entered, *where* they stayed, and *what they did not replace*.
 
 
 ## Turkic Foundations: The Structural Core
@@ -56,7 +56,7 @@ Everything else entered *around* it.
 
 ## Persian Influence: Literature, Prestige, Expression
 
-Persian influence in Azerbaijani is primarily **literary and cultural**, not grammatical.
+Persian influence in Azerbaijani is primarily **vocabulary, literary style, and cultural expression**, not core grammar.
 
 From roughly the medieval period through the early modern era, Persian functioned as a prestige language across much of the region. It dominated:
 - Poetry
@@ -96,7 +96,7 @@ Under the Russian Empire and later the Soviet Union, Russian became the dominant
 This was not organic contact between communities.  
 It was **top-down pressure tied to power and opportunity**.
 
-As a result, the Azerbaijani absorbed Russian-based vocabulary in formal and institutional contexts, including words such as:
+As a result, Azerbaijani absorbed Russian-based vocabulary in formal and institutional contexts, including words such as:
 - **direktor**
 - **institut**
 - **protokol**
@@ -124,7 +124,7 @@ For a deeper breakdown of how Soviet policies reshaped Azerbaijani scripts, voca
 
 Influence is easier to impose when writing systems are unstable.
 
-In just over a century, the Azerbaijani moved through:
+In just over a century, Azerbaijani moved through:
 - Arabic-based script
 - Latin
 - Cyrillic
@@ -176,14 +176,23 @@ They are historical layers.
 Once you recognize which parts of the language come from structure and which come from influence, Azerbaijani becomes easier to navigate, not harder.
 
 
-## A More Useful Way to Think About It
+## Influence Is Not Replacement
 
 Influence does not mean replacement.  
 Borrowing does not mean loss.
 
-Azerbaijani did not disappear under the influence.  
+Azerbaijani did not disappear under outside influence.  
 It adapted, absorbed selectively, and moved forward.
 
 The result is not confusion, but depth.
 
 And understanding that depth is one of the fastest ways to learn the language well.
+
+
+## Keep Learning Azerbaijani With Context
+
+If you are learning Azerbaijani, these historical layers matter because they explain why some words feel formal, some sound literary, and some belong more naturally to everyday speech.
+
+The Master Azerbaijani app starts with the foundations, then builds toward real phrases, pronunciation, grammar, cultural context, and everyday communication step by step.
+
+**[Start with the free first module](/download-app/)**

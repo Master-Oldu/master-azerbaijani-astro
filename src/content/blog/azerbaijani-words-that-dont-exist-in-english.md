@@ -46,7 +46,7 @@ Or when words aren’t really needed.
 English “thank you” can sound transactional.  
 **Sağ ol** often sounds relational.
 
-That difference matters. We'll cover "Sağ ol” more **[here](/blog/why-azerbaijanis-say-sag-ol-instead-of-thank-you/)**. Make sure to check it once it's published in 10 days.
+That difference matters. I go deeper into **sağ ol** in **[Why Azerbaijanis Say “Sağ ol” Instead of “Thank You”](/blog/why-azerbaijanis-say-sag-ol-instead-of-thank-you/)**.
 
 
 ## “Qismət” is not fate. It’s acceptance.
@@ -148,7 +148,7 @@ A better approach is asking:
 That shift alone changes how you learn.
 
 
-## Final thought
+## What These Words Teach You
 
 Untranslatable words aren’t barriers. They’re invitations.
 
@@ -157,3 +157,11 @@ They show you where a culture draws its boundaries, what it values, and how peop
 Once you notice them, Azerbaijani stops feeling “hard” and starts feeling intentional.
 
 And that’s when learning gets interesting.
+
+## Keep Learning Azerbaijani in Context
+
+Words like **sağ ol**, **qismət**, **ayıb**, and **baş üstə** make the most sense when you see them inside real situations, not as isolated vocabulary.
+
+That is also how Master Azerbaijani is built: foundation first, then practical phrases, cultural context, grammar, and everyday communication step by step.
+
+**[Start with the free first module](/download-app/)**

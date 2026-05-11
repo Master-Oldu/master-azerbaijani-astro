@@ -63,8 +63,8 @@ That’s why learners who practice with real-life phrases progress faster. If yo
 
 You can memorize “gözəl,” “yaxşı,” and “pis” all day, but that doesn’t make your Azerbaijani sound real. Emotional words are what make the language come alive:
 
-- “Canım” | [Ca-nım] | My dear/sweetheart  
-- “Ay sağ ol” | [Ay sağ ol] | Thank you | Good job | When someones does/gives exactly what you wanted 
+- “Canım” | [Ca-nım] | Used for my dear or sweetheart  
+- “Ay sağ ol” | [Ay sağ ol] | Thank you | Good job | Said when someone does or gives exactly what you wanted 
 - “Nolar?” | [No-lar] | Please | Technically, it’s Nə olar, but you won’t see or hear it in this format.  
 - “Aman Allah” | [A-man Al-lah] | Oh God! OR “Aman Allahım” | [A-man Al-la-hım] | Oh My God, the good old OMG  
 - “Gördün də” | [Gör-dün də] | You see? | As if, you see? I was right! 
@@ -72,7 +72,7 @@ You can memorize “gözəl,” “yaxşı,” and “pis” all day, but that d
 
 These aren’t technical vocabulary. They’re the **engine** of thinking in Azerbaijani.
 
-A 2024 Frontiers in Communication study found that heritage-language speakers connect emotionally and cognitively faster when they use the target language’s emotional expressions instead of translating English ones. That’s because emotion-words carry cultural logic, not just meaning.
+Emotional language is usually where translation starts to break down. Words like **canım**, **ay sağ ol**, and **boş ver** carry tone, relationship, and cultural instinct, not just dictionary meaning.
 
 If you truly want to think like an Azerbaijani, your emotional reactions should start switching, too.
 
@@ -83,7 +83,7 @@ Say things you’d actually say in life:
 
 - “Hə, yaxşı” | [Hə yax-şı] | Okay | Alright  
 - “Bir az gözlə” | [Bir az göz-lə] | Wait a little  
-- “Nə baş verir?” | [Nə baş ve-rir] |  What’s happening  
+- “Nə baş verir?” | [Nə baş ve-rir] |  What’s happening?  
 - “Bax gör nə deyirəm…” | [Bax gör nə de-yi-rəm] | Look, here’s what I’m saying…  
 - “Gəl gedək” | [Gəl ge-dək] | Let’s go
 
@@ -99,8 +99,16 @@ The fastest learners aren’t the most “talented.” They’re the ones who st
 There’s a reason travelers who barely know the language sometimes speak more naturally because they’re not overthinking it. If you want to practice thinking in Azerbaijani without obsessing over grammar, try **[5 Common Phrases for Travelers to Azerbaijan](/blog/common-phrases-for-travelers)**. Tourist-level confidence works surprisingly well.
 
 
-## A Last Little Push From Me
+## Build the Habit, Not Just the Vocabulary
 
-Thinking in Azerbaijani isn’t something that “just happens.” It’s a shift you create, through habits, chunking, exposure, emotional language, and giving yourself permission to stop translating everything like a machine.
+Thinking in Azerbaijani is not something that “just happens.” It is a shift you create through habits, chunks, exposure, emotional language, and permission to stop translating everything like a machine.
 
-The moment your thoughts start forming in Azerbaijani, even simple ones, your fluency takes off. That’s when you stop being a student of the language and start being a speaker of it.
+The moment your thoughts start forming in Azerbaijani, even simple ones, your fluency starts to change. That is when you stop being only a student of the language and start becoming a speaker of it.
+
+## Practice Azerbaijani Step by Step
+
+If you want to stop translating from English, start with small, repeatable Azerbaijani patterns: greetings, basic responses, emotional phrases, sentence chunks, and everyday conversation.
+
+The Master Azerbaijani app is built around that kind of progression. Start with the free first module, then move into greetings, real phrases, grammar, pronunciation, and practical communication step by step.
+
+**[Start with the free first module](/download-app/)**

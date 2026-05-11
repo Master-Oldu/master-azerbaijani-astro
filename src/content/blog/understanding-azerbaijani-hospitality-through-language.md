@@ -81,7 +81,7 @@ The language leaves room for choice while still expressing warmth.
 
 ## Why this feels different in English
 
-English prioritizes boundaries and clarity. Azerbaijani prioritizes presence.
+English often prioritizes boundaries and clarity. Azerbaijani prioritizes presence.
 
 That doesn’t mean Azerbaijani ignores boundaries. It just approaches them differently.
 
@@ -98,7 +98,7 @@ This idea connects naturally to **sağ ol** and **siz**.
 
 As discussed in **[Why Azerbaijanis Say "Sağ ol" Instead of Just "Thank You"](/blog/why-azerbaijanis-say-sag-ol-instead-of-thank-you/),** acknowledgment matters more than closure.
 
-And as with **siz** in **[Understanding Respect and Formality in Azerbaijani Culture](/blog/understanding-respect-and-formality-in-azerbaijani-culture),** hospitality reflects awareness before comfort.
+And as with **siz** in **[Understanding Respect and Formality in Azerbaijani Culture](/blog/understanding-respect-and-formality-in-azerbaijani-culture),** hospitality reflects awareness of the other person before anything else.
 
 Even small phrases like:
 - **Sağ olun** (formal) | **Sağ ol** (informal)
@@ -133,10 +133,18 @@ What matters is recognizing the intention behind the words.
 
 That’s why Azerbaijani hospitality feels generous even when nothing is taken.
 
-## Something to keep in mind
+## What Hospitality Teaches Learners
 
 Languages don’t just describe behavior. They guide it.
 
 Azerbaijani hospitality lives in verbs, repetition, tone, and pauses as much as in actions.
 
 Once you start listening for that, hospitality stops feeling overwhelming and starts feeling human.
+
+## Keep Learning Azerbaijani Through Real Situations
+
+Hospitality phrases only make sense when you learn them in context: who is speaking, how formal the situation is, what is being offered, and how the other person is expected to respond.
+
+The Master Azerbaijani app starts with the foundations, then builds toward real phrases, pronunciation, grammar, cultural context, and everyday communication step by step.
+
+**[Start with the free first module](/download-app/)**

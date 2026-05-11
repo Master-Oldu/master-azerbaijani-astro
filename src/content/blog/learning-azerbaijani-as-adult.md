@@ -23,7 +23,7 @@ Let’s get into it.
 ## The Good News: Azerbaijani Is More Accessible Than You Think
 
 ### **1. The alphabet won’t melt your brain**  
-Since 1991, the Azerbaijani language uses a Latin-based alphabet with 32 letters. If you can read English, you’re already 60% in the door.
+Since 1991, the Azerbaijani language uses a Latin-based alphabet with 32 letters. If you can read English, the script will feel more approachable than you might expect.
 
 Yes, you’ll meet new friends like **ə, ğ, ş, ö, ü**, but they follow consistent rules.  
 
@@ -62,7 +62,7 @@ If you want engaging alternatives, try **[How to Learn Azerbaijani Without Borin
 ### **4. Speaking practice isn’t handed to you**  
 Unless you have Azerbaijani relatives or live in Azerbaijan, real conversation practice won’t magically appear.
 
-If you want structured speaking practice that doesn’t feel chaotic or random, **[download the Master Azerbaijani app](https://masterazerbaijani.com/download-app/)**. It gives you guided lessons, pronunciation support, and practical Azerbaijani you can build step by step.
+If you want structured practice that does not feel chaotic or random, the **[Master Azerbaijani app](/download-app/)** gives you guided lessons, pronunciation support, and practical Azerbaijani you can build step by step.
 
 Until then, explore language exchange options on your own and keep your exposure high.
 
@@ -114,7 +114,7 @@ Speak early. Fix later.
 Micro-exposure compounds over time.
 
 ### **Focus on high-frequency words**  
-Top 1,000 words = 80% of everyday conversation.
+A strong base of high-frequency words will cover a surprising amount of everyday conversation.
 
 ### **Use spaced repetition**  
 Five minutes a day beats weekend cram sessions.
@@ -160,19 +160,27 @@ Mistakes aren’t failure! They’re valuable feedback.
 
 ## Is It Worth It?
 
-Yes! Not because it’s easy, but because it’s meaningful.
+Yes. Not because it is easy, but because it is meaningful.
 
-The moment you manage to say **“Salamatçılıqdır”** and see someone’s face light up… you’ll know exactly why you’re doing this.
+The moment you manage to say **“Salamatçılıqdır”** and see someone’s face light up, you will know exactly why you are doing this.
 
-It’s the warmth you get when someone hears you try.  
-It’s the pride of reading an article without constantly checking a dictionary.  
-It’s the satisfaction of forming a sentence without translating first.  
-It’s the connection to a culture that actually wants you to succeed.
+It is the warmth you get when someone hears you try.  
+It is the pride of reading a sentence without constantly checking a dictionary.  
+It is the satisfaction of forming a thought without translating first.  
+It is the connection to a culture that actually wants you to succeed.
 
 Languages give you communication.  
-Azerbaijani gives you communication *plus* belonging.
+Azerbaijani gives you communication plus belonging.
 
-If the journey calls to you:
+## Start With a Structure That Makes Progress Real
+
+As an adult learner, you do not need random vocabulary, scattered grammar tips, or another app that teaches you sentences you will never say.
+
+You need a clear starting point, practical phrases, pronunciation support, cultural context, and lessons that build in order.
+
+That is what the Master Azerbaijani app is built for. Start with the free first module, then move into greetings, everyday phrases, grammar, pronunciation, and real communication step by step.
+
+**[Start with the free first module](/download-app/)**
 
 **Xoş gəlmisiniz. Welcome.**  
 Your first word is already done.

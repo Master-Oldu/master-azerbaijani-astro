@@ -141,12 +141,19 @@ This is where fluency starts, not with big grammar explanations, but with tiny v
 And if you’re someone reconnecting with your heritage language, these phrases are basically your “welcome home” kit. They unlock memories, emotions, and connections that English doesn’t quite reach.
 
 
-## Final Thought
+## Start Using These Phrases
 
 If you only memorize ten things in Azerbaijani this month, let it be these phrases.  
-They’re simple, practical, and the backbone of every conversation, from small talk to deep talks.
+They’re simple, practical, and they show up everywhere, from small talk to deeper conversations.
 
 **Your challenge before you close this tab:**  
-Say **“salam”** to three people today, out loud!  
+Say **salam** to three people today, out loud.  
 Even if one of them is your pet.
 
+## Keep Building From Here
+
+These phrases are a strong start, but they work best when you practice them inside real situations: greetings, introductions, polite requests, repetition, and basic conversation flow.
+
+That is exactly what the early Master Azerbaijani modules are designed to help with. Start with the free first module, then continue into greetings, social flow, and everyday phrases step by step.
+
+**[Start with the free first module](/download-app/)**

@@ -49,7 +49,7 @@ If Azerbaijani sometimes feels formal, rigid, or inconsistent to learners today,
 ## Script Changes Were Never Neutral
 
 Script changes were not about convenience or clarity.  
-They were about **control**.
+They were also about **control**.
 
 In the 1920s, a Latin-based alphabet was introduced as part of a Soviet-wide modernization and secularization campaign. Many local intellectuals initially supported the reform, hoping it would increase literacy and modernize education.
 
@@ -188,13 +188,19 @@ None of this is incorrect.
 It is history speaking through language.
 
 
-## Closing Thought
+## What History Leaves Behind
 
-Soviet rule did not erase the Azerbaijani.  
-But it edited it heavily.
+Soviet rule did not erase Azerbaijani.  
+But it edited the language heavily.
 
-The language survived, adapted, and moved forward, carrying those edits with it.
+Azerbaijani survived, adapted, and moved forward, carrying those edits with it.
 
-Understanding that history makes Azerbaijani easier to learn, not harder.
+Understanding that history makes the language easier to learn, not harder. Once you see where certain structures, registers, and habits came from, modern Azerbaijani starts to make more sense.
 
-Because once you see where the structure came from, the logic becomes clear.
+## Keep Learning the Language in Context
+
+If you are learning Azerbaijani today, it helps to study the language as it is actually used: not just formal textbook Azerbaijani, and not just isolated vocabulary.
+
+The Master Azerbaijani app starts with the foundations, then builds toward real phrases, grammar, pronunciation, cultural context, and everyday communication step by step.
+
+**[Start with the free first module](/download-app/)**

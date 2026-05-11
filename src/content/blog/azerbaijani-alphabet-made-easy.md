@@ -145,4 +145,12 @@ Say the entire alphabet out loud. Your English instincts will revolt halfway thr
 Want more practice? I have made an **Exclusive Printable Azerbaijani Alphabet Poster Bundle** just for you.  
 **[<u>Download</u> the Azerbaijani Alphabet Bundle](/product/alphabet-bundle)**
 
+## Where To Go Next
+
+If you are just starting Azerbaijani, the alphabet is the right first step, but it should not stay as a one-time chart you memorize and forget.
+
+The free first module in the Master Azerbaijani app helps you build the foundation before moving into greetings, real phrases, grammar, and everyday communication.
+
+**[Start with the free first module](/download-app/)**
+
 Message me if you're stuck on a particular letter or want recommendations for Azerbaijani music/shows to train your ear. Mastering the alphabet isn't the finish line. **It's your launchpad for real Azerbaijani.**

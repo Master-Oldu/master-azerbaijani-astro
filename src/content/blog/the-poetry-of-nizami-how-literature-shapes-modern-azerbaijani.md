@@ -43,7 +43,7 @@ People spoke Turkic varieties in daily life.
 They wrote serious literature in Persian.
 
 That is why Nizami wrote in Persian.  
-Not out of choice against Azerbaijani, but because **Azerbaijani as a written literary standard did not yet exist**.
+Not because he rejected Azerbaijani, but because **Azerbaijani as a written literary standard did not yet exist**.
 
 
 ### Court Poet or Independent Writer?
@@ -80,7 +80,7 @@ In Azerbaijani, the five works are commonly known as:
 - **Yeddi Gözəl** | *Haft Paykar* (Seven Beauties)
 - **İsgəndərnamə** | *Iskandarnameh* 
 
-These are not romantic or fairy tales meant for decoration.
+These are not simple romances or decorative fairy tales.
  
 They are moral, philosophical, psychological, and social examinations of human behavior.
 
@@ -139,7 +139,7 @@ These Azerbaijani versions helped shape:
 - Poetic rhythm and syntax  
 - How abstract ideas like justice, fate, love, and power are expressed in formal Azerbaijani  
 
-Many concepts that feel “native” in educated Azerbaijani today were **normalized through this translation and adaptation pipeline**, not inherited directly from spoken language.
+Many concepts that feel “native” in educated Azerbaijani today were **normalized through translation and adaptation**, not inherited directly from everyday spoken language.
 
 In this way, Nizami’s influence entered Azerbaijani not as borrowed text, but as **internalized literary thinking**.
 
@@ -168,7 +168,7 @@ Not because of language.
 Because of **location, continuity, and relevance**.
 
 He wrote from this land.  
-He wrote about people recognizable to this culture.  
+He wrote about moral conflicts, social expectations, love, power, pride, and justice in ways that still feel recognizable in this culture.
 He explored conflicts that still feel familiar.
 
 That is why modern Azerbaijani education treats him not as a foreign author, but as a foundational figure.
@@ -192,7 +192,7 @@ Understanding this background helps explain **why Azerbaijani sounds the way it 
 
 That register did not appear randomly.
 
-## Closing Thoughts
+## What Nizami Leaves Behind
 
 Nizami Ganjavi did not give Azerbaijan a language.  
 He gave it **depth**.
@@ -200,6 +200,15 @@ He gave it **depth**.
 Language can be built.  
 Depth has to be earned.
 
-Modern Azerbaijani thought, literature, and expression carry traces of Nizami not because of nationalism, but because good ideas survive translation.
+Modern Azerbaijani thought, literature, and expression carry traces of Nizami not because of nationalism, but because strong ideas survive translation.
 
 That is how culture actually works.
+
+
+## Keep Learning Azerbaijani With Cultural Context
+
+If you are learning Azerbaijani, literature like Nizami’s helps explain why formal, reflective, and poetic Azerbaijani feels different from everyday speech.
+
+The Master Azerbaijani app starts with the foundations, then builds toward real phrases, pronunciation, grammar, cultural context, and everyday communication step by step.
+
+**[Start with the free first module](/download-app/)**

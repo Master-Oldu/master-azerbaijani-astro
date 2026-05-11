@@ -143,14 +143,14 @@ When you're nervous, everything tightens, and your pronunciation gets worse, eve
 This is why travelers with basic Azerbaijani often sound better than textbook learners:  
 They’re relaxed, playful, and not overthinking.
 
-If you want to practice speaking without pressure, our **[Tips on Learning Azerbaijani Without Textbooks](/blog/learn-azerbaijani-without-textbooks-interactive-methods)** is a great confidence-builder.  
+If you want to practice speaking without pressure, this **[Tips on Learning Azerbaijani Without Textbooks](/blog/learn-azerbaijani-without-textbooks-interactive-methods)** is a great confidence-builder.  
 
 **Remember:** Relaxation + repetition = <u>clarity</u>.
 
 
-## When Azerbaijani pronunciation finally “clicks”
+## When Azerbaijani Pronunciation Starts to Click
 
-There’s always a moment (every learner has it) where pronunciation suddenly feels **easier**.
+There is always a moment, every learner has it, where pronunciation suddenly feels easier.
 
 Not perfect.  
 Just easier.
@@ -166,4 +166,12 @@ Once those align, you go from:
 
 “I know this word” → **“I can actually say this word.”**
 
-That’s the real secret to perfect Azerbaijani pronunciation.
+That is the real secret to clear Azerbaijani pronunciation: not perfection, but trained confidence.
+
+## Practice the Sounds Step by Step
+
+If you want pronunciation to improve, don’t just memorize words visually. Train the alphabet, sounds, rhythm, and phrases together.
+
+The Master Azerbaijani app starts with the foundations, then builds toward pronunciation, greetings, real phrases, grammar, and everyday communication step by step.
+
+**[Start with the free first module](/download-app/)**

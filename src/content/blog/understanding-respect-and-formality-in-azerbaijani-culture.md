@@ -69,7 +69,7 @@ If you’re unsure which one to use, **siz gives the conversation room to settle
 
 You use **sən** when a sense of closeness is there.
 
-That closeness isn’t defined strictly by age, status, or rules. It comes from something less visible.
+That closeness is not defined only by age, status, or rules. It comes from something less visible.
 
 In Azerbaijani culture, the switch from **siz** to **sən** usually happens when an unspoken connection forms. When the conversation starts to feel easy. When distance softens on its own.
 
@@ -115,7 +115,7 @@ These aren’t rigid rules. They’re subtle signals that help conversations sta
 
 ## How this connects to “Sağ ol.”
 
-In my earlier post, **[Why Azerbaijanis Say "Sağ ol" Instead of Just "Thank You"](blog/why-azerbaijanis-say-sag-ol-instead-of-thank-you),** I wrote about how acknowledgment matters more than transaction.
+In my earlier post, **[Why Azerbaijanis Say "Sağ ol" Instead of Just "Thank You"](/blog/why-azerbaijanis-say-sag-ol-instead-of-thank-you),** I wrote about how acknowledgment matters more than transaction.
 
 The same cultural logic applies here.
 
@@ -144,10 +144,18 @@ Start with **siz** not to create distance, but to create clarity.
 Connection shortens the distance on its own.  
 Language follows.
 
-## Worth noticing
+## What Sən and Siz Teach Learners
 
 Languages don’t just describe meaning. They reflect how people relate to each other.
 
 **Sən** and **siz** exist because awareness matters before comfort in Azerbaijani culture.
 
 Once you feel that, conversations stop sounding translated and start sounding natural.
+
+## Keep Learning Azerbaijani in Real Context
+
+Words like **sən** and **siz** only make sense when you learn them inside real situations: who is speaking, how close they are, how formal the setting is, and what kind of respect is expected.
+
+The Master Azerbaijani app starts with the foundations, then builds toward real phrases, pronunciation, grammar, cultural context, and everyday communication step by step.
+
+**[Start with the free first module](/download-app/)**

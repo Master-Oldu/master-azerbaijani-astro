@@ -18,7 +18,7 @@ coverImageAlt: "Six-month roadmap for learning Azerbaijani"
 You are not going to speak fluent Azerbaijani in 30 days. That type of promise exists to sell courses, not to help learners.
 You are also not failing if you don’t sound native after a few months.
 
-What *is* realistic, if you follow a clear structure and stay **consistent** (this is the keyword), is going from **zero to conversational** in about **six months**.
+What *is* realistic, if you follow a clear structure and stay **consistent** (this is the keyword), is building basic conversational ability in about **six months**.
 
 Not perfect.  
 Not poetic.  
@@ -191,19 +191,27 @@ It also works.
 If staying consistent feels hard, **[Practice Azerbaijani Daily with Effortless Habits](/blog/practice-azerbaijani-daily-effortless-habits)** explains how to make practice automatic instead of exhausting.
 
 
-## Why I structured this roadmap this way
+## Why This Roadmap Needs Structure
 
-While mapping this out, one thing became clear: most resources either overwhelm beginners or jump too quickly into advanced material. That’s one of the reasons I’m currently building **Master Azerbaijani**, to follow this exact progression in a structured, practical way, without textbooks or fluff.
+Most Azerbaijani resources either overwhelm beginners or jump too quickly into advanced material. That is one of the reasons I built **Master Azerbaijani**: to give learners a clear, practical path through the language without textbooks, random phrases, or unnecessary fluff.
 
-This roadmap isn’t theoretical. It’s designed to work in real life.
+This roadmap is not theoretical. It is the same kind of progression the app is built around: foundations first, then phrases, grammar, pronunciation, listening, and real communication.
 
 
-## Final reality check
+## The Realistic Path Forward
 
 Azerbaijani isn’t “hard.”  
 It’s unfamiliar.
 
-With the right order, realistic expectations, and consistent practice, six months is enough to go from zero to conversational. Not magically. Not effortlessly. But reliably.
+With the right order, realistic expectations, and consistent practice, six months is enough to build real conversational ability. Not magically. Not effortlessly. But reliably.
 
 If you want shortcuts, this roadmap will annoy you.  
 If you want results, it works.
+
+## Follow the Roadmap Step by Step
+
+If you want a structured way to follow this kind of progression, start with the free first module in the Master Azerbaijani app.
+
+The app begins with the foundations, then guides you into greetings, real phrases, pronunciation, grammar, cultural context, and everyday communication step by step.
+
+**[Start with the free first module](/download-app/)**

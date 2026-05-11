@@ -88,6 +88,7 @@ const {
         margin-bottom: 1.4rem;
         line-height: 1.7;
       }
+
 /**********************************************
  RESTORE BLOG ALIGNMENT (ADD ONLY)
 **********************************************/
@@ -115,7 +116,7 @@ const {
   line-height: 1.7;
 }
 
-      /* ===== NEW: REACTIONS ===== */
+      /* ===== REACTIONS ===== */
 
       .reaction-btn {
         padding: 8px 18px;
@@ -142,6 +143,168 @@ const {
         opacity: 1;
         cursor: default;
       }
+
+/* ===== NEWSLETTER SIGNUP FORM ===== */
+
+.ma-signup {
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--card-bg);
+  color: var(--text);
+  margin-top: 0;
+  backdrop-filter: blur(10px);
+}
+
+.ma-signup__flag {
+  display: flex;
+  height: 4px;
+}
+
+.ma-signup__flag span:nth-child(1) { flex: 1; background: #0092BC; }
+.ma-signup__flag span:nth-child(2) { flex: 1; background: #EF3340; }
+.ma-signup__flag span:nth-child(3) { flex: 1; background: #00AE65; }
+
+.ma-signup__body {
+  padding: 2rem 2rem 1.5rem;
+}
+
+.ma-signup__eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ff8c00;
+  margin-bottom: 0.5rem;
+}
+
+.ma-signup__heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.4rem;
+  color: var(--text);
+}
+
+.ma-signup__sub {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  line-height: 1.5;
+  margin-bottom: 1.4rem;
+  color: var(--text);
+}
+
+.ma-signup__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ma-signup__input,
+.ma-signup__select {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  color: #1a1a1a;
+  background: rgba(255, 255, 255, 0.92);
+  outline: none;
+  transition: border-color 0.15s, background 0.15s;
+  font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.ma-signup__input::placeholder {
+  color: #666;
+}
+
+.ma-signup__input:focus,
+.ma-signup__select:focus {
+  border-color: #ff8c00;
+  background: #ffffff;
+}
+
+.ma-signup__select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+.ma-signup__btn {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: inherit;
+  color: #185a9d;
+  background: #ff8c00;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+  margin-top: 0.25rem;
+}
+
+.ma-signup__btn:hover {
+  background: #ffa12b;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+}
+
+.ma-signup__btn:active {
+  transform: scale(0.99);
+}
+
+.ma-signup__btn:disabled {
+  background: #999;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.ma-signup__footer {
+  font-size: 0.78rem;
+  opacity: 0.75;
+  text-align: center;
+  margin-top: 0.85rem;
+  color: var(--text);
+}
+
+.ma-signup__success {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  color: var(--text);
+}
+
+.ma-signup__success-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 140, 0, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.2rem;
+  color: #ff8c00;
+}
+
+.ma-signup__success h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--text);
+}
+
+.ma-signup__success p {
+  font-size: 0.88rem;
+  opacity: 0.85;
+  line-height: 1.5;
+  color: var(--text);
+}
     </style>
   </head>
 
@@ -171,6 +334,54 @@ const {
         <slot />
       </article>
 
+      <!-- ===== NEWSLETTER SIGNUP ===== -->
+      <div style="max-width: 900px; margin: 48px auto 0;">
+        <div class="ma-signup">
+          <div class="ma-signup__flag">
+            <span></span><span></span><span></span>
+          </div>
+
+          <div class="ma-signup__body" id="ma-form-wrap">
+            <p class="ma-signup__eyebrow">Master Azerbaijani</p>
+            <h3 class="ma-signup__heading">Get new posts every 10 days</h3>
+            <p class="ma-signup__sub">Language tips, cultural insights, and learning resources; straight to your inbox. No spam.</p>
+
+            <div class="ma-signup__fields">
+              <input
+                class="ma-signup__input"
+                type="email"
+                id="ma-email"
+                placeholder="your@email.com"
+                autocomplete="email"
+              />
+
+              <select class="ma-signup__select" id="ma-who">
+                <option value="">What brings you here?</option>
+                <option value="Heritage learner reconnecting with Azerbaijani">Heritage learner reconnecting with Azerbaijani</option>
+                <option value="Parent looking for an app to teach Azerbaijani to my child(ren)">Parent looking for an app to teach Azerbaijani to my child(ren)</option>
+                <option value="Beginner learning Azerbaijani for travel">Beginner learning Azerbaijani for travel</option>
+                <option value="Spouse/partner/family member/friend of an Azerbaijani speaker">Spouse/partner/family member/friend of an Azerbaijani speaker</option>
+                <option value="Language enthusiast/polyglot interested in Azerbaijani">Language enthusiast/polyglot interested in Azerbaijani</option>
+<option value="Student or professional learning Azerbaijani">Student or professional learning Azerbaijani</option>
+<option value="Current Master Azerbaijani app user">Current Master Azerbaijani app user</option>
+              </select>
+
+              <button class="ma-signup__btn" id="ma-submit-btn">
+                Subscribe to updates
+              </button>
+            </div>
+
+            <p class="ma-signup__footer">Takes 10 seconds &middot; Unsubscribe anytime</p>
+          </div>
+
+          <div class="ma-signup__success" id="ma-success">
+            <div class="ma-signup__success-icon">✓</div>
+            <h4>You're in!</h4>
+            <p>Next post arrives in your inbox within 10 days.<br />Thanks for following along.</p>
+          </div>
+        </div>
+      </div>
+
       <!-- REACTIONS -->
       <div style="max-width: 900px; margin: 40px auto 0;">
         <p style="font-size: 14px; opacity: 0.8; margin-bottom: 12px;">
@@ -197,73 +408,94 @@ const {
     <Footer />
 
     <script>
-     const postSlug = window.location.pathname
-  .replace(/\/$/, "")   // removes trailing slash
-  .split("/")           // splits path
-  .pop();               // gets last part
+      // ===== NEWSLETTER FORM =====
+      const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfchV3ocgNUVAZrBzdIQ5KY1uUWvfYMqBgY2SyFbDFaeIdB-A/formResponse";
+      const ENTRY_EMAIL = "entry.1907978670";
+      const ENTRY_WHO   = "entry.369430217";
 
-      const likeBtn = document.getElementById("like-btn");
+      const maBtn   = document.getElementById("ma-submit-btn");
+      const maEmail = document.getElementById("ma-email") as HTMLInputElement;
+      const maWho   = document.getElementById("ma-who") as HTMLSelectElement;
+
+      function maSubmit() {
+        if (!maEmail.value || !/\S+@\S+\.\S+/.test(maEmail.value)) {
+          maEmail.focus();
+          return;
+        }
+        maBtn.disabled = true;
+        maBtn.textContent = "Subscribing…";
+
+        const params = new URLSearchParams();
+        params.append(ENTRY_EMAIL, maEmail.value);
+        if (maWho.value) params.append(ENTRY_WHO, maWho.value);
+
+        fetch(FORM_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: params.toString()
+        }).finally(() => {
+          document.getElementById("ma-form-wrap")!.style.display = "none";
+          document.getElementById("ma-success")!.style.display = "block";
+        });
+      }
+
+      maBtn.addEventListener("click", maSubmit);
+      maEmail.addEventListener("keydown", (e) => { if (e.key === "Enter") maSubmit(); });
+
+      // ===== REACTIONS =====
+      const postSlug = window.location.pathname
+        .replace(/\/$/, "")
+        .split("/")
+        .pop();
+
+      const likeBtn    = document.getElementById("like-btn");
       const dislikeBtn = document.getElementById("dislike-btn");
-      const resultBox = document.getElementById("reaction-result");
-
-      const likeCount = document.getElementById("like-count");
+      const resultBox  = document.getElementById("reaction-result");
+      const likeCount    = document.getElementById("like-count");
       const dislikeCount = document.getElementById("dislike-count");
-const existingVote = localStorage.getItem("voted_" + postSlug);
 
-if (existingVote) {
-  likeBtn.disabled = true;
-  dislikeBtn.disabled = true;
+      const existingVote = localStorage.getItem("voted_" + postSlug);
 
-  if (existingVote === "like") {
-    likeBtn.classList.add("active");
-  } else {
-    dislikeBtn.classList.add("active");
-  }
+      if (existingVote) {
+        likeBtn.disabled = true;
+        dislikeBtn.disabled = true;
 
-  // fetch counts so user still sees numbers
-  fetch("/.netlify/functions/vote", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      post_slug: postSlug,
-      vote: existingVote,
-    }),
-  })
-    .then(res => res.json())
-    .then(data => {
-      likeCount.textContent = data.likes;
-      dislikeCount.textContent = data.dislikes;
-      resultBox.style.display = "block";
-    });
-}
+        if (existingVote === "like") {
+          likeBtn.classList.add("active");
+        } else {
+          dislikeBtn.classList.add("active");
+        }
+
+        fetch("/.netlify/functions/vote", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ post_slug: postSlug, vote: existingVote }),
+        })
+          .then(res => res.json())
+          .then(data => {
+            likeCount.textContent = data.likes;
+            dislikeCount.textContent = data.dislikes;
+            resultBox.style.display = "block";
+          });
+      }
+
       async function sendVote(voteType) {
         const res = await fetch("/.netlify/functions/vote", {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            post_slug: postSlug,
-            vote: voteType,
-          }),
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ post_slug: postSlug, vote: voteType }),
         });
 
         const data = await res.json();
-
         likeCount.textContent = data.likes;
         dislikeCount.textContent = data.dislikes;
 
         resultBox.style.display = "block";
-resultBox.style.opacity = "0";
-resultBox.style.transition = "opacity 0.3s ease";
+        resultBox.style.opacity = "0";
+        resultBox.style.transition = "opacity 0.3s ease";
+        setTimeout(() => { resultBox.style.opacity = "1"; }, 10);
 
-setTimeout(() => {
-  resultBox.style.opacity = "1";
-}, 10);
-
-        // FIXED logic
         if (voteType === "like") {
           likeBtn.classList.add("active");
           dislikeBtn.classList.remove("active");
@@ -274,7 +506,6 @@ setTimeout(() => {
 
         likeBtn.disabled = true;
         dislikeBtn.disabled = true;
-
         localStorage.setItem("voted_" + postSlug, voteType);
       }
 

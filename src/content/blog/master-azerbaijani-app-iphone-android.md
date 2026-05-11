@@ -17,7 +17,7 @@ coverImageAlt: "Master Azerbaijani app available on iPhone and Android"
 
 Master Azerbaijani is now available on both the **[Apple App Store](https://apps.apple.com/us/app/master-azerbaijani/id6760097533)** and **[Google Play](https://play.google.com/store/apps/details?id=com.masterazerbaijani.app)**.
 
-This is a big milestone, but let me say it clearly: this is the first public version, not the final version. The app is live, usable, and built to help learners start with structure. At the same time, audio, lessons, and future modules will continue to expand.
+This is a big milestone, but let me say it clearly: this is the first public version, not the finished version. The app is live, usable, and built to help learners start with structure. At the same time, audio, lessons, and future modules will continue to expand.
 
 That is the honest version.
 
@@ -32,9 +32,7 @@ And I know I am not the only one.
 
 Many Azerbaijani families abroad want their children, spouses, relatives, or close friends to learn Azerbaijani, but they do not always know where to start. Some learners know a few words but cannot build sentences. Some understand Azerbaijani but feel nervous speaking. Some are complete beginners who want a clear path instead of random phrases from the internet.
 
-Master Azerbaijani was created for those learners.
-
-Master Azerbaijani is a structured learning app designed to help learners build Azerbaijani step by step.
+Master Azerbaijani was created for those learners: people who need a clear, structured path into the language.
 
 
 ## Who the app is for
@@ -133,6 +131,6 @@ And if you send feedback, thank you twice.
 
 Early users are not just downloading the app. They are helping shape a learning experience that I hope will serve Azerbaijani families, heritage learners, and curious beginners for years to come.
 
-This is only the beginning, but it is a real beginning.
+This is only the beginning, but it is a real one.
 
 Master Azerbaijani is live.

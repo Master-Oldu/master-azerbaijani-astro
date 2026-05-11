@@ -30,7 +30,7 @@ Tea is offered:
 - After the main meal  
 - With dessert  
 - With something newly baked  
-- When you start a new topic
+- When a new conversation starts
 - While you're studying
 - Sometimes simply because time passed  
 
@@ -81,7 +81,7 @@ As time passes, more things appear:
 
 No one announces this either. The table simply becomes fuller.
 
-Hospitality here is additive, not performative.
+Hospitality here is additive. The table grows because the visit matters.
 
 
 ## Tea in Cafés and Restaurants
@@ -90,8 +90,8 @@ Outside the home, tea still keeps its role.
 In cafés and restaurants, you will often hear:
 - **Bir stəkan?**  
   *One glass?*  
-- **Çaynik?**  | Loanword from Russian, but be ready to hear Azerbaijani **Çaydan** too.
-  Meaning: *A whole pot?*  
+- **Çaynik?**  
+  *A whole pot?* This is a Russian loanword, but you may also hear the Azerbaijani **çaydan**.
 
 The question is not whether you want tea, but how much.
 
@@ -121,9 +121,20 @@ Tea culture shows how hospitality works linguistically:
 This is why Azerbaijani hospitality feels warm without being loud.
 
 
-## Closing Thought
+## What Tea Teaches You About the Language
+
 In Azerbaijan, tea doesn’t mark the beginning or the end of a visit.
 
 It simply stays. It is ever-present.
 
 And the language spoken around it stays just as gentle, just as layered, and just as generous.
+
+Tea teaches you something important about Azerbaijani: meaning often lives in repetition, tone, and small phrases that do not look impressive in a dictionary.
+
+## Keep Learning Azerbaijani Through Real Life
+
+If you are learning Azerbaijani, culture is not extra. It is part of understanding what words actually mean when people use them.
+
+The Master Azerbaijani app starts with the foundations, then builds toward real phrases, pronunciation, grammar, cultural context, and everyday communication step by step.
+
+**[Start with the free first module](/download-app/)**

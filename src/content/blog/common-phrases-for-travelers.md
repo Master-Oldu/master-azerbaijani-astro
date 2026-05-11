@@ -121,8 +121,14 @@ Even if you never bargain in your home country, using these politely in Azerbaij
 These are the ones you keep in your mind’s back pocket.
 
 
-## Final Thought
+## Before You Go
 
-Traveling in Azerbaijan gets 10 times easier, and 100 times warmer when you use even a little Azerbaijani. These phrase sets cover everything tourists actually face: finding places, buying things, getting around, understanding menus, and not paying “tourist prices.”
+Traveling in Azerbaijan gets 10 times easier, and 100 times warmer, when you use even a little Azerbaijani. These phrase sets cover what tourists actually face: finding places, buying things, getting around, understanding menus, and not paying “tourist prices.”
 
-If you want more everyday, non-travel phrases, check out **[Common Azerbaijani Phrases for Everyday Conversations](/blog/common-azerbaijani-phrases-everyday-conversation)**. They pair perfectly with this post without repeating anything.
+If you want more everyday, non-travel phrases, check out **[Common Azerbaijani Phrases for Everyday Conversations](/blog/common-azerbaijani-phrases-everyday-conversation)**. They pair well with this post without repeating the same ground.
+
+## Practice Before Your Trip
+
+If Azerbaijan is on your travel list, do not wait until you land to learn your first phrase. Start with the free first module in the Master Azerbaijani app, then build toward greetings, everyday phrases, numbers, directions, food, and real conversation.
+
+**[Start with the free first module](/download-app/)**

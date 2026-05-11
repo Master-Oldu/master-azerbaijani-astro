@@ -29,7 +29,7 @@ There are things Azerbaijani packs into three syllables that English needs a who
 
 Good luck fitting all that into English without sounding like a customer service script.
 
-Identity researchers have found that **[heritage-language speakers](https://www.frontiersin.org/journals/communication/articles/10.3389/fcomm.2024.1468943/full)** who reconnect with their mother tongue report stronger cultural belonging and better emotional grounding. Not because the vocabulary is magical, but because speaking the language reactivates the cultural side of you that never really disappeared.
+Research on **[heritage-language speakers](https://www.frontiersin.org/journals/communication/articles/10.3389/fcomm.2024.1468943/full)** links language use with cultural belonging, identity, and the desire to stay connected across communities. Not because the vocabulary is magical, but because speaking the language reactivates the cultural side of you that never really disappeared.
 
 And realistically, you don’t need a complicated plan to start reconnecting. Even learning just the alphabet helps you feel rooted again. If you haven’t yet, **[Azerbaijani Alphabet Made Easy](/blog/azerbaijani-alphabet-made-easy)** gives you a simple way to start without drowning in charts.
 
@@ -45,11 +45,11 @@ Sometimes, even one phrase can change a moment. This is why even simple expressi
 
 Most people think culture is holidays, food, and music. But it’s also the tiny things: how we make jokes, how we argue, how we show affection, how we shade someone politely without them realizing it until three hours later.
 
-A big thing that happens when you relearn your heritage language is that you stop translating and start thinking in it. Your brain switches context. It’s the difference between "I know some words" and “I get it now.” If you want to reach that point faster, **[How to Think in Azerbaijani (Not Translate from English)](/blog/how-to-think-in-azerbaijani.md)** breaks it down in a way that actually works.
+A big thing that happens when you relearn your heritage language is that you stop translating and start thinking in it. Your brain switches context. It’s the difference between "I know some words" and “I get it now.” If you want to reach that point faster, **[How to Think in Azerbaijani (Not Translate from English)](/blog/how-to-think-in-azerbaijani)** breaks it down in a way that actually works.
 
 ## It gives your kids a cultural safety net that will matter more than they realize
 
-Kids raised in the US or other English-speaking countries often feel culturally “in-between.” Teaching them Azerbaijani doesn’t magically fix identity struggles, but it gives them a home base. **[Research from Harvard](https://immigrationinitiative.harvard.edu/wp-content/uploads/2024/02/JANUARY-2024_WHY-HERITAGE-LANGUAGE-IS-IMPORTANT-FOR-IMMIGRANT-ORIGIN-CHILDRENS-DEVELOPMENT-AND-LEARNING-FINAL.B-1.pdf)** and several bilingual development groups shows that children who maintain a heritage language have stronger emotional resilience and better long-term academic outcomes.
+Kids raised in the US or other English-speaking countries often feel culturally “in-between.” Teaching them Azerbaijani doesn’t magically fix identity struggles, but it gives them a home base. **[Research from Harvard](https://immigrationinitiative.harvard.edu/wp-content/uploads/2024/02/JANUARY-2024_WHY-HERITAGE-LANGUAGE-IS-IMPORTANT-FOR-IMMIGRANT-ORIGIN-CHILDRENS-DEVELOPMENT-AND-LEARNING-FINAL.B-1.pdf)** on bilingual development groups shows that children who maintain a heritage language have stronger emotional resilience and better long-term academic outcomes.
 
 Notice the keyword: **maintain!** Not perfect. Not native-level. Just keep the language alive.
 
@@ -65,10 +65,20 @@ And if you do plan to visit, a few key expressions from **[5 Common Phrases for 
 
 Heritage speakers always think they “lost everything,” but science disagrees. Studies show that even when someone stops speaking a language for years, the brain keeps traces of it: sounds, rhythms, vocabulary roots. When you start practicing again, you relearn faster than a new learner because your brain already has the wiring.
 
-The trick is consistency, not perfection. If you want a realistic way to keep it alive daily, **[Tips for Practicing Azerbaijani Daily](/blog/common-azerbaijani-phrases-everyday-conversation)** walks through exactly that.
+The trick is consistency, not perfection. If you want a realistic way to keep it alive daily, **[Tips for Practicing Azerbaijani Daily](/blog/practice-azerbaijani-daily-effortless-habits)** walks through exactly that.
 
-## Final thought
+## What You Keep When You Keep the Language
 
-Learning your heritage language isn’t about chasing fluency or impressing anyone. It’s about reclaiming pieces of yourself, strengthening family bonds, and keeping the culture from slipping through your fingers. Whether you’re Azerbaijani by birth, marriage, or heart, learning the language isn’t just an “interesting project.”
+Learning your heritage language isn’t about chasing perfect fluency or impressing anyone. It is about reclaiming pieces of yourself, strengthening family bonds, and keeping the culture from slipping through your fingers.
 
-It’s one of the most meaningful investments you can make in your identity, your relationships, and your family’s future.
+Whether you are Azerbaijani by birth, marriage, family, or heart, learning the language is not just an “interesting project.”
+
+It is one of the most meaningful investments you can make in your identity, your relationships, and your family’s future.
+
+## Start Rebuilding the Connection Step by Step
+
+If Azerbaijani is part of your family story, you do not need to become perfect overnight. You need a clear, steady way to bring the language back into daily life.
+
+The Master Azerbaijani app starts with the foundations, then builds toward real phrases, pronunciation, grammar, cultural context, and everyday communication step by step.
+
+**[Start with the free first module](/download-app/)**

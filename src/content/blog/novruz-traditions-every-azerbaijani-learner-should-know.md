@@ -55,7 +55,7 @@ Each of the four Tuesdays before Novruz is called a **Çərşənbə**, represent
 3. **Yel Çərşənbəsi** – Wind  
 4. **Torpaq Çərşənbəsi** – Earth  
 
-By the final Tuesday, the nature and the earth are considered fully ready for renewal. Novruz is not a sudden change. It is gradual readiness.
+By the final Tuesday, nature and the earth are considered ready for renewal. Novruz is not a sudden change. It is gradual readiness.
 
 
 ## Jumping Over Fire and Speaking It Out Loud
@@ -64,7 +64,7 @@ On every **Çərşənbə** (Tuesday), small fires are lit, and people jump over 
 
 While jumping, many people say:
 
-**“Ağırlığım-uğurluğum odda yansın.”**
+**“Ağırlığım, uğurluğum odda yansın.”**
 
 Literal meaning: “May my hardship and misfortune burn in the fire.”
 
@@ -104,7 +104,7 @@ Commonly referenced items include, but are not limited to:
 - **Sirkə**: patience and endurance  
 - **Sumax**: sunrise and rebirth  
 - **Sarımsaq**: protection  
-- **Şam**: light and clarity, lit up as per the number of people in the family. 
+- **Şam**: light and clarity, often lit according to the number of people in the family. 
 
 Not every household follows the exact same list today. What matters is symbolism, balance, and intention.
 
@@ -175,17 +175,25 @@ Novruz is one of the clearest examples of how language functions in Azerbaijani 
 
 It explains:
 - Why words are taken seriously  
-- Why do people avoid negativity at specific moments  
+- Why people avoid negativity at specific moments  
 - Why wishes are spoken out loud  
 - Why listening matters as much as speaking  
 
 For learners, Novruz is a reminder that language is not only grammar and vocabulary. It is timing, intention, and meaning.
 
 
-## Final Thought
+## What Novruz Teaches Learners
 
-If you are learning Azerbaijani, don’t treat Novruz like a holiday you “read about.”
-Treat it as a cultural grammar lesson.
+If you are learning Azerbaijani, don’t treat Novruz like a holiday you “read about.” Treat it as a cultural grammar lesson.
 
-Once you understand Novruz, the language starts making sense in ways textbooks never explain.
-And that is the difference between knowing Azerbaijani words and actually understanding Azerbaijani people.
+Novruz shows you how much Azerbaijani depends on timing, intention, hospitality, positive speech, and shared rituals.
+
+Once you understand Novruz, the language starts making sense in ways textbooks rarely explain. That is the difference between knowing Azerbaijani words and actually understanding Azerbaijani people.
+
+## Keep Learning Azerbaijani Through Culture
+
+Azerbaijani makes more sense when you learn the language together with the culture behind it: greetings, family language, hospitality, food, holidays, and everyday expressions.
+
+The Master Azerbaijani app starts with the foundations, then builds toward real phrases, pronunciation, grammar, cultural context, and everyday communication step by step.
+
+**[Start with the free first module](/download-app/)**
