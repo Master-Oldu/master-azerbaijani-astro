@@ -58,20 +58,20 @@ You do not need to memorize every item on every menu. But knowing a handful of s
  
 If you are cooking with someone, or following a recipe, a few verbs go a long way:
  
-- **bişirmək** — to cook
-- **qovurmaq** — to fry or roast
-- **doğramaq** — to chop
-- **qarışdırmaq** — to mix or stir
-- **əlavə etmək** — to add
+- **bişirmək** - to cook
+- **qovurmaq** - to fry or roast
+- **doğramaq** - to chop
+- **qarışdırmaq** - to mix or stir
+- **əlavə etmək** - to add
 
 Useful nouns to pair with them:
  
-- **yağ** — oil or butter
-- **duz** — salt
-- **istiot** — pepper
-- **soğan** — onion
-- **sarımsaq** — garlic
-- **su** — water
+- **yağ** - oil or butter
+- **duz** - salt
+- **istiot** - pepper
+- **soğan** - onion
+- **sarımsaq** - garlic
+- **su** - water
 
 Recipes in Azerbaijani tend to be loose with quantities; *bir az* (a little) and *lazım olan qədər* (as much as needed) appear constantly. If you are cooking alongside someone rather than following a written recipe, just watch the hands.
  
@@ -84,10 +84,11 @@ The most important one is **Əlinizə sağlıq**, literally *health to your hand
  
 A few others:
  
-- **Çox dadlıdır.** — It is very delicious.
-- **Əla bişiriblər.** — It has been cooked wonderfully.
-- **Doydum, təşəkkür edirəm.** — I am full, thank you. *(Said to signal you have eaten well; a compliment in itself.)*
-The phrase **Nuş olsun** functions like *bon appétit* — said before eating, or to someone who is eating. You will hear it constantly. Responding with **Sağ olun** (thank you, roughly) is perfectly natural.
+- **Çox dadlıdır.** - It is very delicious.
+- **Əla bişiriblər.** - It has been cooked wonderfully.
+- **Doydum, təşəkkür edirəm.** - I am full, thank you. *(Said to signal you have eaten well; a compliment in itself.)*
+
+The phrase **Nuş olsun** functions like *bon appétit* - said before eating, or to someone who is eating. You will hear it constantly. Responding with **Sağ olun** (thank you, roughly) is perfectly natural.
  
 Food and hospitality are so tightly woven together in Azerbaijani culture that the vocabulary overlaps more than you might expect. [The language of Azerbaijani hospitality](/blog/understanding-azerbaijani-hospitality-through-language) goes deeper into how this plays out, not just at the table, but in how guests are received and what is expected on both sides.
  

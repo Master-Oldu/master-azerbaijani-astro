@@ -45,9 +45,9 @@ Once you shift your focus to the suffixes and stop fighting the verb-last struct
  
 The pattern to internalize is simple:
  
-- **Mən bu kitabı oxuyuram.** — I / this book / reading am.
-- **O, çayı içdi.** — He or she / the tea / drank.
-- **Sən Bakıya gedirsən?** — You / to Baku / going are?
+- **Mən bu kitabı oxuyuram.** - I / this book / reading am.
+- **O, çayı içdi.** - He or she / the tea / drank.
+- **Sən Bakıya gedirsən?** - You / to Baku / going are?
 
 Verb at the end, every time. Train your ear to wait for it, and Azerbaijani sentences will start to feel complete rather than strange.
  

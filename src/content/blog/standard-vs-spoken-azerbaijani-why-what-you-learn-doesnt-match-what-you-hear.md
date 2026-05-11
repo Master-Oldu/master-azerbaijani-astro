@@ -120,6 +120,8 @@ Different surface forms.
 
 This is phonetic erosion, not new grammar.
 
+If the individual sounds are still hard to hear, review [Perfect Azerbaijani Pronunciation](/blog/perfect-azerbaijani-pronunciation/) before trying to recognize fast spoken forms.
+
 
 ### Wanting something (high-frequency verb)
 
@@ -148,6 +150,8 @@ Learners are trained to see language like this:
 > stem + suffix + suffix + suffix
 
 Spoken Azerbaijani removes the seams.
+
+If suffixes still feel confusing, start with [Azerbaijani Suffixes: The Building Blocks of Fluency](/blog/azerbaijani-suffixes-the-building-blocks-of-fluency/) first. Spoken Azerbaijani is much easier to understand when you already know what the full endings are supposed to be.
 
 Suffixes:
 - shorten
@@ -230,6 +234,8 @@ These are tendencies, not rules.
 
 You will hear multiple versions of the same verb even within one family.
 
+For a broader look at how pronunciation, rhythm, and word choice shift across the country, read [How Azerbaijani Changes Across Regions: Accents and Dialects Explained](/blog/how-azerbaijani-changes-across-regions-accents-and-dialects-explained/).
+
 That is why learning regions first does not help beginners.  
 You need the standard form as a reference point before regional patterns make sense.
 
@@ -273,6 +279,8 @@ Structure first.
 Compression later.
 
 That’s how fluent listeners are built.
+
+Once you understand the standard form, shadowing is one of the best ways to train your ear for natural speed. I explain the method in [The Power of Shadowing: Train Your Azerbaijani Pronunciation](/blog/the-power-of-shadowing-speak-like-a-native/).
 
 ## Build the Foundation Before Chasing Native Speed
 

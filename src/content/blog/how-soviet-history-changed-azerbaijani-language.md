@@ -172,7 +172,7 @@ Modern Azerbaijani did not emerge from a single source.
 
 It is a Turkic language at its core, enriched by Persian literary tradition and later influenced by Russian through education and administration. Each layer left traces that are still visible in how the language sounds, looks, and functions today.
 
-In the next post, [How Turkic, Persian, and Russian Shaped Modern Azerbaijani](/blog/how-turkic-persian-and-russian-shaped-modern-azerbaijani), I’ll look more closely at how these influences coexist, and how learners can recognize them without confusion.
+In the next post, [How Turkic, Persian, and Russian Shaped Modern Azerbaijani](/blog/the-influence-of-persian-turkish-and-russian-on-modern-azerbaijani), I’ll look more closely at how these influences coexist, and how learners can recognize them without confusion.
 
 
 ## What This Means for Learners
