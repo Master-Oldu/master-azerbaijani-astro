@@ -169,30 +169,58 @@ import Footer from '../../components/Footer.astro';
 </section>
 
 <!-- Roadmap -->
-<section style="margin:60px auto; max-width:720px; padding:24px 26px; border-radius:14px; background:linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1)); border:1px solid rgba(255,255,255,0.25); backdrop-filter:blur(10px); box-shadow:0 10px 30px rgba(0,0,0,0.2); text-align:center;">
+<section style="
+  margin:60px auto;
+  max-width:820px;
+  padding:24px 32px 30px;
+  border-radius:14px;
+  background:linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1));
+  border:1px solid rgba(255,255,255,0.25);
+  backdrop-filter:blur(10px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  text-align:center;
+">
 
-  <h2 style="margin-bottom:20px;">Roadmap</h2>
+  <h2 style="margin-bottom:24px;">Roadmap</h2>
 
-  <div style="display:flex; flex-direction:column; gap:14px; align-items:center;">
-    <div style="display:flex; gap:10px;">
-      <span style="font-weight:600; color:#FA7239;">Now</span>
-      <span>Available on iPhone and Android</span>
+  <div style="
+    display:grid;
+    grid-template-columns:170px 1fr;
+    column-gap:18px;
+    row-gap:16px;
+    max-width:760px;
+    margin:0 auto;
+    align-items:start;
+  ">
+
+    <div style="font-weight:600; color:#FA7239; text-align:right;">
+      Now
+    </div>
+    <div style="text-align:left;">
+      Available on iPhone and Android
     </div>
 
-    <div style="display:flex; gap:10px;">
-      <span style="font-weight:600; color:#FA7239;">September 2026</span>
-      <span>5 new learning modules added, bringing the course to 10 modules</span>
+    <div style="font-weight:600; color:#FA7239; text-align:right;">
+      September 2026
+    </div>
+    <div style="text-align:left;">
+      5 new learning modules added, bringing the course to 10 modules
     </div>
 
-    <div style="display:flex; gap:10px;">
-      <span style="font-weight:600; color:#FA7239;">Ongoing</span>
-      <span>Native Azerbaijani audio expanding across lessons</span>
+    <div style="font-weight:600; color:#FA7239; text-align:right;">
+      Ongoing
+    </div>
+    <div style="text-align:left;">
+      Native Azerbaijani audio expanding across lessons
     </div>
 
-    <div style="display:flex; gap:10px;">
-      <span style="font-weight:600; color:#FA7239;">March 2027</span>
-      <span>5 additional modules planned to complete the beginner-to-advanced course path</span>
+    <div style="font-weight:600; color:#FA7239; text-align:right;">
+      March 2027
     </div>
+    <div style="text-align:left;">
+      5 more modules planned to complete the beginner-to-advanced course path
+    </div>
+
   </div>
 
 </section>
