@@ -138,9 +138,9 @@ Children and adults tap dyed eggs against each other. The unbroken egg “wins,�
 
 One of the most loved Novruz traditions is **papaqatdı**.
 
-Children place a hat or bag in front of a neighbor’s door, hide, and wait. The homeowner fills it with sweets or treats.
+Children place a hat or bag in front of a neighbor’s door, knock real quick, hide, and wait. The homeowner fills it with sweets or treats.
 
-No knocking. No words. The act itself is the request.
+No words. Just knocking. The act itself is the request.
 
 It reinforces generosity without direct asking, a value deeply rooted in Azerbaijani culture.
 
