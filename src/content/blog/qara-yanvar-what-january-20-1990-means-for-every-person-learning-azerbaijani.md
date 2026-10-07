@@ -36,6 +36,7 @@ According to [Azerbaijan's Ministry of Foreign Affairs](https://mfa.gov.az/en/ne
 
 When you hear **20 Yanvar faciəsi**,  *the January 20 tragedy*, this is the event being remembered.
 
+For background on how Soviet rule shaped Azerbaijan and its language more broadly, the [post on Soviet history and Azerbaijani](/blog/how-soviet-history-changed-azerbaijani-language) covers that period in more depth.
 
 ## The Language of Independence
 
@@ -92,8 +93,7 @@ Here is how they come together:
 
 **Xatirəsini anırıq** tells you someone's memory is being honored. **Ehtiramla** adds *with respect*. You may also hear **yad edirik** in place of **anırıq**; both are used in the language of remembrance.
 
-Once you recognize these expressions, a headline or memorial message becomes readable, even when you do not know every word.
-
+Once you recognize these expressions, a headline or memorial message becomes readable, even when you do not know every word. The formal register these words belong to, the use of **siz**, of **ehtiram**, of careful phrasing, is part of a broader pattern in how Azerbaijani handles respect, covered in the [post on formality and register](/blog/understanding-respect-and-formality-in-azerbaijani-culture).
 
 ## When Someone Shares Their Memories
 
