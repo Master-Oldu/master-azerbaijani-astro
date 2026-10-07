@@ -56,6 +56,8 @@ When you hear **Darıxıram** on its own, listen to what is around it. Someone w
 
 For heritage learners living away from family, **Sənin üçün darıxıram** is a phrase worth having ready for the next phone call.
 
+Darıxmaq is not the only word like this. There is a whole category of Azerbaijani words that have no real English equivalent: [this post covers some of the most important ones](/blog/azerbaijani-words-that-dont-exist-in-english).
+
 
 ## The Heart as Emotional Landscape
 
@@ -89,7 +91,7 @@ Being angry, being disappointed, and having your feelings hurt are different thi
 
 That last sentence is particularly useful. It names the feeling and points to the cause. It gives the other person something specific to respond to.
 
-When you are building emotional vocabulary, these kinds of sentences matter more than single words.
+When you are building emotional vocabulary, these kinds of sentences matter more than single words. This precision around emotional register is something Azerbaijani does consistently, the way [sağ ol carries more than a simple thank you](/blog/why-azerbaijanis-say-sag-ol-instead-of-thank-you) is another good example of it.
 
 
 ## Care That Sounds Practical
