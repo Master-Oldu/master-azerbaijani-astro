@@ -9,7 +9,7 @@ tags:
   - azerbaijani-speaking
   - azerbaijani-pronunciation
   - spoken-azerbaijani
-coverImage: "/images/how-to-sound-natural-in-azerbaijani.jpg"
+coverImage: "/images/how-to-sound-natural-in-azerbaijani.png"
 coverImageAlt: "Person speaking Azerbaijani naturally in conversation"
 ---
 
