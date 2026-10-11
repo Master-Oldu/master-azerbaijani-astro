@@ -9,7 +9,7 @@ tags:
   - learn-azerbaijani
   - qara-yanvar
   - azerbaijani-language
-coverImage: "/images/qara-yanvar-january-20-1990.jpg"
+coverImage: "/images/qara-yanvar-january-20-1990.png"
 coverImageAlt: "Flowers at the Alley of Martyrs in Baku in remembrance of the January 20 victims"
 ---
 
