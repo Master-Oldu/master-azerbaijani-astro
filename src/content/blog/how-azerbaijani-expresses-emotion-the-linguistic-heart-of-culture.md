@@ -117,7 +117,7 @@ You will also hear **bəh-bəh**, admiration, delight, and sometimes irony. And 
 When you are listening, pay attention to pace, emphasis, and what just happened. The phrase without that context gives you half the meaning at best.
 
 
-## Closing Thoughts
+## Learning to Hear the Feeling
 
 Emotional language in Azerbaijani is not always direct.
 
