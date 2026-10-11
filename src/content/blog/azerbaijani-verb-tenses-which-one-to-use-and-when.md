@@ -192,7 +192,7 @@ For something completed before another past event:
 Time words help too. **İndi** means now. **Dünən** means yesterday. **Sabah** means tomorrow. **Artıq** means already. Learn them alongside the verb forms you use most.
 
 
-## Closing Thoughts
+## Put the Tenses to Work
 
 Start with sentences you actually need to say. Tell someone what you are doing, what happened yesterday, somewhere you have been, and what you plan to do tomorrow.
 
