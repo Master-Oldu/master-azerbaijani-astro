@@ -13,7 +13,9 @@ coverImage: "/images/how-azerbaijani-expresses-emotion.png"
 coverImageAlt: "Warm emotional connection through Azerbaijani language and culture"
 ---
 
-Yemək yemisən? - Have you eaten?
+**Yemək yemisən?**
+
+Have you eaten?
 
 From someone close to you, that ordinary question carries concern, affection, and an invitation to be looked after. The words ask about food. The relationship gives them another layer.
 
