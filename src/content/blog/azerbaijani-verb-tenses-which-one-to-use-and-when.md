@@ -13,7 +13,7 @@ coverImage: "/images/azerbaijani-verb-tenses.png"
 coverImageAlt: "Azerbaijani verb conjugation and tense guide for English speakers"
 ---
 
-## Same Verb, Different Ending
+**Same Verb, Different Ending**
 
 You learn **gəlmək** - to come. Then you hear it with different endings:
 
