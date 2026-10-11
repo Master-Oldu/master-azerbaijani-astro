@@ -13,7 +13,7 @@ coverImage: "/images/azerbaijani-learners-toolkit.png"
 coverImageAlt: "Master Azerbaijani learning resources — app, blog, word of the day, and alphabet materials"
 ---
 
-## What I Have Been Building
+**What I Have Been Building since November 2025**
 
 Master Azerbaijani started with something personal.
 
