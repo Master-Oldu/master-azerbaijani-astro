@@ -12,7 +12,6 @@ tags:
 coverImage: "/images/how-azerbaijani-expresses-emotion.png"
 coverImageAlt: "Warm emotional connection through Azerbaijani language and culture"
 ---
-
 **Yemək yemisən?**
 
 Have you eaten?
