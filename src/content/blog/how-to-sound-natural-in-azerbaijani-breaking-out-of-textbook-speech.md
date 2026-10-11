@@ -13,7 +13,7 @@ coverImage: "/images/how-to-sound-natural-in-azerbaijani.png"
 coverImageAlt: "Person speaking Azerbaijani naturally in conversation"
 ---
 
-## When a Short Answer Is Enough
+**When a Short Answer Is Enough**
 
 A friend offers you tea.
 
