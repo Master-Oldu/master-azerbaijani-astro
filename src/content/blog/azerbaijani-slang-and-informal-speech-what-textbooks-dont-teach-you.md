@@ -13,7 +13,7 @@ coverImage: "/images/azerbaijani-slang-informal-speech.png"
 coverImageAlt: "Casual Azerbaijani conversation between friends"
 ---
 
-## What You Will Not Find in a Textbook
+**What You Will Not Find in a Textbook**
 
 Textbooks teach you how to introduce yourself, ask for directions, and conjugate verbs.
 
