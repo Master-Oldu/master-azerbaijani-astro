@@ -9,7 +9,7 @@ tags:
   - learn-azerbaijani
   - azerbaijani-verbs
   - azerbaijani-tenses
-coverImage: "/images/azerbaijani-verb-tenses.jpg"
+coverImage: "/images/azerbaijani-verb-tenses.png"
 coverImageAlt: "Azerbaijani verb conjugation and tense guide for English speakers"
 ---
 
