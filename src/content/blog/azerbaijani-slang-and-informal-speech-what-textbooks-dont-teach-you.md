@@ -9,7 +9,7 @@ tags:
   - azerbaijani-slang
   - spoken-azerbaijani
   - azerbaijani-culture
-coverImage: "/images/azerbaijani-slang-informal-speech.jpg"
+coverImage: "/images/azerbaijani-slang-informal-speech.png"
 coverImageAlt: "Casual Azerbaijani conversation between friends"
 ---
 
