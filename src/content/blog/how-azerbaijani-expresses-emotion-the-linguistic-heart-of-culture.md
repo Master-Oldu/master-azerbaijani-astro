@@ -9,7 +9,7 @@ tags:
   - learn-azerbaijani
   - azerbaijani-phrases
   - emotional-language
-coverImage: "/images/how-azerbaijani-expresses-emotion.jpg"
+coverImage: "/images/how-azerbaijani-expresses-emotion.png"
 coverImageAlt: "Warm emotional connection through Azerbaijani language and culture"
 ---
 
