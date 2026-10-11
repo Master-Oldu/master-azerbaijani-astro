@@ -9,7 +9,7 @@ tags:
   - azerbaijani-resources
   - master-azerbaijani
   - language-learning
-coverImage: "/images/azerbaijani-learners-toolkit.jpg"
+coverImage: "/images/azerbaijani-learners-toolkit.png"
 coverImageAlt: "Master Azerbaijani learning resources — app, blog, word of the day, and alphabet materials"
 ---
 
