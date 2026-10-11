@@ -13,7 +13,7 @@ coverImage: "/images/qara-yanvar-january-20-1990.png"
 coverImageAlt: "Flowers at the Alley of Martyrs in Baku in remembrance of the January 20 victims"
 ---
 
-## 20 Yanvar
+**20 Yanvar**
 
 If you spend time with Azerbaijani, sooner or later you will come across **20 Yanvar**.
 
