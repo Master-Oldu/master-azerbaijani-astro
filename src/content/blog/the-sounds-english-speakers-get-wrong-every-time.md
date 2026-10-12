@@ -9,7 +9,7 @@ tags:
   - learn-azerbaijani
   - azerbaijani-alphabet
   - language-learning
-coverImage: "/images/sounds-english-speakers-get-wrong.jpg"
+coverImage: "/images/sounds-english-speakers-get-wrong.png"
 coverImageAlt: "Azerbaijani letters and pronunciation guide for English speakers"
 ---
 
