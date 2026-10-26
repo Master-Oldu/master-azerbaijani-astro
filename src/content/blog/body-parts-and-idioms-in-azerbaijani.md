@@ -17,11 +17,11 @@ coverImageAlt: "Azerbaijani body-part expressions featuring əl, göz, üz, and 
 
 Imagine someone describes a person as **əliuzun**.
 
-You know *əl* means hand and *uzun* means long. So they are describing someone with unusually long arms?
+You know *əl* means hand and *uzun* means long. So they're describing someone with unusually long arms?
 
 Not even close.
 
-In Azerbaijani, calling someone *əliuzun* can mean they have a habit of stealing or taking things that do not belong to them.
+In Azerbaijani, calling someone *əliuzun* can mean they have a habit of stealing or taking things that don't belong to them.
 
 Now imagine hearing someone described as **gözüqara**. Literally, black-eyed. But the speaker may be talking about someone fearless or daring, not describing their appearance.
 
@@ -38,7 +38,7 @@ Some expressions are easy to guess. Others mean almost the opposite of what thei
 
 > **O, əliuzun adamdır.** (That person is inclined to steal.)
 
-It is not a harmless description. Calling someone *əliuzun* is a serious negative judgment.
+It isn't a harmless description. Calling someone *əliuzun* is a serious negative judgment.
 
 Compare that with **əliaçıq**, literally *open-handed*.
 
@@ -57,7 +57,7 @@ A long hand reaches for what belongs to others. An open hand gives. The images d
 
 > **O, çox gözüqara adamdır.** (That person is very daring.)
 
-Depending on context, this can be praise or criticism. Someone who acts courageously in a difficult situation might be admired as *gözüqara*. But someone who rushes into danger without thinking could receive the same description. Fearless and reckless are not always far apart.
+Depending on context, this can be praise or criticism. Someone who acts courageously in a difficult situation might be admired as *gözüqara*. But someone who rushes into danger without thinking could receive the same description. Fearless and reckless aren't always far apart.
 
 **Gözütox** suggests a satisfied or full eye, but it has nothing to do with eyesight or food.
 
@@ -99,9 +99,9 @@ In English, someone hanging their head might be embarrassed or defeated. But whe
 
 > **O, sakit, başıaşağı adamdır.** (That person is quiet and keeps to themselves.)
 
-It is often a positive description, especially when the speaker wants to emphasize that someone does not interfere in other people's affairs or cause trouble.
+It is often a positive description, especially when the speaker wants to emphasize that someone doesn't interfere in other people's affairs or cause trouble.
 
-But the same expression can also mean ashamed or embarrassed depending on context. Someone might say *məni başıaşağı etmə* — do not embarrass me or do not make me ashamed. The surrounding sentence always makes it clear which meaning is in play.
+But the same expression can also mean ashamed or embarrassed depending on context. Someone might say *məni başıaşağı etmə*, i.e., don't embarrass me or do not make me ashamed. The surrounding sentence always makes it clear which meaning is in play.
 
 
 ## Əl-Ayağa Düşmək: When Everyone Starts Rushing Around
@@ -113,7 +113,7 @@ Unexpected guests arrive. Someone rushes to make tea. Someone else starts prepar
 **Əl-ayağa düşmək** literally involves hands and feet, but the expression describes becoming flustered, hurriedly trying to deal with a situation. There is usually an element of urgency or commotion. It captures the atmosphere of the moment rather than listing everything people are doing.
 
 
-## Baş Açmamaq: When You Cannot Make Sense of Something
+## Baş Açmamaq: When You Can't Make Sense of Something
 
 You may know **başa düşmək**, meaning *to understand*.
 
@@ -121,7 +121,7 @@ You may know **başa düşmək**, meaning *to understand*.
 
 **Baş açmamaq** is different. It means being unable to make sense of something.
 
-> **Bu işdən baş açmıram.** (I cannot make sense of this.)
+> **Bu işdən baş açmıram.** (I can't make sense of this.)
 
 Say it when instructions are confusing, a situation seems unnecessarily complicated, or you cannot understand why something is happening.
 
@@ -136,14 +136,14 @@ Related: **baş sındırmaq**, literally *to break one's head*, means thinking v
 
 > **Bu hərəkətindən sonra hamının gözündən düşdü.** (After that behavior, the person lost everyone's respect.)
 
-The person has not physically fallen anywhere. What has changed is how others see them. The expression captures that shift in reputation without needing a long explanation.
+The person hasn't physically fallen anywhere. What has changed is how others see them. The expression captures that shift in reputation without needing a long explanation.
 
 It connects naturally with the *üzüağ* and *üzüqara* examples. Azerbaijani uses both eyes and face to express how people judge and regard one another.
 
 
 ## Ağzından Qaçırmaq: When Words Escape
 
-**Ağız** means mouth. And Azerbaijani has a useful expression for saying something you did not intend to reveal.
+**Ağız** means mouth. And Azerbaijani has a useful expression for saying something you didn't intend to reveal.
 
 **Ağzından qaçırmaq**: literally, something escapes from someone's mouth.
 
@@ -151,7 +151,7 @@ It connects naturally with the *üzüağ* and *üzüqara* examples. Azerbaijani 
 
 English has a similar one: *to let something slip*.
 
-This is not about speaking too much. It describes revealing information unintentionally, often something that was supposed to remain private. Imagine someone accidentally revealing a surprise party to the person it was organized for. That is *ağzından qaçırmaq*.
+This isn't about speaking too much. It describes revealing information unintentionally, often something that was supposed to remain private. Imagine someone accidentally revealing a surprise party to the person it was organized for. That's *ağzından qaçırmaq*.
 
 
 ## Ürəyi Ağzına Gəlmək: When Fear Takes Over
@@ -162,18 +162,18 @@ This is not about speaking too much. It describes revealing information unintent
 
 > **Uşaq qəfil yola qaçanda ürəyim ağzıma gəldi.** (My heart was in my mouth when the child suddenly ran into the road.)
 
-English speakers will recognize the image. The expression describes a sudden, intense fright. Not ordinary worry, but the kind of moment when something unexpected happens and your body reacts before you have time to think.
+English speakers will recognize the image. The expression describes a sudden, intense fright. Not ordinary worry, but the kind of moment when something unexpected happens, and your body reacts before you have time to think.
 
 
 ## Why the Same Body Part Can Mean So Many Things
 
 A hand can suggest generosity or dishonesty. An eye can describe courage, contentment, or lost respect. A face can represent honor or shame. A head can describe a quiet personality or the struggle to understand something.
 
-There is no single symbolic meaning attached to each body part. The meaning comes from the combination.
+There's no single symbolic meaning attached to each body part. The meaning comes from the combination.
 
 One thing worth knowing about how these expressions behave grammatically: words like **əliuzun**, **gözüqara**, **üzüağ**, and **başıaşağı** are compound descriptive forms. Expressions like **baş açmamaq**, **gözdən düşmək**, and **əl-ayağa düşmək** are phrases that change depending on the sentence.
 
-You may learn *gözdən düşmək* and later hear *gözündən düşdü*. You may learn *baş açmamaq* and encounter *baş açmıram*. The wording changes, but the figurative meaning stays recognizable. That is why memorizing an idiom as a single unchanging sentence is not always enough. The [suffixes post](/blog/azerbaijani-suffixes-the-building-blocks-of-fluency) covers how those endings work if you want to go deeper.
+You may learn *gözdən düşmək* and later hear *gözündən düşdü*. You may learn *baş açmamaq* and encounter *baş açmıram*. The wording changes, but the figurative meaning stays recognizable. That's why memorizing an idiom as a single unchanging sentence is not always enough. The [suffixes post](/blog/azerbaijani-suffixes-the-building-blocks-of-fluency) covers how those endings work if you want to go deeper.
 
 
 ## The Meaning Is Rarely in the Body Part Alone
@@ -184,7 +184,7 @@ The same is true for *əliuzun*. Someone's arms are not the issue. Their behavio
 
 And someone described as *başıaşağı* might be a quiet, unassuming person rather than someone feeling ashamed.
 
-These are the differences that make figurative language worth learning. Not every expression has to be memorized through a literal English translation. Sometimes it is more useful to remember the situation in which you would hear it and what judgment or feeling it conveys.
+These are the differences that make figurative language worth learning. Not every expression has to be memorized through a literal English translation. Sometimes it's more useful to remember the situation in which you would hear it and what judgment or feeling it conveys.
 
 For more expressions beyond body parts, [Azerbaijani Idioms Every Learner Should Know](/blog/azerbaijani-idioms-every-learner-should-know) covers more of the language's figurative side.
 
