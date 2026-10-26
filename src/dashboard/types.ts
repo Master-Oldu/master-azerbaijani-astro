@@ -200,7 +200,7 @@ export interface DashboardDataSource {
  * administrator allow-list on every action. Do not send this in phase 1.
  */
 export interface AdminDashboardRequest {
-  action: 'overview' | 'learners' | 'learner' | 'purchases';
+  action: 'session' | 'overview' | 'learners' | 'learner' | 'purchases';
   learnerId?: string;
   search?: string;
   page?: number;

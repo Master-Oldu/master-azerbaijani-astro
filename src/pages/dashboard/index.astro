@@ -1,20 +1,26 @@
 ---
 import DashboardLayout from '../../layouts/DashboardLayout.astro';
+
+const demoPreview = import.meta.env.DEV && import.meta.env.PUBLIC_DASHBOARD_DEMO !== 'false';
 ---
 
 <DashboardLayout
   title="Overview"
   section="overview"
-  description="Current access and unresolved purchases stay fixed. The reporting period changes registrations and recorded completions."
+  description={
+    demoPreview
+      ? 'Current access and unresolved purchases stay fixed. The reporting period changes registrations and recorded completions.'
+      : 'Sign in with your existing Master Azerbaijani account. Records stay closed until the server confirms an administrator.'
+  }
 >
-  <p class="loading">Loading demonstration data…</p>
+  <p class="loading">{demoPreview ? 'Loading demonstration data…' : 'Loading…'}</p>
 </DashboardLayout>
 
 <script>
-  import { mountOverview } from '../../dashboard/screens/overview';
+  import { startDashboard } from '../../dashboard/gate';
 
   const root = document.querySelector('#dashboard-root');
   if (root instanceof HTMLElement) {
-    void mountOverview(root);
+    void startDashboard(root, 'overview');
   }
 </script>

@@ -2,6 +2,10 @@
  * Replacement point for live administrative data. Not imported by the pages,
  * so this phase cannot call Supabase and this file is not shipped to the browser.
  *
+ * The browser session check calls `admin-dashboard` with `{ "action": "session" }`.
+ * It is not this module. Data methods below stay disconnected until a later phase,
+ * and each one must still authorize the caller on the server.
+ *
  * When a later phase connects data:
  * 1. Add an Edge Function, for example `admin-dashboard`.
  * 2. On every action, verify the caller JWT and an administrator allow-list.

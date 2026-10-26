@@ -1,20 +1,26 @@
 ---
 import DashboardLayout from '../../../layouts/DashboardLayout.astro';
+
+const demoPreview = import.meta.env.DEV && import.meta.env.PUBLIC_DASHBOARD_DEMO !== 'false';
 ---
 
 <DashboardLayout
   title="Learner details"
   section="learners"
-  description="Account, lesson progression, learning history, entitlements, and purchase records."
+  description={
+    demoPreview
+      ? 'Account, lesson progression, learning history, entitlements, and purchase records.'
+      : 'Sign in with your existing Master Azerbaijani account. Learner records stay closed until the server confirms an administrator.'
+  }
 >
-  <p class="loading">Loading demonstration data…</p>
+  <p class="loading">{demoPreview ? 'Loading demonstration data…' : 'Loading…'}</p>
 </DashboardLayout>
 
 <script>
-  import { mountLearner } from '../../../dashboard/screens/learner';
+  import { startDashboard } from '../../../dashboard/gate';
 
   const root = document.querySelector('#dashboard-root');
   if (root instanceof HTMLElement) {
-    void mountLearner(root);
+    void startDashboard(root, 'learner');
   }
 </script>

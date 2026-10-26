@@ -19,5 +19,8 @@ export function getDataSourceMeta(): { kind: 'demonstration'; label: string; asO
 }
 
 export function createDashboardSource(): DashboardDataSource {
+  if (!import.meta.env.DEV || import.meta.env.PUBLIC_DASHBOARD_DEMO === 'false') {
+    throw new Error('Synthetic dashboard records are available only in the local demonstration preview.');
+  }
   return createDemoSource();
 }

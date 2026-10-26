@@ -9,6 +9,7 @@ interface Props {
 }
 
 const { title, description, section } = Astro.props;
+const demoPreview = import.meta.env.DEV && import.meta.env.PUBLIC_DASHBOARD_DEMO !== 'false';
 const pageTitle = `${title} · Master Azerbaijani Admin`;
 const items = [
   { id: 'overview', href: '/dashboard/', label: 'Overview' },
@@ -41,7 +42,8 @@ const items = [
         </nav>
         <div class="sidebar-foot">
           <a href="/">Public website</a>
-          <p>Local demonstration preview.</p>
+          <p>{demoPreview ? 'Local demonstration preview.' : 'Administrator sign-in required.'}</p>
+          <div id="dashboard-account"></div>
         </div>
       </aside>
       <div class="workspace">
@@ -52,21 +54,49 @@ const items = [
             <p class="topbar-copy">{description}</p>
           </div>
         </header>
-        <div class="demo-banner" role="status">
-          <p><strong>Demonstration data.</strong> These learners, lessons, and purchases are synthetic. Production customer records are not connected.</p>
-          <p id="source-note">Sample records stay in this local preview.</p>
-          <p>A hidden address is not security. Live administrative data will require an authorized administrator on every request.</p>
-        </div>
+        {
+          demoPreview ? (
+            <div class="demo-banner" role="status">
+              <p>
+                <strong>Demonstration data.</strong> These learners, lessons, and purchases are synthetic. Production customer records are not connected.
+              </p>
+              <p id="source-note">Sample records stay in this local preview.</p>
+              <p>A hidden address is not security. Live administrative data will require an authorized administrator on every request.</p>
+            </div>
+          ) : (
+            <div class="demo-banner" id="dashboard-banner" role="status">
+              <p>
+                <strong>Administrator sign-in.</strong> Customer records stay closed until the server confirms this account is an administrator.
+              </p>
+              <p>A hidden address is not security. This page does not include customer records.</p>
+            </div>
+          )
+        }
         <div id="dashboard-root" data-screen={section}>
           <slot />
         </div>
         <noscript>
-          <div class="panel">
-            <h2>JavaScript is required for this preview</h2>
-            <p>The dashboard reads the local demonstration source in the browser. The public website does not use this screen.</p>
-          </div>
+          {
+            demoPreview ? (
+              <div class="panel">
+                <h2>JavaScript is required for this preview</h2>
+                <p>The dashboard reads the local demonstration source in the browser. The public website does not use this screen.</p>
+              </div>
+            ) : (
+              <div class="panel">
+                <h2>JavaScript is required to sign in</h2>
+                <p>The dashboard cannot confirm an administrator without JavaScript. No customer records are included on this page.</p>
+              </div>
+            )
+          }
         </noscript>
-        <p class="fine-print">Phase 1 preview. Nothing on this screen is loaded from Supabase.</p>
+        <p class="fine-print">
+          {
+            demoPreview
+              ? 'Phase 1 preview. Nothing on this screen is loaded from Supabase.'
+              : 'Customer records are not loaded by this page. A hidden address is not security.'
+          }
+        </p>
       </div>
     </div>
   </body>
