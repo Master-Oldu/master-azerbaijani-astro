@@ -1,0 +1,73 @@
+---
+import DashboardHead from '../components/dashboard/DashboardHead.astro';
+import '../styles/dashboard.css';
+
+interface Props {
+  title: string;
+  description: string;
+  section: 'overview' | 'learners' | 'purchases';
+}
+
+const { title, description, section } = Astro.props;
+const pageTitle = `${title} · Master Azerbaijani Admin`;
+const items = [
+  { id: 'overview', href: '/dashboard/', label: 'Overview' },
+  { id: 'learners', href: '/dashboard/learners/', label: 'Learners' },
+  { id: 'purchases', href: '/dashboard/purchases/', label: 'Purchases' },
+] as const;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <DashboardHead title={pageTitle} description={description} />
+  </head>
+  <body class="ma-dashboard">
+    <a class="skip" href="#dashboard-main">Skip to content</a>
+    <div class="shell">
+      <aside class="sidebar">
+        <a class="brand" href="/dashboard/">
+          <img src="/images/logo-12.png" alt="" width="168" height="48" />
+          <span class="brand-role">Private admin</span>
+        </a>
+        <nav class="dash-nav" aria-label="Dashboard">
+          {
+            items.map((item) => (
+              <a href={item.href} aria-current={section === item.id ? 'page' : undefined}>
+                {item.label}
+              </a>
+            ))
+          }
+        </nav>
+        <div class="sidebar-foot">
+          <a href="/">Public website</a>
+          <p>Local demonstration preview.</p>
+        </div>
+      </aside>
+      <div class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Master Azerbaijani</p>
+            <h1 id="dashboard-main">{title}</h1>
+            <p class="topbar-copy">{description}</p>
+          </div>
+        </header>
+        <div class="demo-banner" role="status">
+          <p><strong>Demonstration data.</strong> These learners, lessons, and purchases are synthetic. Production customer records are not connected.</p>
+          <p id="source-note">Sample records stay in this local preview.</p>
+          <p>A hidden address is not security. Live administrative data will require an authorized administrator on every request.</p>
+        </div>
+        <div id="dashboard-root" data-screen={section}>
+          <slot />
+        </div>
+        <noscript>
+          <div class="panel">
+            <h2>JavaScript is required for this preview</h2>
+            <p>The dashboard reads the local demonstration source in the browser. The public website does not use this screen.</p>
+          </div>
+        </noscript>
+        <p class="fine-print">Phase 1 preview. Nothing on this screen is loaded from Supabase.</p>
+      </div>
+    </div>
+  </body>
+</html>

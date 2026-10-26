@@ -1,0 +1,20 @@
+---
+import DashboardLayout from '../../../layouts/DashboardLayout.astro';
+---
+
+<DashboardLayout
+  title="Learners"
+  section="learners"
+  description="Search demonstration accounts, then open a learner for progress and purchases."
+>
+  <p class="loading">Loading demonstration data…</p>
+</DashboardLayout>
+
+<script>
+  import { mountLearners } from '../../../dashboard/screens/learners';
+
+  const root = document.querySelector('#dashboard-root');
+  if (root instanceof HTMLElement) {
+    void mountLearners(root);
+  }
+</script>

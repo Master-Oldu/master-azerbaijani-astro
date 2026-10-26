@@ -7,6 +7,12 @@ export default defineConfig({
   site: 'https://masterazerbaijani.com',
   integrations: [
     mdx(),
-    sitemap(),
+    sitemap({
+      // The private dashboard is omitted. Every existing public URL still passes.
+      filter: (page) => {
+        const path = new URL(page).pathname;
+        return path !== '/dashboard' && !path.startsWith('/dashboard/');
+      },
+    }),
   ],
 });

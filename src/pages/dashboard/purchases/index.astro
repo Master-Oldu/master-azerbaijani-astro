@@ -1,0 +1,20 @@
+---
+import DashboardLayout from '../../../layouts/DashboardLayout.astro';
+---
+
+<DashboardLayout
+  title="Purchases"
+  section="purchases"
+  description="Store transactions, payment classification, grants, entitlement status, and ownership. Counts are records, not customer accounts."
+>
+  <p class="loading">Loading demonstration data…</p>
+</DashboardLayout>
+
+<script>
+  import { mountPurchases } from '../../../dashboard/screens/purchases';
+
+  const root = document.querySelector('#dashboard-root');
+  if (root instanceof HTMLElement) {
+    void mountPurchases(root);
+  }
+</script>

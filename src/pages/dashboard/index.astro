@@ -1,0 +1,20 @@
+---
+import DashboardLayout from '../../layouts/DashboardLayout.astro';
+---
+
+<DashboardLayout
+  title="Overview"
+  section="overview"
+  description="Current access and unresolved purchases stay fixed. The reporting period changes registrations and recorded completions."
+>
+  <p class="loading">Loading demonstration data…</p>
+</DashboardLayout>
+
+<script>
+  import { mountOverview } from '../../dashboard/screens/overview';
+
+  const root = document.querySelector('#dashboard-root');
+  if (root instanceof HTMLElement) {
+    void mountOverview(root);
+  }
+</script>
