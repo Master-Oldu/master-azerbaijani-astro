@@ -14,13 +14,14 @@ const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 export interface LearnersRequestBody {
   action: 'learners';
   page: number;
-  page_size: 20;
+  page_size: number;
   search?: string;
 }
 
 export interface LearnersQuery {
   search: string | null;
   page: number;
+  page_size?: number;
 }
 
 export interface LessonCompletionRow {
@@ -63,7 +64,7 @@ export interface LearnerDirectoryRow {
 export interface LearnersPayload {
   search: string | null;
   page: number;
-  page_size: 20;
+  page_size: number;
   total: number;
   page_count: number;
   rows: LearnerDirectoryRow[];
@@ -78,12 +79,13 @@ export type LearnersOutcome =
   | { status: 'unavailable'; code: string | null }
   | { status: 'network' };
 
-/** Named periods are unrelated. A blank search is omitted. page_size stays 20. */
-export function buildLearnersRequest(search: string, page: number): LearnersRequestBody | null {
+/** A blank search is omitted. The directory uses 20. Overview may ask for another size from 1 to 100. */
+export function buildLearnersRequest(search: string, page: number, pageSize = LEARNERS_PAGE_SIZE): LearnersRequestBody | null {
   const trimmed = search.trim();
-  if (trimmed.length > SEARCH_LIMIT) return null;
+  const size = requestedPageSize(pageSize);
+  if (size === null) return null;
   if (!Number.isInteger(page) || page < 1 || page > 10000) return null;
-  const body: LearnersRequestBody = { action: 'learners', page, page_size: LEARNERS_PAGE_SIZE };
+  const body: LearnersRequestBody = { action: 'learners', page, page_size: size };
   if (trimmed) body.search = trimmed;
   return body;
 }
@@ -98,13 +100,15 @@ export function parseLearnersPayload(body: unknown, expected: LearnersQuery): Le
   } else if (learners.search !== expected.search) {
     return null;
   }
-  if (learners.page !== expected.page || learners.page_size !== LEARNERS_PAGE_SIZE) return null;
+  const pageSize = requestedPageSize(expected.page_size ?? LEARNERS_PAGE_SIZE);
+  if (pageSize === null) return null;
+  if (learners.page !== expected.page || learners.page_size !== pageSize) return null;
   const total = whole(learners.total);
   const pageCount = whole(learners.page_count);
   if (total === null || pageCount === null) return null;
-  if (pageCount !== expectedPageCount(total, LEARNERS_PAGE_SIZE)) return null;
+  if (pageCount !== expectedPageCount(total, pageSize)) return null;
   if (!Array.isArray(learners.rows)) return null;
-  const expectedRows = expectedRowCount(total, expected.page, LEARNERS_PAGE_SIZE, pageCount);
+  const expectedRows = expectedRowCount(total, expected.page, pageSize, pageCount);
   if (learners.rows.length !== expectedRows) return null;
 
   const rows: LearnerDirectoryRow[] = [];
@@ -119,7 +123,7 @@ export function parseLearnersPayload(body: unknown, expected: LearnersQuery): Le
   return {
     search: expected.search,
     page: expected.page,
-    page_size: LEARNERS_PAGE_SIZE,
+    page_size: pageSize,
     total,
     page_count: pageCount,
     rows,
@@ -265,6 +269,11 @@ function optionalText(value: unknown): string | null | undefined {
 
 function isTimestamp(value: unknown): value is string {
   return typeof value === 'string' && value.trim().length > 0 && Number.isFinite(Date.parse(value));
+}
+
+function requestedPageSize(value: number): number | null {
+  if (!Number.isInteger(value) || value < 1 || value > 100) return null;
+  return value;
 }
 
 function whole(value: unknown): number | null {

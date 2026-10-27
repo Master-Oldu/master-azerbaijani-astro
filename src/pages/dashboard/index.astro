@@ -10,7 +10,7 @@ const demoPreview = import.meta.env.DEV && import.meta.env.PUBLIC_DASHBOARD_DEMO
   description={
     demoPreview
       ? 'Current access and unresolved purchases stay fixed. The reporting period changes registrations and recorded completions.'
-      : 'Current counts stay separate from the reporting period. Signup and purchase lists are not connected on this page.'
+      : 'Current counts stay separate from the reporting period. Latest registrations and purchases requiring review load after the server confirms an administrator.'
   }
 >
   <p class="loading">{demoPreview ? 'Loading demonstration data…' : 'Loading…'}</p>

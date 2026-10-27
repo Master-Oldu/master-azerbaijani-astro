@@ -367,7 +367,7 @@ function cancelLiveOverview(): void {
 async function invokeOverview(
   supabase: SupabaseClient,
   name: typeof OVERVIEW_FUNCTION,
-  body: OverviewRequestBody,
+  body: OverviewRequestBody | LearnersRequestBody | PurchasesRequestBody,
 ): Promise<{ data: unknown; error: unknown }> {
   return supabase.functions.invoke(name, { body, timeout: CHECK_TIMEOUT_MS });
 }

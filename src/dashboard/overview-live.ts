@@ -4,8 +4,9 @@
  * Does not import demonstration records and does not write them to storage.
  */
 
-import { formatDay } from './dates';
-import { esc } from './markup';
+import { formatDate, formatDay } from './dates';
+import { emailText, esc, learnerHref, pill } from './markup';
+import { buildLearnersRequest, readLearnersInvoke, type LearnersPayload, type LearnersRequestBody } from './learners-contract';
 import {
   buildOverviewRequest,
   DEFAULT_OVERVIEW_PERIOD,
@@ -17,11 +18,22 @@ import {
   type OverviewPeriodId,
   type OverviewRequestBody,
 } from './overview-contract';
+import {
+  buildPurchasesRequest,
+  DEFAULT_PURCHASE_FILTERS,
+  readPurchasesInvoke,
+  type PurchasesPayload,
+  type PurchasesRequestBody,
+} from './purchases-contract';
 
 const SAFE_CODE = /^[a-z0-9_]{1,80}$/;
+const PANEL_PAGE_SIZE = 5;
 
 export interface OverviewInvoker {
-  invoke(name: typeof OVERVIEW_FUNCTION, body: OverviewRequestBody): Promise<{ data: unknown; error: unknown }>;
+  invoke(
+    name: typeof OVERVIEW_FUNCTION,
+    body: OverviewRequestBody | LearnersRequestBody | PurchasesRequestBody,
+  ): Promise<{ data: unknown; error: unknown }>;
 }
 
 interface Selection {
@@ -35,23 +47,50 @@ interface MountOptions {
   onDenied: (reason: 'invalid_session' | 'not_admin') => void;
 }
 
+type PanelState<T> = { status: 'loading' } | { status: 'error'; message: string } | { status: 'ready'; data: T };
+
 export function mountLiveOverview(root: HTMLElement, invoker: OverviewInvoker, options: MountOptions): { dispose: () => void } {
   let generation = 0;
+  let registrationGeneration = 0;
+  let reviewGeneration = 0;
   let disposed = false;
   let selection: Selection = { period: DEFAULT_OVERVIEW_PERIOD, start: '', end: '' };
   let current: OverviewCurrent | null = null;
+  let overviewState = 'loading';
+  let lede = 'Loading overview figures…';
+  let overview: OverviewPayload | null = null;
+  let extra = '';
+  let registrations: PanelState<LearnersPayload> = { status: 'loading' };
+  let reviews: PanelState<PurchasesPayload> = { status: 'loading' };
 
   function dispose(): void {
     disposed = true;
     generation += 1;
+    registrationGeneration += 1;
+    reviewGeneration += 1;
     current = null;
+    overview = null;
+    registrations = { status: 'loading' };
+    reviews = { status: 'loading' };
   }
 
-  function render(html: string, state: string): void {
+  function paint(): void {
     if (disposed || !options.stillCurrent()) return;
-    root.innerHTML = html;
-    root.dataset.overviewState = state;
+    const active = document.activeElement;
+    const focusId = active instanceof HTMLElement ? active.id : '';
+    const range = active instanceof HTMLInputElement ? ([active.selectionStart, active.selectionEnd] as const) : null;
+    root.innerHTML = shell(selection, current, lede, overview, extra, registrations, reviews);
+    root.dataset.overviewState = overviewState;
     root.dataset.ready = 'true';
+    if (focusId) {
+      const next = document.getElementById(focusId);
+      if (next instanceof HTMLInputElement && range?.[0] != null && range[1] != null) {
+        next.focus();
+        next.setSelectionRange(range[0], range[1]);
+      } else if (next instanceof HTMLElement) {
+        next.focus({ preventScroll: true });
+      }
+    }
     bind();
   }
 
@@ -80,6 +119,12 @@ export function mountLiveOverview(root: HTMLElement, invoker: OverviewInvoker, o
     root.querySelector<HTMLButtonElement>('#overview-retry')?.addEventListener('click', () => {
       void refresh();
     });
+    root.querySelector<HTMLButtonElement>('#registrations-retry')?.addEventListener('click', () => {
+      void loadRegistrations();
+    });
+    root.querySelector<HTMLButtonElement>('#reviews-retry')?.addEventListener('click', () => {
+      void loadReviews();
+    });
   }
 
   async function refresh(): Promise<void> {
@@ -89,12 +134,20 @@ export function mountLiveOverview(root: HTMLElement, invoker: OverviewInvoker, o
     const body = buildOverviewRequest(requested.period, requested.start, requested.end);
     if (!body) {
       setBanner('Choose a start and end date before the overview request is sent. No figures were requested for this range.');
-      render(shell(requested, current, rangeMessage(requested), null, ''), 'needs-dates');
+      lede = rangeMessage(requested);
+      overview = null;
+      extra = '';
+      overviewState = 'needs-dates';
+      paint();
       return;
     }
 
     setBanner('Loading overview figures from the administrator service.');
-    render(shell(requested, current, 'Loading overview figures…', null, ''), 'loading');
+    lede = 'Loading overview figures…';
+    overview = null;
+    extra = '';
+    overviewState = 'loading';
+    paint();
 
     let result: { data: unknown; error: unknown };
     try {
@@ -103,7 +156,7 @@ export function mountLiveOverview(root: HTMLElement, invoker: OverviewInvoker, o
       result = { data: null, error: { name: 'FunctionsFetchError' } };
     }
     const outcome = await readOverviewInvoke(result, requested.period);
-    if (disposed || requestId !== generation || !options.stillCurrent()) return;
+    if (disposed || requestId !== generation || !sameSelection(requested, selection) || !options.stillCurrent()) return;
 
     if (outcome.status === 'denied') {
       current = null;
@@ -112,9 +165,12 @@ export function mountLiveOverview(root: HTMLElement, invoker: OverviewInvoker, o
     }
     if (outcome.status !== 'ok') {
       current = null;
-      const message = failureMessage(outcome);
+      lede = failureMessage(outcome);
+      overview = null;
+      extra = retryButton();
+      overviewState = 'error';
       setBanner('The overview request failed. No customer figures are shown.');
-      render(shell(requested, null, message, null, retryButton()), 'error');
+      paint();
       return;
     }
 
@@ -124,12 +180,92 @@ export function mountLiveOverview(root: HTMLElement, invoker: OverviewInvoker, o
       start: outcome.overview.period.start ?? '',
       end: outcome.overview.period.end,
     };
-    setBanner('Overview counts from the administrator service. Signup lists and individual purchase records are not included in this response.');
-    render(shell(selection, current, periodSentence(outcome.overview), outcome.overview, ''), 'ready');
+    lede = periodSentence(outcome.overview);
+    overview = outcome.overview;
+    extra = '';
+    overviewState = 'ready';
+    setBanner('Overview counts come from the overview action. The lists below are separate learners and purchases requests.');
+    paint();
+  }
+
+  async function loadRegistrations(): Promise<void> {
+    if (disposed || !options.stillCurrent()) return;
+    const requestId = ++registrationGeneration;
+    const body = buildLearnersRequest('', 1, PANEL_PAGE_SIZE);
+    registrations = { status: 'loading' };
+    paint();
+    if (!body) {
+      registrations = { status: 'error', message: 'The registrations request was not sent. No accounts are shown.' };
+      paint();
+      return;
+    }
+    let result: { data: unknown; error: unknown };
+    try {
+      result = await invoker.invoke(OVERVIEW_FUNCTION, body);
+    } catch {
+      result = { data: null, error: { name: 'FunctionsFetchError' } };
+    }
+    const outcome = await readLearnersInvoke(result, { search: null, page: 1, page_size: PANEL_PAGE_SIZE });
+    if (disposed || requestId !== registrationGeneration || !options.stillCurrent()) return;
+    if (outcome.status === 'denied') {
+      options.onDenied(outcome.reason);
+      return;
+    }
+    if (outcome.status !== 'ok') {
+      registrations = { status: 'error', message: panelFailure('registrations', outcome) };
+      paint();
+      return;
+    }
+    if (!newestFirst(outcome.learners.rows)) {
+      registrations = { status: 'error', message: 'The registrations response could not be used. No accounts are shown.' };
+      paint();
+      return;
+    }
+    registrations = { status: 'ready', data: outcome.learners };
+    paint();
+  }
+
+  async function loadReviews(): Promise<void> {
+    if (disposed || !options.stillCurrent()) return;
+    const requestId = ++reviewGeneration;
+    const filters = { ...DEFAULT_PURCHASE_FILTERS, resolution: 'required' as const };
+    const body = buildPurchasesRequest('', 1, filters, PANEL_PAGE_SIZE);
+    reviews = { status: 'loading' };
+    paint();
+    if (!body) {
+      reviews = { status: 'error', message: 'The review request was not sent. No purchase records are shown.' };
+      paint();
+      return;
+    }
+    let result: { data: unknown; error: unknown };
+    try {
+      result = await invoker.invoke(OVERVIEW_FUNCTION, body);
+    } catch {
+      result = { data: null, error: { name: 'FunctionsFetchError' } };
+    }
+    const outcome = await readPurchasesInvoke(result, { search: null, page: 1, page_size: PANEL_PAGE_SIZE, filters });
+    if (disposed || requestId !== reviewGeneration || !options.stillCurrent()) return;
+    if (outcome.status === 'denied') {
+      options.onDenied(outcome.reason);
+      return;
+    }
+    if (outcome.status !== 'ok') {
+      reviews = { status: 'error', message: panelFailure('reviews', outcome) };
+      paint();
+      return;
+    }
+    reviews = { status: 'ready', data: outcome.purchases };
+    paint();
   }
 
   void refresh();
+  void loadRegistrations();
+  void loadReviews();
   return { dispose };
+}
+
+function sameSelection(left: Selection, right: Selection): boolean {
+  return left.period === right.period && left.start === right.start && left.end === right.end;
 }
 
 function shell(
@@ -138,6 +274,8 @@ function shell(
   lede: string,
   overview: OverviewPayload | null,
   extra: string,
+  registrations: PanelState<LearnersPayload>,
+  reviews: PanelState<PurchasesPayload>,
 ): string {
   const currentBlock = current
     ? `<div class="stats stats-4">
@@ -149,7 +287,7 @@ function shell(
     : '';
 
   const periodBlock = overview ? periodStats(overview) : '';
-  const panels = disconnectedPanels();
+  const panels = informationPanels(registrations, reviews);
 
   return `
     <section class="metric-group" aria-labelledby="current-heading">
@@ -204,19 +342,91 @@ function coverageNote(overview: OverviewPayload): string {
   return '';
 }
 
-function disconnectedPanels(): string {
+function informationPanels(registrations: PanelState<LearnersPayload>, reviews: PanelState<PurchasesPayload>): string {
   return `
     <div class="split">
-      <section class="panel">
-        <h2>Registrations in this period</h2>
-        <p class="empty">Individual signup records are not returned by the overview action. The Learners page will provide them in a later phase. No signup rows are shown here.</p>
+      <section class="panel" id="latest-registrations" data-registrations-state="${esc(registrations.status)}">
+        <h2>Latest registrations</h2>
+        <p class="lede">These are the newest registered accounts. This list is not limited to the reporting period above. The New registrations figure is the count for that period.</p>
+        ${registrationBody(registrations)}
+        <p class="panel-link"><a href="/dashboard/learners/">Open the Learners directory</a></p>
       </section>
-      <section class="panel">
-        <h2>Unresolved purchases</h2>
-        <p class="empty">Individual purchase records are not returned by the overview action. The Purchases page will provide them in a later phase. No purchase rows are shown here.</p>
+      <section class="panel" id="purchases-requiring-review" data-reviews-state="${esc(reviews.status)}">
+        <h2>Purchases requiring review</h2>
+        <p class="lede">These production records are explicitly marked for review because a pending legacy link request is stored. An unowned purchase without that evidence is not listed. Sandbox test permission is not a review.</p>
+        ${reviewBody(reviews)}
+        <p class="panel-link"><a href="/dashboard/purchases/?resolution=required">Open purchases requiring review</a></p>
       </section>
     </div>
   `;
+}
+
+function registrationBody(panel: PanelState<LearnersPayload>): string {
+  if (panel.status === 'loading') return `<p class="empty">Loading latest registrations…</p>${panelRetry('registrations-retry')}`;
+  if (panel.status === 'error') return `<p class="empty">${esc(panel.message)}</p>${panelRetry('registrations-retry')}`;
+  if (panel.data.rows.length === 0) return '<p class="empty">No registered accounts were returned.</p>';
+  const rows = panel.data.rows
+    .map((row) => {
+      const name = row.display_name ?? 'No name saved';
+      const email = row.email ? emailText(row.email) : esc('No email saved');
+      return `<tr data-user-id="${esc(row.user_id)}">
+        <td><a href="${esc(learnerHref(row.user_id))}">${esc(name)}</a><span class="secondary">${email}</span></td>
+        <td class="nowrap">${esc(formatDate(row.created_at))}</td>
+      </tr>`;
+    })
+    .join('');
+  const shown = panel.data.total > panel.data.rows.length ? `Showing ${panel.data.rows.length} of ${panel.data.total} registered accounts, newest first.` : 'Newest registered accounts first.';
+  return `<p class="lede">${esc(shown)}</p><div class="table-wrap"><table class="fit">
+    <caption>Registration dates are Pacific Time.</caption>
+    <thead><tr><th>Account</th><th>Registered</th></tr></thead>
+    <tbody>${rows}</tbody>
+  </table></div>`;
+}
+
+function reviewBody(panel: PanelState<PurchasesPayload>): string {
+  if (panel.status === 'loading') return `<p class="empty">Loading purchases requiring review…</p>${panelRetry('reviews-retry')}`;
+  if (panel.status === 'error') return `<p class="empty">${esc(panel.message)}</p>${panelRetry('reviews-retry')}`;
+  if (panel.data.rows.length === 0) return '<p class="empty">No production records are explicitly requiring review.</p>';
+  const rows = panel.data.rows
+    .map((row) => {
+      if (row.record_kind !== 'store' || row.account) return '';
+      const platform = row.platform === 'apple' ? 'Apple' : 'Google Play';
+      const product = row.product === 'monthly' ? 'Monthly' : row.product === 'annual' ? 'Annual' : row.product === 'lifetime' ? 'Lifetime' : 'Unrecognized product';
+      const basis = row.review_basis === 'pending_legacy_link_request' ? 'Pending legacy ownership review' : 'Explicitly requiring review';
+      return `<article data-record-id="${esc(row.id)}">
+        <p><span class="primary">${esc(platform)}</span><span class="secondary">${esc(product)} · Recorded ${esc(formatDate(row.recorded_at))}</span></p>
+        <p>${pill('neutral', 'Unowned')}${pill('warn', basis)}</p>
+      </article>`;
+    })
+    .join('');
+  const shown = panel.data.total > panel.data.rows.length ? `Showing ${panel.data.rows.length} of ${panel.data.total} records explicitly requiring review.` : 'Records explicitly requiring review.';
+  return `<p class="lede">${esc(shown)}</p>${rows}<p class="secondary">Recorded dates are Pacific Time. No owner is invented for these records.</p>`;
+}
+
+function panelRetry(id: string): string {
+  return `<div class="signin-actions"><button type="button" id="${esc(id)}">Try again</button></div>`;
+}
+
+function newestFirst(rows: LearnersPayload['rows']): boolean {
+  for (let index = 1; index < rows.length; index += 1) {
+    const previous = Date.parse(rows[index - 1].created_at);
+    const next = Date.parse(rows[index].created_at);
+    if (next > previous) return false;
+    if (next === previous && rows[index - 1].user_id.toLowerCase() > rows[index].user_id.toLowerCase()) return false;
+  }
+  return true;
+}
+
+function panelFailure(kind: 'registrations' | 'reviews', outcome: { status: string; code?: string | null }): string {
+  const subject = kind === 'registrations' ? 'registrations' : 'review';
+  const unavailable = kind === 'registrations' ? 'learners_unavailable' : 'purchases_unavailable';
+  if (outcome.status === 'network') return `The ${subject} request did not reach the server. No records are shown.`;
+  if (outcome.status === 'invalid_body') return `The ${subject} request was rejected (invalid_body). No records are shown.`;
+  const code = outcome.code && SAFE_CODE.test(outcome.code) ? outcome.code : '';
+  if (code === unavailable) return `The ${subject} list could not be read (${code}). No records are shown.`;
+  if (code === 'authorization_unavailable') return 'The administrator check could not be completed (authorization_unavailable). No records are shown.';
+  if (code) return `The ${subject} response could not be used (${code}). No records are shown.`;
+  return `The ${subject} response could not be used. No records are shown.`;
 }
 
 function periodForm(selection: Selection): string {

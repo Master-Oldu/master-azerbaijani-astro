@@ -42,7 +42,7 @@ export const DEFAULT_PURCHASE_FILTERS: PurchaseFilters = {
 export interface PurchasesRequestBody {
   action: 'purchases';
   page: number;
-  page_size: 20;
+  page_size: number;
   environment: PurchaseFilters['environment'];
   search?: string;
   platform?: Exclude<PurchaseFilters['platform'], 'all'>;
@@ -57,6 +57,7 @@ export interface PurchasesQuery {
   search: string | null;
   page: number;
   filters: PurchaseFilters;
+  page_size?: number;
 }
 
 export interface PurchaseAccount {
@@ -146,7 +147,7 @@ export interface PurchasesPayload {
   filters: PurchaseFilters;
   search: string | null;
   page: number;
-  page_size: 20;
+  page_size: number;
   total: number;
   page_count: number;
   rows: PurchaseRow[];
@@ -180,16 +181,17 @@ export type PurchasesOutcome =
   | { status: 'unavailable'; code: string | null }
   | { status: 'network' };
 
-/** Defaults stay omitted except environment, which the Purchases screen always names. */
-export function buildPurchasesRequest(search: string, page: number, filters: PurchaseFilters): PurchasesRequestBody | null {
+/** Defaults stay omitted except environment, which the Purchases screen always names. The directory uses page size 20. */
+export function buildPurchasesRequest(search: string, page: number, filters: PurchaseFilters, pageSize = PURCHASES_PAGE_SIZE): PurchasesRequestBody | null {
   const trimmed = search.trim();
-  if (trimmed.length > SEARCH_LIMIT) return null;
+  const size = requestedPageSize(pageSize);
+  if (size === null) return null;
   if (!Number.isInteger(page) || page < 1 || page > 10000) return null;
   if (!isFilters(filters)) return null;
   const body: PurchasesRequestBody = {
     action: 'purchases',
     page,
-    page_size: PURCHASES_PAGE_SIZE,
+    page_size: size,
     environment: filters.environment,
   };
   if (trimmed) body.search = trimmed;
@@ -211,14 +213,16 @@ export function parsePurchasesPayload(body: unknown, expected: PurchasesQuery): 
   if (expected.search === null) {
     if (purchases.search !== null) return null;
   } else if (purchases.search !== expected.search) return null;
-  if (purchases.page !== expected.page || purchases.page_size !== PURCHASES_PAGE_SIZE) return null;
+  const pageSize = requestedPageSize(expected.page_size ?? PURCHASES_PAGE_SIZE);
+  if (pageSize === null) return null;
+  if (purchases.page !== expected.page || purchases.page_size !== pageSize) return null;
   const total = whole(purchases.total);
   const pageCount = whole(purchases.page_count);
   if (total === null || pageCount === null) return null;
-  const expectedPages = total === 0 ? 0 : Math.ceil(total / PURCHASES_PAGE_SIZE);
+  const expectedPages = total === 0 ? 0 : Math.ceil(total / pageSize);
   if (pageCount !== expectedPages) return null;
   if (!Array.isArray(purchases.rows)) return null;
-  const expectedRows = expectedPages === 0 || expected.page > expectedPages ? 0 : Math.min(PURCHASES_PAGE_SIZE, total - (expected.page - 1) * PURCHASES_PAGE_SIZE);
+  const expectedRows = expectedPages === 0 || expected.page > expectedPages ? 0 : Math.min(pageSize, total - (expected.page - 1) * pageSize);
   if (purchases.rows.length !== expectedRows) return null;
 
   const rows: PurchaseRow[] = [];
@@ -237,7 +241,7 @@ export function parsePurchasesPayload(body: unknown, expected: PurchasesQuery): 
     filters,
     search: expected.search,
     page: expected.page,
-    page_size: PURCHASES_PAGE_SIZE,
+    page_size: pageSize,
     total,
     page_count: pageCount,
     rows,
@@ -645,6 +649,11 @@ function nonEmpty(value: unknown): value is string {
 
 function isTimestamp(value: unknown): value is string {
   return typeof value === 'string' && value.trim().length > 0 && Number.isFinite(Date.parse(value));
+}
+
+function requestedPageSize(value: number): number | null {
+  if (!Number.isInteger(value) || value < 1 || value > 100) return null;
+  return value;
 }
 
 function whole(value: unknown): number | null {

@@ -21,6 +21,13 @@ import {
 const SEARCH_WAIT_MS = 400;
 const SAFE_CODE = /^[a-z0-9_]{1,80}$/;
 
+function initialFilters(): PurchaseFilters {
+  const filters: PurchaseFilters = { ...DEFAULT_PURCHASE_FILTERS };
+  const resolution = new URLSearchParams(window.location.search).get('resolution');
+  if (resolution === 'required' || resolution === 'not_required' || resolution === 'all') filters.resolution = resolution;
+  return filters;
+}
+
 export interface PurchasesInvoker {
   invoke(name: typeof PURCHASES_FUNCTION, body: PurchasesRequestBody): Promise<{ data: unknown; error: unknown }>;
 }
@@ -36,7 +43,7 @@ export function mountLivePurchases(root: HTMLElement, invoker: PurchasesInvoker,
   let draft = '';
   let appliedSearch = '';
   let page = 1;
-  let filters: PurchaseFilters = { ...DEFAULT_PURCHASE_FILTERS };
+  let filters: PurchaseFilters = initialFilters();
   let timer = 0;
 
   function dispose(): void {
