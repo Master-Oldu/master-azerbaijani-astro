@@ -98,7 +98,9 @@ const items = [
                 ? 'Overview counts load only after the server confirms an administrator. This page does not list signup or purchase records.'
                 : section === 'learners'
                   ? 'Learner information loads only after the server confirms an administrator. The Purchases directory is not included.'
-                  : 'Customer records are not loaded by this page. A hidden address is not security.'
+                  : section === 'purchases'
+                    ? 'Purchase records load only after the server confirms an administrator. A store row is one entitlement lineage, not each payment.'
+                    : 'Customer records are not loaded by this page. A hidden address is not security.'
           }
         </p>
       </div>

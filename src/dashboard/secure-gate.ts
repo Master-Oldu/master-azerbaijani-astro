@@ -10,6 +10,8 @@ import { LEARNERS_FUNCTION, type LearnersRequestBody } from './learners-contract
 import { mountLiveLearners } from './learners-live';
 import { OVERVIEW_FUNCTION, type OverviewRequestBody } from './overview-contract';
 import { mountLiveOverview } from './overview-live';
+import { PURCHASES_FUNCTION, type PurchasesRequestBody } from './purchases-contract';
+import { mountLivePurchases } from './purchases-live';
 
 const CHECK_TIMEOUT_MS = 15000;
 
@@ -20,6 +22,7 @@ let authorizedUserId: string | null = null;
 let liveOverview: { dispose: () => void } | null = null;
 let liveLearners: { dispose: () => void } | null = null;
 let liveLearner: { dispose: () => void } | null = null;
+let livePurchases: { dispose: () => void } | null = null;
 
 export async function openAdministratorGate(root: HTMLElement, screen: DashboardScreen): Promise<void> {
   activeScreen = screen;
@@ -110,6 +113,21 @@ async function finishAuthorization(
         root,
         {
           invoke: (name, body) => invokeLearners(supabase, name, body),
+        },
+        {
+          stillCurrent: () => showingAuthorized && authorizedUserId === userId,
+          onDenied: (reason) => {
+            void denyAccess(supabase, config, root, reason);
+          },
+        },
+      );
+      return;
+    }
+    if (activeScreen === 'purchases') {
+      livePurchases = mountLivePurchases(
+        root,
+        {
+          invoke: (name, body) => invokePurchases(supabase, name, body),
         },
         {
           stillCurrent: () => showingAuthorized && authorizedUserId === userId,
@@ -342,6 +360,8 @@ function cancelLiveOverview(): void {
   liveLearners = null;
   liveLearner?.dispose();
   liveLearner = null;
+  livePurchases?.dispose();
+  livePurchases = null;
 }
 
 async function invokeOverview(
@@ -356,6 +376,14 @@ async function invokeLearners(
   supabase: SupabaseClient,
   name: typeof LEARNERS_FUNCTION,
   body: LearnersRequestBody,
+): Promise<{ data: unknown; error: unknown }> {
+  return supabase.functions.invoke(name, { body, timeout: CHECK_TIMEOUT_MS });
+}
+
+async function invokePurchases(
+  supabase: SupabaseClient,
+  name: typeof PURCHASES_FUNCTION,
+  body: PurchasesRequestBody,
 ): Promise<{ data: unknown; error: unknown }> {
   return supabase.functions.invoke(name, { body, timeout: CHECK_TIMEOUT_MS });
 }
@@ -381,6 +409,7 @@ function clearOverviewMarker(root: HTMLElement): void {
   delete root.dataset.overviewState;
   delete root.dataset.learnersState;
   delete root.dataset.learnerState;
+  delete root.dataset.purchasesState;
   delete root.dataset.ready;
 }
 

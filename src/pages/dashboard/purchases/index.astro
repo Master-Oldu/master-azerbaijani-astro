@@ -10,7 +10,7 @@ const demoPreview = import.meta.env.DEV && import.meta.env.PUBLIC_DASHBOARD_DEMO
   description={
     demoPreview
       ? 'Store transactions, payment classification, grants, entitlement status, and ownership. Counts are records, not customer accounts.'
-      : 'Sign in with your existing Master Azerbaijani account. Purchase records stay closed until the server confirms an administrator.'
+      : 'Entitlement lineages and grants load only after the server confirms an administrator. Counts are records, not payments or customer accounts.'
   }
 >
   <p class="loading">{demoPreview ? 'Loading demonstration data…' : 'Loading…'}</p>

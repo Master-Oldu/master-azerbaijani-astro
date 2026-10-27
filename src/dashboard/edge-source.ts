@@ -3,8 +3,8 @@
  * so this phase cannot call Supabase and this file is not shipped to the browser.
  *
  * The browser session check calls `admin-dashboard` with `{ "action": "session" }`.
- * Overview counts, the learner directory, and individual learner details are requested
- * separately, after that check. This module is still not imported. Purchases stay disconnected,
+ * Overview counts, the learner directory, learner details, and the purchases directory
+ * are requested separately, after that check. This module is still not imported,
  * and each later action must still authorize the caller on the server.
  *
  * When a later phase connects data:
