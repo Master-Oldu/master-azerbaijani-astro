@@ -3,9 +3,9 @@
  * so this phase cannot call Supabase and this file is not shipped to the browser.
  *
  * The browser session check calls `admin-dashboard` with `{ "action": "session" }`.
- * Overview counts are requested separately, after that check, from `overview-live.ts`.
- * This module is still not imported. Learners, learner details, and purchases stay
- * disconnected, and each later action must still authorize the caller on the server.
+ * Overview counts and the learner directory are requested separately, after that check.
+ * This module is still not imported. Learner details and purchases stay disconnected,
+ * and each later action must still authorize the caller on the server.
  *
  * When a later phase connects data:
  * 1. Add an Edge Function, for example `admin-dashboard`.

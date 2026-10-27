@@ -4,6 +4,8 @@ import { createClient } from '@supabase/supabase-js';
 import { checkAdministratorSession, readPublicSupabaseConfig, type PublicSupabaseConfig, type SessionCheckStatus } from './admin-session';
 import type { DashboardScreen } from './gate';
 import { esc } from './markup';
+import { LEARNERS_FUNCTION, type LearnersRequestBody } from './learners-contract';
+import { mountLiveLearners } from './learners-live';
 import { OVERVIEW_FUNCTION, type OverviewRequestBody } from './overview-contract';
 import { mountLiveOverview } from './overview-live';
 
@@ -14,6 +16,7 @@ let showingAuthorized = false;
 let activeScreen: DashboardScreen = 'overview';
 let authorizedUserId: string | null = null;
 let liveOverview: { dispose: () => void } | null = null;
+let liveLearners: { dispose: () => void } | null = null;
 
 export async function openAdministratorGate(root: HTMLElement, screen: DashboardScreen): Promise<void> {
   activeScreen = screen;
@@ -89,6 +92,21 @@ async function finishAuthorization(
         root,
         {
           invoke: (name, body) => invokeOverview(supabase, name, body),
+        },
+        {
+          stillCurrent: () => showingAuthorized && authorizedUserId === userId,
+          onDenied: (reason) => {
+            void denyAccess(supabase, config, root, reason);
+          },
+        },
+      );
+      return;
+    }
+    if (activeScreen === 'learners') {
+      liveLearners = mountLiveLearners(
+        root,
+        {
+          invoke: (name, body) => invokeLearners(supabase, name, body),
         },
         {
           stillCurrent: () => showingAuthorized && authorizedUserId === userId,
@@ -302,12 +320,22 @@ async function denyAccess(
 function cancelLiveOverview(): void {
   liveOverview?.dispose();
   liveOverview = null;
+  liveLearners?.dispose();
+  liveLearners = null;
 }
 
 async function invokeOverview(
   supabase: SupabaseClient,
   name: typeof OVERVIEW_FUNCTION,
   body: OverviewRequestBody,
+): Promise<{ data: unknown; error: unknown }> {
+  return supabase.functions.invoke(name, { body, timeout: CHECK_TIMEOUT_MS });
+}
+
+async function invokeLearners(
+  supabase: SupabaseClient,
+  name: typeof LEARNERS_FUNCTION,
+  body: LearnersRequestBody,
 ): Promise<{ data: unknown; error: unknown }> {
   return supabase.functions.invoke(name, { body, timeout: CHECK_TIMEOUT_MS });
 }
@@ -323,6 +351,7 @@ async function endSession(supabase: SupabaseClient): Promise<void> {
 
 function clearOverviewMarker(root: HTMLElement): void {
   delete root.dataset.overviewState;
+  delete root.dataset.learnersState;
   delete root.dataset.ready;
 }
 
