@@ -31,5 +31,5 @@ export async function startDashboard(root: HTMLElement, screen: DashboardScreen)
   }
 
   const { openAdministratorGate } = await import('./secure-gate');
-  await openAdministratorGate(root);
+  await openAdministratorGate(root, screen);
 }

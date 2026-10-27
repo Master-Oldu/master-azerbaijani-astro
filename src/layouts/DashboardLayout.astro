@@ -94,7 +94,9 @@ const items = [
           {
             demoPreview
               ? 'Phase 1 preview. Nothing on this screen is loaded from Supabase.'
-              : 'Customer records are not loaded by this page. A hidden address is not security.'
+              : section === 'overview'
+                ? 'Overview counts load only after the server confirms an administrator. This page does not list signup or purchase records.'
+                : 'Customer records are not loaded by this page. A hidden address is not security.'
           }
         </p>
       </div>

@@ -2,14 +2,21 @@ import type { Session, SupabaseClient } from '@supabase/supabase-js';
 import { createClient } from '@supabase/supabase-js';
 
 import { checkAdministratorSession, readPublicSupabaseConfig, type PublicSupabaseConfig, type SessionCheckStatus } from './admin-session';
+import type { DashboardScreen } from './gate';
 import { esc } from './markup';
+import { OVERVIEW_FUNCTION, type OverviewRequestBody } from './overview-contract';
+import { mountLiveOverview } from './overview-live';
 
 const CHECK_TIMEOUT_MS = 15000;
 
 let watching = false;
 let showingAuthorized = false;
+let activeScreen: DashboardScreen = 'overview';
+let authorizedUserId: string | null = null;
+let liveOverview: { dispose: () => void } | null = null;
 
-export async function openAdministratorGate(root: HTMLElement): Promise<void> {
+export async function openAdministratorGate(root: HTMLElement, screen: DashboardScreen): Promise<void> {
+  activeScreen = screen;
   const config = readPublicSupabaseConfig({
     url: import.meta.env.PUBLIC_SUPABASE_URL,
     anonKey: import.meta.env.PUBLIC_SUPABASE_ANON_KEY,
@@ -68,11 +75,35 @@ async function finishAuthorization(
     () => 'unavailable' as const,
   );
   if (status === 'authorized') {
+    const userId = session.user.id;
+    if (showingAuthorized && authorizedUserId === userId) {
+      renderAccount(supabase, config, root, session.user.email ?? '');
+      return;
+    }
+    cancelLiveOverview();
     showingAuthorized = true;
-    renderAuthorized(root, session.user.email ?? '');
+    authorizedUserId = userId;
     renderAccount(supabase, config, root, session.user.email ?? '');
+    if (activeScreen === 'overview') {
+      liveOverview = mountLiveOverview(
+        root,
+        {
+          invoke: (name, body) => invokeOverview(supabase, name, body),
+        },
+        {
+          stillCurrent: () => showingAuthorized && authorizedUserId === userId,
+          onDenied: (reason) => {
+            void denyAccess(supabase, config, root, reason);
+          },
+        },
+      );
+      return;
+    }
+    renderAuthorized(root, session.user.email ?? '');
     return;
   }
+  cancelLiveOverview();
+  authorizedUserId = null;
   showingAuthorized = false;
   if (status === 'invalid_session') {
     await endSession(supabase);
@@ -81,6 +112,7 @@ async function finishAuthorization(
   }
   if (status === 'not_admin') {
     await endSession(supabase);
+    clearOverviewMarker(root);
     root.innerHTML = notAdmin();
     root.querySelector<HTMLButtonElement>('#admin-try-another')?.addEventListener('click', () => {
       renderSignIn(root, supabase, config, '');
@@ -91,6 +123,7 @@ async function finishAuthorization(
 }
 
 function renderSignIn(root: HTMLElement, supabase: SupabaseClient, config: PublicSupabaseConfig, notice: string): void {
+  clearOverviewMarker(root);
   clearAccount();
   setBanner('Administrator sign-in. Customer records stay closed until the server confirms this account is an administrator.');
   root.innerHTML = `
@@ -163,19 +196,22 @@ async function submitSignIn(
 }
 
 function renderAuthorized(root: HTMLElement, email: string): void {
-  setBanner('Administrator access confirmed. Customer records are not connected yet.');
+  setBanner('Administrator access confirmed. Records on this page are not connected yet.');
   const who = email ? `Signed in as ${email}. ` : '';
   root.innerHTML = `
     <section class="panel">
       <h2>Administrator access confirmed</h2>
       <p class="lede">${esc(who)}The server confirmed this account is an administrator.</p>
-      <p>Learner, overview, and purchase records are not connected yet. This page did not load customer information.</p>
+      <p>Learner and purchase records are not connected on this page. This page did not load customer information.</p>
     </section>
   `;
 }
 
 function renderUnavailable(root: HTMLElement, supabase: SupabaseClient, config: PublicSupabaseConfig): void {
+  clearOverviewMarker(root);
   showingAuthorized = false;
+  authorizedUserId = null;
+  cancelLiveOverview();
   setBanner('The administrator check did not finish. No customer records were opened.');
   root.innerHTML = `
     <section class="panel">
@@ -208,6 +244,8 @@ function renderAccount(supabase: SupabaseClient, config: PublicSupabaseConfig, r
   slot.querySelector<HTMLButtonElement>('#dashboard-sign-out')?.addEventListener('click', () => {
     void (async () => {
       showingAuthorized = false;
+      authorizedUserId = null;
+      cancelLiveOverview();
       await endSession(supabase);
       renderSignIn(root, supabase, config, '');
     })();
@@ -221,6 +259,8 @@ function watchSession(supabase: SupabaseClient, config: PublicSupabaseConfig, ro
     if (event === 'SIGNED_OUT') {
       const wasAuthorized = showingAuthorized;
       showingAuthorized = false;
+      authorizedUserId = null;
+      cancelLiveOverview();
       clearAccount();
       if (wasAuthorized) renderSignIn(root, supabase, config, 'You have been signed out.');
       return;
@@ -230,10 +270,46 @@ function watchSession(supabase: SupabaseClient, config: PublicSupabaseConfig, ro
     }
     if (event === 'TOKEN_REFRESHED' && showingAuthorized && !session) {
       showingAuthorized = false;
+      authorizedUserId = null;
+      cancelLiveOverview();
       clearAccount();
       renderSignIn(root, supabase, config, 'Your session is no longer valid. Sign in again.');
     }
   });
+}
+
+async function denyAccess(
+  supabase: SupabaseClient,
+  config: PublicSupabaseConfig,
+  root: HTMLElement,
+  reason: 'invalid_session' | 'not_admin',
+): Promise<void> {
+  showingAuthorized = false;
+  authorizedUserId = null;
+  cancelLiveOverview();
+  await endSession(supabase);
+  if (reason === 'not_admin') {
+    clearOverviewMarker(root);
+    root.innerHTML = notAdmin();
+    root.querySelector<HTMLButtonElement>('#admin-try-another')?.addEventListener('click', () => {
+      renderSignIn(root, supabase, config, '');
+    });
+    return;
+  }
+  renderSignIn(root, supabase, config, 'Your session is no longer valid. Sign in again.');
+}
+
+function cancelLiveOverview(): void {
+  liveOverview?.dispose();
+  liveOverview = null;
+}
+
+async function invokeOverview(
+  supabase: SupabaseClient,
+  name: typeof OVERVIEW_FUNCTION,
+  body: OverviewRequestBody,
+): Promise<{ data: unknown; error: unknown }> {
+  return supabase.functions.invoke(name, { body, timeout: CHECK_TIMEOUT_MS });
 }
 
 async function endSession(supabase: SupabaseClient): Promise<void> {
@@ -243,6 +319,11 @@ async function endSession(supabase: SupabaseClient): Promise<void> {
     // The local session is cleared by the call when it can be. The screen still returns to sign-in.
   }
   clearAccount();
+}
+
+function clearOverviewMarker(root: HTMLElement): void {
+  delete root.dataset.overviewState;
+  delete root.dataset.ready;
 }
 
 function clearAccount(): void {

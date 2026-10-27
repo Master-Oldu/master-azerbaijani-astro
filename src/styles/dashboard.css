@@ -218,6 +218,24 @@
   font-size: 0.95rem;
 }
 
+.notice {
+  background: var(--gold-soft);
+  border: 1px solid #e4d0a4;
+  border-left: 4px solid var(--gold);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin: 12px 0 16px;
+}
+
+.notice p + p {
+  margin-top: 6px;
+}
+
+.stat-partial {
+  border-color: #e4d0a4;
+  box-shadow: inset 3px 0 0 var(--gold), var(--shadow);
+}
+
 .stats {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
