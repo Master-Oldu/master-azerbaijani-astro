@@ -10,7 +10,7 @@ const demoPreview = import.meta.env.DEV && import.meta.env.PUBLIC_DASHBOARD_DEMO
   description={
     demoPreview
       ? 'Account, lesson progression, learning history, entitlements, and purchase records.'
-      : 'Sign in with your existing Master Azerbaijani account. Learner records stay closed until the server confirms an administrator.'
+      : 'Learner details load only after the server confirms an administrator. The Purchases directory is not included.'
   }
 >
   <p class="loading">{demoPreview ? 'Loading demonstration data…' : 'Loading…'}</p>
