@@ -28,9 +28,11 @@ For many Azerbaijanis, it is a date connected to grief, family memory, and the s
 
 ## What Happened
 
-In 1990, Azerbaijan was still part of the Soviet Union. Demands for greater sovereignty were growing, driven by the conflict over Nagorno-Karabakh and mounting opposition to Soviet rule. Baku had also experienced deadly attacks against Armenian residents earlier that January.
-
-Soviet troops entered the city on the night of January 19 to 20. The state of emergency was announced to the public only after the operation had already begun and people had already been killed.
+In 1990, Azerbaijan was still part of the Soviet Union. Demands for greater sovereignty were growing, driven by the conflict over Nagorno-Karabakh and mounting opposition to Soviet rule. By January, the Popular Front of Azerbaijan had taken over administration in several regions and blockaded Soviet military barracks. On January 18, it called on residents to barricade the roads into Baku.
+ 
+Moscow answered with force. Soviet officials said publicly that the aim was to stop the Popular Front from taking power and to keep the republic's Communist-led government in place. The official justification also pointed to the violence earlier that month, including deadly attacks on Armenian residents of Baku. Human Rights Watch examined that explanation in its [1991 report](https://www.hrw.org/reports/pdfs/u/ussr/ussr915.pdf) and found that the evidence did not support it, noting that the military action appears to have been planned even before those attacks.
+ 
+Roughly 26,000 Soviet troops entered the city on the night of January 19 to 20. The state of emergency was announced to the public only after the operation had already begun and people had already been killed.
 
 According to [Azerbaijan's Ministry of Foreign Affairs](https://mfa.gov.az/en/news/no00520nbspstatement-of-the-ministry-of-foreign-affairs-of-the-republic-of-azerbaijan-enru), the crackdown killed 147 civilians and seriously injured 744 people.
 
