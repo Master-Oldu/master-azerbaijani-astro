@@ -224,34 +224,26 @@ import Footer from '../../components/Footer.astro';
 
   <h2 style="margin-bottom:24px;">What’s Next</h2>
 
-  <div style="
-    display:grid;
-    grid-template-columns:170px 1fr;
-    column-gap:18px;
-    row-gap:16px;
-    max-width:640px;
-    margin:0 auto;
-    align-items:start;
-  ">
+  <div class="whats-next-grid">
 
-    <div style="font-weight:600; color:#FA7239; text-align:right;">
+    <div class="whats-next-label">
       Ongoing
     </div>
-    <div style="text-align:left;">
+    <div class="whats-next-detail">
       Expanding native Azerbaijani audio across lessons
     </div>
 
-    <div style="font-weight:600; color:#FA7239; text-align:right;">
+    <div class="whats-next-label">
       March 2027
     </div>
-    <div style="text-align:left;">
+    <div class="whats-next-detail">
       Five additional modules planned to complete the learning path
     </div>
 
-    <div style="font-weight:600; color:#FA7239; text-align:right;">
+    <div class="whats-next-label">
       2027 Focus
     </div>
-    <div style="text-align:left;">
+    <div class="whats-next-detail">
       Refining lessons, strengthening practice, and improving the overall experience for independent Azerbaijani learners
     </div>
 
@@ -362,6 +354,28 @@ import Footer from '../../components/Footer.astro';
     }
   }
 
+  /* What's Next: desktop and tablet layout */
+  .whats-next-grid {
+    display: grid;
+    grid-template-columns: 170px minmax(0, 1fr);
+    column-gap: 18px;
+    row-gap: 16px;
+    max-width: 640px;
+    margin: 0 auto;
+    align-items: start;
+  }
+
+  .whats-next-label {
+    font-weight: 600;
+    color: #FA7239;
+    text-align: right;
+  }
+
+  .whats-next-detail {
+    min-width: 0;
+    text-align: left;
+  }
+
   @media (max-width: 1024px), (any-pointer: coarse) {
     #app-download-buttons {
       grid-template-columns: 1fr;
@@ -379,13 +393,19 @@ import Footer from '../../components/Footer.astro';
     }
   }
 
+  /* What's Next: stacked layout on phones */
   @media (max-width: 640px) {
-    section[style*="grid-template-columns:170px 1fr"] div[style*="text-align:right"] {
-      text-align: left !important;
+    .whats-next-grid {
+      grid-template-columns: minmax(0, 1fr);
+      row-gap: 6px;
     }
 
-    section[style*="grid-template-columns:170px 1fr"] > div {
-      grid-template-columns: 1fr !important;
+    .whats-next-label {
+      text-align: left;
+    }
+
+    .whats-next-detail:not(:last-child) {
+      margin-bottom: 18px;
     }
   }
 </style>
