@@ -1,3 +1,4 @@
+
 ---
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
@@ -50,7 +51,7 @@ import Footer from '../../components/Footer.astro';
   </div>
 
 <!-- Download Buttons -->
-<div class="download-buttons">
+<div class="download-buttons" id="app-download-buttons">
   <a
     href="https://apps.apple.com/us/app/master-azerbaijani/id6760097533"
     target="_blank"
@@ -67,6 +68,20 @@ import Footer from '../../components/Footer.astro';
     class="download-app-button"
   >
     Get it on Google Play
+  </a>
+</div>
+
+<!-- Apple App Store Reviews Link -->
+<div class="app-review-area">
+  <a
+    href="https://apps.apple.com/us/app/master-azerbaijani/id6760097533?see-all=reviews&amp;platform=iphone"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="app-review-link"
+  >
+    <span class="app-review-star" aria-hidden="true">★</span>
+    <span>See what learners are saying on the App Store</span>
+    <span class="app-review-arrow" aria-hidden="true">↗</span>
   </a>
 </div>
 
@@ -235,3 +250,82 @@ import Footer from '../../components/Footer.astro';
 </main>
 
 <Footer />
+
+<!-- Page-specific styling for download buttons and review link -->
+<style>
+  #app-download-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+    max-width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: stretch;
+  }
+
+  #app-download-buttons > .download-app-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
+    min-height: 76px;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+  }
+
+  .app-review-area {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .app-review-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    max-width: 100%;
+    color: #f5f5f5;
+    font-size: 0.98rem;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  .app-review-link:hover {
+    color: #ffffff;
+  }
+
+  .app-review-link:focus-visible {
+    outline: 2px solid #FA7239;
+    outline-offset: 5px;
+    border-radius: 3px;
+  }
+
+  .app-review-star {
+    color: #FA7239;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+    text-decoration: none;
+  }
+
+  .app-review-arrow {
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 640px) {
+    #app-download-buttons {
+      grid-template-columns: 1fr;
+      gap: 14px;
+      max-width: 520px;
+    }
+
+    .app-review-link {
+      font-size: 0.9rem;
+      gap: 7px;
+    }
+  }
+</style>
