@@ -256,7 +256,7 @@ import Footer from '../../components/Footer.astro';
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
     width: 100%;
-    max-width: 1030px;
+    max-width: 774px;
     margin-left: auto;
     margin-right: auto;
     align-items: stretch;
@@ -275,16 +275,19 @@ import Footer from '../../components/Footer.astro';
   }
 
   .app-review-area {
-    margin-top: 20px;
+    width: 100%;
+    max-width: 774px;
+    margin: 20px auto 0;
     text-align: center;
   }
 
   .app-review-link {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     max-width: 100%;
-    min-height: 54px;
+    min-height: 76px;
     box-sizing: border-box;
     padding: 12px 26px;
     border: 1px solid #FA7239;
@@ -310,11 +313,10 @@ import Footer from '../../components/Footer.astro';
     border-radius: 12px;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 1024px), (any-pointer: coarse) {
     #app-download-buttons {
       grid-template-columns: 1fr;
       gap: 14px;
-      max-width: 520px;
     }
 
     .app-review-link {
